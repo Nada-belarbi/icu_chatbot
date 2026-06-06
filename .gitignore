@@ -1,0 +1,47 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Chroma database (runtime data, not committed)
+data/chroma_db/
+
+# Trained model weights (large binaries)
+models/camembert_classifier/*.bin
+models/camembert_classifier/*.safetensors
+models/camembert_classifier/*.pt
+
+# Logs
+logs/
+*.log
+
+# Notebooks checkpoints
+notebooks/.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
