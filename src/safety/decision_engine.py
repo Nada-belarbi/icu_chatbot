@@ -60,14 +60,21 @@ class DecisionEngine:
         self._classifier = classifier
         self._threshold = confidence_threshold
 
-    def decide(self, text: str) -> str:
+    def decide(self, text: str, context_string: str = "") -> str:
         """
         Route *text* to one of the four decision constants.
 
         Parameters
         ----------
         text:
-            Cleaned (and optionally context-prefixed) user input.
+            Cleaned user input (output of ``TextCleaner.clean()``).
+        context_string:
+            Optional conversation history prefix produced by
+            ``ConversationMemoryManager.get_context_string()``.
+            When non-empty it is prepended to *text* before calling the
+            classifier, so ambiguous follow-up questions are classified
+            with their conversation context.  The rule filter always
+            operates on raw *text* only (no context contamination).
 
         Returns
         -------
@@ -75,15 +82,18 @@ class DecisionEngine:
             One of: ``allow_rag``, ``refuse``, ``redirect``,
             ``ask_reformulation``.
         """
-        # --- Step 1: rule-based pre-filter ---
+        # --- Step 1: rule-based pre-filter (on raw text only) ---
         category, blocked = self._rule_filter.filter(text)
         if blocked:
             if category == "urgency":
                 return DECISION_REDIRECT
             return DECISION_REFUSE
 
-        # --- Step 2: semantic classifier ---
-        label, score = self._classifier.classify(text)
+        # --- Step 2: semantic classifier (with memory context) ---
+        classifier_input = (
+            f"{context_string}\nUtilisateur: {text}" if context_string else text
+        )
+        label, score = self._classifier.classify(classifier_input)
 
         if score < self._threshold:
             return DECISION_ASK_REFORMULATION
