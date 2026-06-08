@@ -27,6 +27,8 @@ URGENCY_KEYWORDS = [
     "inconscient", "ne répond plus", "arrêt cardiaque", "arrêt respiratoire",
     "hémorragie", "saignement abondant", "convulsion", "convulsions",
     "appel le 15", "samu", "pompiers", "18", "15", "112",
+    "ne respire plus", "ne respire pas", "s'arrête de respirer",
+    "perd connaissance", "perd la conscience",
 ]
 
 DIAGNOSIS_KEYWORDS = [
@@ -38,11 +40,16 @@ TREATMENT_KEYWORDS = [
     "dois-je prendre", "quelle dose", "combien de médicament",
     "prescrire", "prescription", "ordonnance", "quel traitement pour moi",
     "puis-je arrêter", "peut-on arrêter le traitement",
+    "médicament donner", "quel médicament", "quels médicaments",
+    "quel traitement", "quels traitements",
 ]
 
 PROGNOSIS_KEYWORDS = [
     "vais-je survivre", "vais-je guérir", "combien de temps il me reste",
     "chance de survie", "pronostic vital", "espérance de vie",
+    "va survivre", "va-t-il survivre", "va-t-elle survivre",
+    "va guérir", "va-t-il guérir", "va-t-elle guérir",
+    "survivre", "chances de s'en sortir",
 ]
 
 PERSONAL_DATA_KEYWORDS = [
