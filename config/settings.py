@@ -80,6 +80,9 @@ CAMEMBERT_CONFIDENCE_THRESHOLD: float = _get_float(
 )
 CHROMA_TOP_K: int = _get_int("CHROMA_TOP_K", default=5, min_val=1, max_val=20)
 MEMORY_MAX_TURNS: int = _get_int("MEMORY_MAX_TURNS", default=3, min_val=1, max_val=10)
+CHUNK_SIZE: int = _get_int("CHUNK_SIZE", default=500, min_val=100, max_val=2000)
+CHUNK_OVERLAP: int = _get_int("CHUNK_OVERLAP", default=50, min_val=0, max_val=500)
+CHROMA_COLLECTION_NAME: str = os.getenv("CHROMA_COLLECTION_NAME", "icu_documents")
 
 
 # ---------------------------------------------------------------------------

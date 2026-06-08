@@ -7,15 +7,15 @@ Progress legend: `[ ]` not started · `[~]` in progress · `[x]` done
 ## PHASE 0 — Project bootstrap
 
 ### 0.1 Environment setup
-- [ ] Create and activate Python virtual environment (`.venv`)
-- [ ] Run `pip install -r requirements.txt`
-- [ ] Copy `.env.example` → `.env` and add `OPENAI_API_KEY`
-- [ ] Verify Python ≥ 3.10
+- [x] Create and activate Python virtual environment (`.venv`)
+- [x] Run `pip install -r requirements.txt`
+- [x] Copy `.env.example` → `.env` and add `OPENAI_API_KEY`
+- [x] Verify Python ≥ 3.10  ← Python 3.12.8
 
 ### 0.2 Git setup
-- [ ] `git init` inside `icu_chatbot/`
-- [ ] First commit: `initial project structure`
-- [ ] Create branches: `dev`, then feature branches per phase
+- [x] `git init` inside `icu_chatbot/`
+- [x] First commit: `initial project structure`  (54 files, commit cf8d32f)
+- [x] Create branches: `dev`, `feature/config`
 
 **✓ Exit check:** `python -c "import langchain, openai, chromadb, streamlit, transformers"` runs without error.
 
@@ -24,8 +24,8 @@ Progress legend: `[ ]` not started · `[~]` in progress · `[x]` done
 ## PHASE 1 — Configuration
 
 ### 1.1 `config/settings.py`
-- [ ] Load `.env` with `python-dotenv`
-- [ ] Define constants:
+- [x] Load `.env` with `python-dotenv`
+- [x] Define constants:
   - `OPENAI_API_KEY` (from env)
   - `OPENAI_MODEL` (default: `gpt-4o-mini`)
   - `CAMEMBERT_MODEL_PATH` → `models/camembert_classifier/`
@@ -34,19 +34,18 @@ Progress legend: `[ ]` not started · `[~]` in progress · `[x]` done
   - `DOCUMENTS_PATH` → `data/documents/`
   - `DATASET_PATH` → `data/questions_dataset/`
   - `CHROMA_TOP_K` (default: `5`)
-  - `MEMORY_MAX_TURNS` (default: `5`)
+  - `MEMORY_MAX_TURNS` (default: `3`)
   - `LOG_DIR` → `logs/`
-- [ ] Validate that required values are set (raise on missing API key)
-- [ ] Validate that numeric thresholds are in expected ranges
+- [x] Validate that required values are set (raise on missing API key)
+- [x] Validate that numeric thresholds are in expected ranges
 
 ### 1.2 `config/safety_config.py`
-- [ ] Define classifier label constants:
+- [x] Define classifier label constants:
   `LABEL_GENERAL`, `LABEL_SENSITIVE`, `LABEL_MEDICAL_ADVICE`, `LABEL_EMERGENCY`, `LABEL_OUT_OF_SCOPE`
-- [ ] Define rule keyword lists per category (urgency, diagnosis, treatment, prognosis, personal data)
-- [ ] Define all controlled response message strings (in French)
-- [ ] Define dangerous response patterns list (used by `PostGenerationChecker`)
+- [x] Define rule keyword lists per category (urgency, diagnosis, treatment, prognosis, personal data)
+- [x] Define dangerous response patterns list (used by `PostGenerationChecker`)
 
-**Commit:** `add configuration files`
+**Commit:** `add configuration files` ✓ (815c284)
 
 **✓ Tests (manual):**
 - Run `python config/settings.py` → no error, all paths printed
@@ -58,44 +57,48 @@ Progress legend: `[ ]` not started · `[~]` in progress · `[x]` done
 ## PHASE 2 — Controlled responses
 
 ### 2.1 `src/safety/controlled_responses.py`
-- [ ] Create `ControlledResponseManager` class
-- [ ] Implement response methods:
+- [x] Create `ControlledResponseManager` class
+- [x] Implement response methods:
   - `get_urgency_redirect()` → direct to emergency / medical team
   - `get_refuse_medical_advice()` → explain system limits
   - `get_ask_reformulation()` → invite rephrasing
   - `get_no_source_found()` → no matching document
   - `get_out_of_scope()` → outside perimeter
-- [ ] All messages: empathetic French, no medical content, redirect to professional when needed
+  - `get_api_unavailable()` → OpenAI API unreachable
+  - `get_generic_error()` → unexpected exception fallback
+- [x] All messages: empathetic French, no medical content, redirect to professional when needed
 
-**Commit:** `add controlled responses`
+**Commit:** `add controlled responses` ✓ (7e9700c)
 
 **✓ Unit tests** (`tests/unit/test_controlled_responses.py`):
-- [ ] Each method returns a non-empty string
-- [ ] No response contains medical advice keywords
-- [ ] Urgency response contains reference to medical team
-- [ ] All messages are in French
+- [x] Each method returns a non-empty string
+- [x] No response contains medical advice keywords
+- [x] Urgency response contains reference to medical team
+- [x] All messages are in French
 
 ---
 
 ## PHASE 3 — Preprocessing
 
 ### 3.1 `src/preprocessing/text_cleaner.py`
-- [ ] Create `TextCleaner` class
-- [ ] Implement `clean(text: str) -> str`:
+- [x] Create `TextCleaner` class
+- [x] Implement `clean(text: str) -> str`:
   - Strip leading/trailing whitespace
   - Normalize multiple spaces to single space
   - Normalize Unicode (NFC)
   - Preserve medical terms and personal phrasing ("mon père", "ma mère")
-- [ ] Raise `ValueError` (or return controlled error) on empty / whitespace-only input
+- [x] Raise `ValueError` on empty / whitespace-only input
 
-**Commit:** `add text cleaner`
+**Commit:** `add text cleaner` ✓ (893c2ec)
 
-**✓ Unit tests** (`tests/unit/test_text_cleaner.py`):
-- [ ] Empty string → raises `ValueError`
-- [ ] `"  bonjour  "` → `"bonjour"`
-- [ ] Multiple internal spaces → single space
-- [ ] `"mon père est intubé"` → personal phrasing preserved unchanged
-- [ ] Medical term (e.g. `"réanimation"`) → not altered
+**✓ Unit tests** (`tests/unit/test_text_cleaner.py`) — 14/14 passed:
+- [x] Empty string → raises `ValueError`
+- [x] `"  bonjour  "` → `"bonjour"`
+- [x] Multiple internal spaces → single space
+- [x] `"mon père est intubé"` → personal phrasing preserved unchanged
+- [x] Medical term (e.g. `"réanimation"`) → not altered
+- [x] NFC normalization → accents intact
+- [x] Non-breaking space (U+00A0) → collapsed
 
 ---
 
@@ -112,49 +115,49 @@ Progress legend: `[ ]` not started · `[~]` in progress · `[x]` done
 > user profiles would create GDPR risk with no benefit in this use case.
 
 ### 4.1 `src/memory/conversation_memory.py`
-- [ ] Create `ConversationMemoryManager` class — **plain Python, no LangChain dependency**
+- [x] Create `ConversationMemoryManager` class — **plain Python, no LangChain dependency**
   - Use a simple `list` stored in `st.session_state` (avoids LangChain version drift)
-- [ ] Implement:
+- [x] Implement:
   - `add_user_message(text: str)`
   - `add_assistant_message(text: str)`
   - `get_history() -> list[dict]` — returns last N turns only
-  - `get_context_string() -> str` — formats last **2–3 turns** as a short string prefix for the classifier
+  - `get_context_string() -> str` — formats last 2–3 turns as a short string prefix for the classifier
   - `clear()` — wipe all history
-- [ ] Hard limit: `MEMORY_MAX_TURNS = 3` (default in `.env.example`) — more history degrades classifier accuracy
-- [ ] No disk persistence — in-memory only
-- [ ] No storage of PII
+- [x] Hard limit: `MEMORY_MAX_TURNS = 3` (default in `.env.example`) — more history degrades classifier accuracy
+- [x] No disk persistence — in-memory only
+- [x] No storage of PII
 
-**Commit:** `add conversation memory manager`
+**Commit:** `add conversation memory manager` ✓ (03f7075)
 
-**✓ Unit tests** (`tests/unit/test_memory_manager.py`):
-- [ ] Add user message → appears in `get_history()`
-- [ ] Add assistant message → appears in `get_history()`
-- [ ] History capped at `MEMORY_MAX_TURNS`
-- [ ] `clear()` → `get_history()` returns empty
-- [ ] Two separate instances share no state
+**✓ Unit tests** (`tests/unit/test_conversation_memory.py`) — 14/14 passed:
+- [x] Add user message → appears in `get_history()`
+- [x] Add assistant message → appears in `get_history()`
+- [x] History capped at `MEMORY_MAX_TURNS`
+- [x] `clear()` → `get_history()` returns empty
+- [x] Two separate instances share no state
 
 ---
 
 ## PHASE 5 — Rule-based safety filter
 
 ### 5.1 `src/safety/rule_filter.py`
-- [ ] Create `RuleFilter` class
-- [ ] Load keyword lists from `safety_config.py`
-- [ ] Implement `filter(text: str) -> tuple[str, bool]`:
-  - Returns `(category, blocked)` where category ∈ `{urgency, diagnosis, treatment, prognosis, personal_data, out_of_scope, allowed}`
+- [x] Create `RuleFilter` class
+- [x] Load keyword lists from `safety_config.py`
+- [x] Implement `filter(text: str) -> tuple[str, bool]`:
+  - Returns `(category, blocked)` where category ∈ `{urgency, diagnosis, treatment, prognosis, personal_data, allowed}`
   - `blocked = True` for everything except `allowed`
-- [ ] Rules use case-insensitive regex matching
-- [ ] Urgency always takes priority over other categories
+- [x] Rules use case-insensitive regex matching
+- [x] Urgency always takes priority over other categories
 
-**Commit:** `add rule-based safety filter`
+**Commit:** `add rule-based safety filter` ✓ (6b7eb62)
 
-**✓ Unit tests** (`tests/unit/test_rule_filter.py`):
-- [ ] `"Est-ce que mon père va survivre ?"` → `(prognosis, True)`
-- [ ] `"Quel médicament donner ?"` → `(treatment, True)`
-- [ ] `"Il ne respire plus"` → `(urgency, True)`
-- [ ] `"Qu'est-ce qu'un respirateur ?"` → `(allowed, False)`
-- [ ] Urgency keyword wins over any other category in same query
-- [ ] Case-insensitive match works
+**✓ Unit tests** (`tests/unit/test_rule_filter.py`) — 12/12 passed:
+- [x] `"Est-ce que mon père va survivre ?"` → `(prognosis, True)`
+- [x] `"Quel médicament donner ?"` → `(treatment, True)`
+- [x] `"Il ne respire plus"` → `(urgency, True)`
+- [x] `"Qu'est-ce qu'un respirateur ?"` → `(allowed, False)`
+- [x] Urgency keyword wins over any other category in same query
+- [x] Case-insensitive match works
 
 ---
 
@@ -165,28 +168,30 @@ Progress legend: `[ ]` not started · `[~]` in progress · `[x]` done
 > without waiting for the real CamemBERT model to be trained.
 
 ### 6.1 `src/safety/query_classifier.py` — Mock phase
-- [ ] Define abstract base class / interface `BaseQueryClassifier`:
+- [x] Define abstract base class / interface `BaseQueryClassifier`:
   - `classify(text: str) -> tuple[str, float]` → `(label, score)`
-- [ ] Implement `MockQueryClassifier(BaseQueryClassifier)`:
+- [x] Implement `MockQueryClassifier(BaseQueryClassifier)`:
   - Configurable return value for tests
   - Default: returns `(information_generale, 0.95)`
-- [ ] Wire `MockQueryClassifier` into `DecisionEngine` for all integration work
+  - Factory methods: `as_general()`, `as_emergency()`, `as_medical_advice()`, `as_out_of_scope()`, `as_low_confidence()`
+- [x] Wire `MockQueryClassifier` into `DecisionEngine` for all integration work
 
-**Commit:** `add CamemBERT mock classifier`
+**Commit:** `add CamemBERT mock classifier` ✓ (eb1767d)
 
-**✓ Tests:**
-- [ ] `MockQueryClassifier` satisfies `BaseQueryClassifier` interface
-- [ ] Configurable label and score work as expected
-- [ ] All unit tests for `DecisionEngine` pass with mock
+**✓ Tests** (`tests/unit/test_query_classifier.py`) — 24/24 passed:
+- [x] `MockQueryClassifier` satisfies `BaseQueryClassifier` interface
+- [x] Configurable label and score work as expected
+- [x] Invalid label → `ValueError`
+- [x] Score out of [0,1] → `ValueError`
 
 ---
 
 ## PHASE 7 — Decision engine
 
 ### 7.1 `src/safety/decision_engine.py`
-- [ ] Create `DecisionEngine` class
-- [ ] Constructor accepts `RuleFilter`, `QueryClassifier` (accepts any `BaseQueryClassifier`)
-- [ ] Implement `decide(text: str) -> str`:
+- [x] Create `DecisionEngine` class
+- [x] Constructor accepts `RuleFilter`, `QueryClassifier` (accepts any `BaseQueryClassifier`)
+- [x] Implement `decide(text: str) -> str`:
   - If rule blocks with `urgency` → return `redirect`
   - If rule blocks (non-urgency) → return `refuse`
   - Else run classifier → `(label, score)`
@@ -196,16 +201,16 @@ Progress legend: `[ ]` not started · `[~]` in progress · `[x]` done
   - If label ∈ `{information_generale, sensible}` and score ≥ threshold → return `allow_rag`
   - Default fallback → return `refuse`
 
-**Commit:** `add decision engine`
+**Commit:** `add decision engine` ✓ (3489bd1)
 
-**✓ Unit tests** (`tests/unit/test_decision_engine.py`):
-- [ ] Urgency rule → `redirect` (classifier not called)
-- [ ] Non-urgency rule block → `refuse` (classifier not called)
-- [ ] High confidence `information_generale` → `allow_rag`
-- [ ] Low confidence (below threshold) → `ask_reformulation`
-- [ ] `avis_medical_personnalise` label → `refuse`
-- [ ] `hors_perimetre` label → `refuse`
-- [ ] `urgence` label from classifier → `redirect`
+**✓ Unit tests** (`tests/unit/test_decision_engine.py`) — 15/15 passed:
+- [x] Urgency rule → `redirect` (classifier not called)
+- [x] Non-urgency rule block → `refuse` (classifier not called)
+- [x] High confidence `information_generale` → `allow_rag`
+- [x] Low confidence (below threshold) → `ask_reformulation`
+- [x] `avis_medical_personnalise` label → `refuse`
+- [x] `hors_perimetre` label → `refuse`
+- [x] `urgence` label from classifier → `redirect`
 
 ---
 
@@ -215,9 +220,43 @@ Progress legend: `[ ]` not started · `[~]` in progress · `[x]` done
 > This phase is a **checkpoint**: before wiring the pipeline, confirm that
 > `get_context_string()` (last 2–3 turns) is integrated into the classifier input in `DecisionEngine`.
 
-- [ ] Verify `ConversationMemoryManager.get_context_string()` is called before `QueryClassifier.classify()`
-- [ ] Confirm context string is limited to 2–3 turns maximum
-- [ ] Write a short integration test: question + 2-turn history → context correctly prepended
+- [x] `DecisionEngine.decide()` accepts optional `context_string` parameter
+- [x] Context string prepended to classifier input (not to rule filter input)
+- [x] Rule filter always uses raw text only — no context contamination
+- [x] Context capped at `MEMORY_MAX_TURNS` (enforced by `ConversationMemoryManager`)
+
+**Commit:** `phase 8 — wire conversation memory into decision engine` ✓ (60fb0fb)
+
+**✓ Integration tests** (`tests/integration/test_memory_decision_integration.py`) — 5/5 passed:
+- [x] Context prepended to classifier input
+- [x] Context appears before current question
+- [x] Empty context → text passed unchanged
+- [x] Context capped at max_turns
+- [x] Urgency in old context does NOT trigger redirect for safe current question
+
+---
+
+## PHASE 9 — ChatbotPipeline skeleton
+
+### 9.1 `src/pipeline/chatbot_pipeline.py`
+- [x] `PipelineResult` value object (`answer`, `sources`, `decision`, `response_type`)
+- [x] `ChatbotPipeline.__init__()` wires: `TextCleaner`, `RuleFilter`, `MockQueryClassifier`, `DecisionEngine`, `ControlledResponseManager`
+- [x] `run(user_input, memory)` — public entry point, **never raises**
+- [x] Full routing: `redirect` / `refuse` / `ask_reformulation` / `allow_rag`
+- [x] `allow_rag` path stubs gracefully when Retriever/RAGChain not yet wired
+- [x] Empty input caught by `TextCleaner` → `ask_reformulation` (no memory update)
+- [x] Any unexpected exception → `generic_error` response
+- [x] Memory updated after every successful exchange
+- [x] Logger hook present (no-op until Phase 15)
+
+**Commit:** `add chatbot pipeline skeleton` ✓ (d696dc0)
+
+**✓ Integration tests** (`tests/integration/test_pipeline.py`) — 16/16 passed:
+- [x] Returns `PipelineResult` with non-empty answer
+- [x] All 4 routing paths verified
+- [x] Empty input → reformulation, memory unchanged
+- [x] Memory updated with user + assistant messages
+- [x] Broken classifier → `generic_error`, no crash
 
 ---
 

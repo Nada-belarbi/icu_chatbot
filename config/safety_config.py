@@ -70,11 +70,14 @@ DANGEROUS_RESPONSE_PATTERNS = [
     r"\d+\s*(mg|ml|g|µg)\s*(par jour|\/jour|\/j|toutes les)",
     r"prenez\s+\d+",
     r"dose\s+(recommandée|habituelle|standard)\s+est",
-    # Prognosis
+    # Prognosis / survival predictions
     r"vous\s+avez\s+\d+\s*%\s+(de chance|de survie)",
     r"il\s+(vous\s+)?reste\s+\d+",
-    # Direct medical advice
+    r"il\s+va\s+(survivre|s['']en\s+sortir|guérir)",
+    r"elle\s+va\s+(survivre|s['']en\s+sortir|guérir)",
+    # Direct medical advice / treatment instructions
     r"je\s+vous\s+(conseille|recommande)\s+de\s+(prendre|arrêter|augmenter|diminuer)",
     r"vous\s+devriez\s+(prendre|arrêter|augmenter|diminuer)",
+    r"donnez[- ]lui\s+(ce|un|des|le|la|les|\w+\s+(médicament|traitement|dose|comprimé))",
 ]
 
