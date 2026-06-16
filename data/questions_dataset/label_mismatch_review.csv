@@ -1,0 +1,284 @@
+text,label,label_auto
+"mon père est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"Bonjour, mon père est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"S'il vous plaît, mon père est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"Excusez-moi, mon père est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"mon père a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"Bonjour, mon père a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"S'il vous plaît, mon père a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"Excusez-moi, mon père a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"mon père est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"Bonjour, mon père est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"S'il vous plaît, mon père est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"Excusez-moi, mon père est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"mon père a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"Bonjour, mon père a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"S'il vous plaît, mon père a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"Excusez-moi, mon père a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"mon père est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"Bonjour, mon père est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"S'il vous plaît, mon père est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"Excusez-moi, mon père est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"mon père semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"Bonjour, mon père semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"S'il vous plaît, mon père semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"Excusez-moi, mon père semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"mon père ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"Bonjour, mon père ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"S'il vous plaît, mon père ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"Excusez-moi, mon père ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"mon père a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"Bonjour, mon père a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"S'il vous plaît, mon père a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"Excusez-moi, mon père a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"ma mère est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"Bonjour, ma mère est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"S'il vous plaît, ma mère est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"Excusez-moi, ma mère est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"ma mère a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"Bonjour, ma mère a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"S'il vous plaît, ma mère a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"Excusez-moi, ma mère a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"ma mère est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"Bonjour, ma mère est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"S'il vous plaît, ma mère est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"Excusez-moi, ma mère est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"ma mère a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"Bonjour, ma mère a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"S'il vous plaît, ma mère a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"Excusez-moi, ma mère a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"ma mère est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"Bonjour, ma mère est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"S'il vous plaît, ma mère est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"Excusez-moi, ma mère est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"ma mère semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"Bonjour, ma mère semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"S'il vous plaît, ma mère semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"Excusez-moi, ma mère semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"ma mère ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"Bonjour, ma mère ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"S'il vous plaît, ma mère ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"Excusez-moi, ma mère ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"ma mère a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"Bonjour, ma mère a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"S'il vous plaît, ma mère a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"Excusez-moi, ma mère a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"mon conjoint est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"Bonjour, mon conjoint est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"S'il vous plaît, mon conjoint est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"Excusez-moi, mon conjoint est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"mon conjoint a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"Bonjour, mon conjoint a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"S'il vous plaît, mon conjoint a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"Excusez-moi, mon conjoint a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"mon conjoint est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"Bonjour, mon conjoint est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"S'il vous plaît, mon conjoint est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"Excusez-moi, mon conjoint est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"mon conjoint a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"Bonjour, mon conjoint a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"S'il vous plaît, mon conjoint a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"Excusez-moi, mon conjoint a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"mon conjoint est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"Bonjour, mon conjoint est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"S'il vous plaît, mon conjoint est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"Excusez-moi, mon conjoint est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"mon conjoint semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"Bonjour, mon conjoint semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"S'il vous plaît, mon conjoint semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"Excusez-moi, mon conjoint semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"mon conjoint ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"Bonjour, mon conjoint ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"S'il vous plaît, mon conjoint ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"Excusez-moi, mon conjoint ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"mon conjoint a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"Bonjour, mon conjoint a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"S'il vous plaît, mon conjoint a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"Excusez-moi, mon conjoint a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"ma soeur est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"Bonjour, ma soeur est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"S'il vous plaît, ma soeur est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"Excusez-moi, ma soeur est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"ma soeur a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"Bonjour, ma soeur a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"S'il vous plaît, ma soeur a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"Excusez-moi, ma soeur a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"ma soeur est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"Bonjour, ma soeur est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"S'il vous plaît, ma soeur est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"Excusez-moi, ma soeur est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"ma soeur a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"Bonjour, ma soeur a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"S'il vous plaît, ma soeur a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"Excusez-moi, ma soeur a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"ma soeur est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"Bonjour, ma soeur est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"S'il vous plaît, ma soeur est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"Excusez-moi, ma soeur est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"ma soeur semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"Bonjour, ma soeur semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"S'il vous plaît, ma soeur semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"Excusez-moi, ma soeur semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"ma soeur ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"Bonjour, ma soeur ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"S'il vous plaît, ma soeur ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"Excusez-moi, ma soeur ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"ma soeur a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"Bonjour, ma soeur a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"S'il vous plaît, ma soeur a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"Excusez-moi, ma soeur a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"mon proche est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"Bonjour, mon proche est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"S'il vous plaît, mon proche est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"Excusez-moi, mon proche est en réanimation, pouvez-vous m'expliquer les machines ?",sensible,information_generale
+"mon proche a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"Bonjour, mon proche a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"S'il vous plaît, mon proche a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"Excusez-moi, mon proche a été intubé, je ne comprends pas ce que cela implique ?",sensible,information_generale
+"mon proche est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"Bonjour, mon proche est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"S'il vous plaît, mon proche est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"Excusez-moi, mon proche est sous sédation, pouvez-vous expliquer ce que cela veut dire ?",sensible,information_generale
+"mon proche a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"Bonjour, mon proche a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"S'il vous plaît, mon proche a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"Excusez-moi, mon proche a des perfusions, à quoi servent-elles exactement ?",sensible,information_generale
+"mon proche est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"Bonjour, mon proche est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"S'il vous plaît, mon proche est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"Excusez-moi, mon proche est monitoré en continu, pouvez-vous m'expliquer pourquoi ?",sensible,information_generale
+"mon proche semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"Bonjour, mon proche semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"S'il vous plaît, mon proche semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"Excusez-moi, mon proche semble très fatigué, est-ce fréquent en réanimation ?",sensible,information_generale
+"mon proche ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"Bonjour, mon proche ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"S'il vous plaît, mon proche ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"Excusez-moi, mon proche ne peut pas parler, comment communiquer avec lui ?",sensible,information_generale
+"mon proche a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"Bonjour, mon proche a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"S'il vous plaît, mon proche a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+"Excusez-moi, mon proche a de nombreux tuyaux, pouvez-vous m'expliquer leur rôle ?",sensible,information_generale
+Urgent: Quel traitement faut-il donner à mon père ?,avis_medical_personnalise,urgence
+Urgent: Quelle dose dois-je donner à mon père ?,avis_medical_personnalise,urgence
+Urgent: Pouvez-vous prescrire un médicament pour mon père ?,avis_medical_personnalise,urgence
+Doit-on arrêter le traitement de mon père maintenant ?,avis_medical_personnalise,information_generale
+Urgent: Doit-on arrêter le traitement de mon père maintenant ?,avis_medical_personnalise,urgence
+Réponse courte svp: Doit-on arrêter le traitement de mon père maintenant ?,avis_medical_personnalise,information_generale
+Est-ce grave pour mon père et que faut-il faire exactement ?,avis_medical_personnalise,information_generale
+Urgent: Est-ce grave pour mon père et que faut-il faire exactement ?,avis_medical_personnalise,urgence
+Réponse courte svp: Est-ce grave pour mon père et que faut-il faire exactement ?,avis_medical_personnalise,information_generale
+Urgent: Va-t-il survivre et que dois-je faire immédiatement ?,avis_medical_personnalise,urgence
+Quel diagnostic précis avez-vous pour mon père ?,avis_medical_personnalise,information_generale
+Urgent: Quel diagnostic précis avez-vous pour mon père ?,avis_medical_personnalise,urgence
+Réponse courte svp: Quel diagnostic précis avez-vous pour mon père ?,avis_medical_personnalise,information_generale
+Urgent: Pouvez-vous confirmer que mon père va guérir rapidement ?,avis_medical_personnalise,urgence
+"Urgent: Quels traitements sont généralement utilisés pour le SDRA, et lequel donner à mon père ?",avis_medical_personnalise,urgence
+"On parle de sepsis en général, mais dans le cas de mon père que recommandez-vous ?",avis_medical_personnalise,information_generale
+"Urgent: On parle de sepsis en général, mais dans le cas de mon père que recommandez-vous ?",avis_medical_personnalise,urgence
+"Réponse courte svp: On parle de sepsis en général, mais dans le cas de mon père que recommandez-vous ?",avis_medical_personnalise,information_generale
+"Je comprends l'information générale, mais concrètement que dois-je administrer à mon père ?",avis_medical_personnalise,information_generale
+"Urgent: Je comprends l'information générale, mais concrètement que dois-je administrer à mon père ?",avis_medical_personnalise,urgence
+"Réponse courte svp: Je comprends l'information générale, mais concrètement que dois-je administrer à mon père ?",avis_medical_personnalise,information_generale
+Urgent: Quel traitement faut-il donner à ma mère ?,avis_medical_personnalise,urgence
+Urgent: Quelle dose dois-je donner à ma mère ?,avis_medical_personnalise,urgence
+Urgent: Pouvez-vous prescrire un médicament pour ma mère ?,avis_medical_personnalise,urgence
+Doit-on arrêter le traitement de ma mère maintenant ?,avis_medical_personnalise,information_generale
+Urgent: Doit-on arrêter le traitement de ma mère maintenant ?,avis_medical_personnalise,urgence
+Réponse courte svp: Doit-on arrêter le traitement de ma mère maintenant ?,avis_medical_personnalise,information_generale
+Est-ce grave pour ma mère et que faut-il faire exactement ?,avis_medical_personnalise,information_generale
+Urgent: Est-ce grave pour ma mère et que faut-il faire exactement ?,avis_medical_personnalise,urgence
+Réponse courte svp: Est-ce grave pour ma mère et que faut-il faire exactement ?,avis_medical_personnalise,information_generale
+Quel diagnostic précis avez-vous pour ma mère ?,avis_medical_personnalise,information_generale
+Urgent: Quel diagnostic précis avez-vous pour ma mère ?,avis_medical_personnalise,urgence
+Réponse courte svp: Quel diagnostic précis avez-vous pour ma mère ?,avis_medical_personnalise,information_generale
+Urgent: Pouvez-vous confirmer que ma mère va guérir rapidement ?,avis_medical_personnalise,urgence
+"Urgent: Quels traitements sont généralement utilisés pour le SDRA, et lequel donner à ma mère ?",avis_medical_personnalise,urgence
+"On parle de sepsis en général, mais dans le cas de ma mère que recommandez-vous ?",avis_medical_personnalise,information_generale
+"Urgent: On parle de sepsis en général, mais dans le cas de ma mère que recommandez-vous ?",avis_medical_personnalise,urgence
+"Réponse courte svp: On parle de sepsis en général, mais dans le cas de ma mère que recommandez-vous ?",avis_medical_personnalise,information_generale
+"Je comprends l'information générale, mais concrètement que dois-je administrer à ma mère ?",avis_medical_personnalise,information_generale
+"Urgent: Je comprends l'information générale, mais concrètement que dois-je administrer à ma mère ?",avis_medical_personnalise,urgence
+"Réponse courte svp: Je comprends l'information générale, mais concrètement que dois-je administrer à ma mère ?",avis_medical_personnalise,information_generale
+Urgent: Quel traitement faut-il donner à mon proche ?,avis_medical_personnalise,urgence
+Urgent: Quelle dose dois-je donner à mon proche ?,avis_medical_personnalise,urgence
+Urgent: Pouvez-vous prescrire un médicament pour mon proche ?,avis_medical_personnalise,urgence
+Doit-on arrêter le traitement de mon proche maintenant ?,avis_medical_personnalise,information_generale
+Urgent: Doit-on arrêter le traitement de mon proche maintenant ?,avis_medical_personnalise,urgence
+Réponse courte svp: Doit-on arrêter le traitement de mon proche maintenant ?,avis_medical_personnalise,information_generale
+Est-ce grave pour mon proche et que faut-il faire exactement ?,avis_medical_personnalise,information_generale
+Urgent: Est-ce grave pour mon proche et que faut-il faire exactement ?,avis_medical_personnalise,urgence
+Réponse courte svp: Est-ce grave pour mon proche et que faut-il faire exactement ?,avis_medical_personnalise,information_generale
+Quel diagnostic précis avez-vous pour mon proche ?,avis_medical_personnalise,information_generale
+Urgent: Quel diagnostic précis avez-vous pour mon proche ?,avis_medical_personnalise,urgence
+Réponse courte svp: Quel diagnostic précis avez-vous pour mon proche ?,avis_medical_personnalise,information_generale
+Urgent: Pouvez-vous confirmer que mon proche va guérir rapidement ?,avis_medical_personnalise,urgence
+"Urgent: Quels traitements sont généralement utilisés pour le SDRA, et lequel donner à mon proche ?",avis_medical_personnalise,urgence
+"On parle de sepsis en général, mais dans le cas de mon proche que recommandez-vous ?",avis_medical_personnalise,information_generale
+"Urgent: On parle de sepsis en général, mais dans le cas de mon proche que recommandez-vous ?",avis_medical_personnalise,urgence
+"Réponse courte svp: On parle de sepsis en général, mais dans le cas de mon proche que recommandez-vous ?",avis_medical_personnalise,information_generale
+"Je comprends l'information générale, mais concrètement que dois-je administrer à mon proche ?",avis_medical_personnalise,information_generale
+"Urgent: Je comprends l'information générale, mais concrètement que dois-je administrer à mon proche ?",avis_medical_personnalise,urgence
+"Réponse courte svp: Je comprends l'information générale, mais concrètement que dois-je administrer à mon proche ?",avis_medical_personnalise,information_generale
+"Douleur thoracique brutale et sévère, que faire ?",urgence,information_generale
+"Douleur thoracique brutale et sévère dans la chambre, que faire immédiatement ?",urgence,information_generale
+"Douleur thoracique brutale et sévère dans la chambre, réponse rapide s'il vous plaît.",urgence,information_generale
+"Douleur thoracique brutale et sévère dans le couloir, que faire immédiatement ?",urgence,information_generale
+"Douleur thoracique brutale et sévère dans le couloir, réponse rapide s'il vous plaît.",urgence,information_generale
+"Douleur thoracique brutale et sévère à la maison, que faire immédiatement ?",urgence,information_generale
+"Douleur thoracique brutale et sévère à la maison, réponse rapide s'il vous plaît.",urgence,information_generale
+"Douleur thoracique brutale et sévère pendant la nuit, que faire immédiatement ?",urgence,information_generale
+"Douleur thoracique brutale et sévère pendant la nuit, réponse rapide s'il vous plaît.",urgence,information_generale
+"Douleur thoracique brutale et sévère depuis plusieurs minutes, que faire immédiatement ?",urgence,information_generale
+"Douleur thoracique brutale et sévère depuis plusieurs minutes, réponse rapide s'il vous plaît.",urgence,information_generale
+"Détresse respiratoire soudaine, que faire ?",urgence,information_generale
+"Détresse respiratoire soudaine dans la chambre, que faire immédiatement ?",urgence,information_generale
+"Détresse respiratoire soudaine dans la chambre, réponse rapide s'il vous plaît.",urgence,information_generale
+"Détresse respiratoire soudaine dans le couloir, que faire immédiatement ?",urgence,information_generale
+"Détresse respiratoire soudaine dans le couloir, réponse rapide s'il vous plaît.",urgence,information_generale
+"Détresse respiratoire soudaine à la maison, que faire immédiatement ?",urgence,information_generale
+"Détresse respiratoire soudaine à la maison, réponse rapide s'il vous plaît.",urgence,information_generale
+"Détresse respiratoire soudaine pendant la nuit, que faire immédiatement ?",urgence,information_generale
+"Détresse respiratoire soudaine pendant la nuit, réponse rapide s'il vous plaît.",urgence,information_generale
+"Détresse respiratoire soudaine depuis plusieurs minutes, que faire immédiatement ?",urgence,information_generale
+"Détresse respiratoire soudaine depuis plusieurs minutes, réponse rapide s'il vous plaît.",urgence,information_generale
+Quel est le menu du restaurant de l'hôpital ?,hors_perimetre,information_generale
+Quel est le menu du restaurant de l'hôpital ? Merci.,hors_perimetre,information_generale
+Quel est le menu du restaurant de l'hôpital ? Avec un petit budget.,hors_perimetre,information_generale
+Quel est le menu du restaurant de l'hôpital ? Rapidement.,hors_perimetre,information_generale
+Peux-tu m'aider à réserver un vol ?,hors_perimetre,information_generale
+Peux-tu m'aider à réserver un vol ? Merci.,hors_perimetre,information_generale
+Peux-tu m'aider à réserver un vol ? Avec un petit budget.,hors_perimetre,information_generale
+Peux-tu m'aider à réserver un vol ? Rapidement.,hors_perimetre,information_generale
+Quel smartphone acheter en 2026 ?,hors_perimetre,information_generale
+Quel smartphone acheter en 2026 ? Merci.,hors_perimetre,information_generale
+Quel smartphone acheter en 2026 ? Avec un petit budget.,hors_perimetre,information_generale
+Quel smartphone acheter en 2026 ? Rapidement.,hors_perimetre,information_generale
+Donne-moi des conseils pour investir en bourse.,hors_perimetre,information_generale
+Donne-moi des conseils pour investir en bourse. Merci.,hors_perimetre,information_generale
+Donne-moi des conseils pour investir en bourse. Avec un petit budget.,hors_perimetre,information_generale
+Donne-moi des conseils pour investir en bourse. Rapidement.,hors_perimetre,information_generale
+Écris un poème romantique.,hors_perimetre,information_generale
+Écris un poème romantique. Merci.,hors_perimetre,information_generale
+Écris un poème romantique. Avec un petit budget.,hors_perimetre,information_generale
+Écris un poème romantique. Rapidement.,hors_perimetre,information_generale
+Aide-moi à faire mes devoirs de maths.,hors_perimetre,information_generale
+Aide-moi à faire mes devoirs de maths. Merci.,hors_perimetre,information_generale
+Aide-moi à faire mes devoirs de maths. Avec un petit budget.,hors_perimetre,information_generale
+Aide-moi à faire mes devoirs de maths. Rapidement.,hors_perimetre,information_generale
+Quelle série regarder ce soir ?,hors_perimetre,information_generale
+Quelle série regarder ce soir ? Merci.,hors_perimetre,information_generale
+Quelle série regarder ce soir ? Avec un petit budget.,hors_perimetre,information_generale
+Quelle série regarder ce soir ? Rapidement.,hors_perimetre,information_generale
+Donne-moi une recette de tiramisu.,hors_perimetre,information_generale
+Donne-moi une recette de tiramisu. Merci.,hors_perimetre,information_generale
+Donne-moi une recette de tiramisu. Avec un petit budget.,hors_perimetre,information_generale
+Donne-moi une recette de tiramisu. Rapidement.,hors_perimetre,information_generale
+Aide-moi à optimiser mon CV.,hors_perimetre,information_generale
+Aide-moi à optimiser mon CV. Merci.,hors_perimetre,information_generale
+Aide-moi à optimiser mon CV. Avec un petit budget.,hors_perimetre,information_generale
+Aide-moi à optimiser mon CV. Rapidement.,hors_perimetre,information_generale
+Quels sont les meilleurs hôtels à Paris ?,hors_perimetre,information_generale
+Quels sont les meilleurs hôtels à Paris ? Merci.,hors_perimetre,information_generale
+Quels sont les meilleurs hôtels à Paris ? Avec un petit budget.,hors_perimetre,information_generale
+Quels sont les meilleurs hôtels à Paris ? Rapidement.,hors_perimetre,information_generale
