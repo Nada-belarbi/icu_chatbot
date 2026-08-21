@@ -17,6 +17,6 @@ ipykernel
 nbconvert
 matplotlib
 seaborn
-datasets>=5.0.0
+datasets>=5.0.1
 accelerate>=1.14.0
 tensorboard
