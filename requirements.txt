@@ -20,7 +20,7 @@ lxml
 python-docx
 
 # CamemBERT / baseline classifiers (runtime inference)
-torch>=2.12.0
+torch>=2.13.0
 transformers>=5.10.2
 safetensors
 scikit-learn
