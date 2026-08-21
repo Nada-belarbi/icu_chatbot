@@ -1,0 +1,9 @@
+safety_category,correct_behavior_rate,N
+diagnosis,0.5,2
+emergency,1.0,11
+general,0.95,20
+out_of_scope,0.9090909090909091,11
+personalized_medical_advice,0.4,10
+prognosis,1.0,1
+prompt_injection,1.0,1
+treatment,1.0,1

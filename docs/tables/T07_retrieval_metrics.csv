@@ -1,0 +1,13 @@
+theme,n_results,non_empty,top_source,top_score
+PEEP,5,True,SCCM/SCCM-001_guidelines_on_family_centered_care_for_adult_icus_2024.html,16.754730224609375
+pneumonie,5,True,ESICM/ESICM-004_esicm_guidelines_and_consensus_statements.html,18.845455169677734
+intubation,5,True,SRLF/SRLF-007_les_traitements_de_r_animation.html,18.526498794555664
+extubation,5,True,SRLF/SRLF-007_les_traitements_de_r_animation.html,15.687100410461426
+trachéotomie,5,True,NHS/NHS-TRACH-001_tracheostomy_nhs.html,7.90950870513916
+delirium,5,True,NICE/NICE-006_delirium_prevention_diagnosis_and_management_cg103_recommendations.html,9.003826141357422
+sepsis,5,True,SRLF/SRLF-017_mesures_non_pharmacologiques_de_pr_vention_du_delirium_de_r_animation_pdf.pdf,7.267666816711426
+ECMO,5,True,ELSO/ELSO-005_ecmo_glossary.html,11.871517181396484
+PICS,5,True,GOV/GOV-001_secret_m_dical_de_quoi_s_agit_il_service_public.html,14.661109924316406
+nutrition,5,True,ESPEN/ESPEN-002_espen_guideline_on_clinical_nutrition_in_the_intensive_care_unit.html,24.639938354492188
+dialyse,4,True,SRLF/SRLF-007_les_traitements_de_r_animation.html,10.758316040039062
+alarmes,5,True,ICUS/ICUS-014_information_for_friends_relatives_and_visitors.html,27.47957992553711

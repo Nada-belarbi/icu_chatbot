@@ -15,6 +15,33 @@ from config.settings import CHROMA_TOP_K
 _log = logging.getLogger(__name__)
 
 
+def _build_query_variants(query: str) -> list[str]:
+    """Return semantically equivalent query variants for robust retrieval."""
+    variants = [query]
+    lower = query.lower()
+
+    # Respiratory support acronyms are often under-indexed in multilingual corpora.
+    # Expand explicitly to improve recall on CPAP/BiPAP/VNI questions.
+    if any(token in lower for token in (
+        "cpap",
+        "bipap",
+        "vni",
+        "niv",
+        "ventilation non invasive",
+        "ventilation non-invasive",
+        "non invasive ventilation",
+        "non-invasive ventilation",
+    )):
+        variants.extend([
+            f"{query} ventilation non invasive VNI NIV",
+            f"{query} CPAP BiPAP pression positive continue pression positive a deux niveaux",
+            f"{query} non-invasive ventilation CPAP BiPAP",
+        ])
+
+    # Deduplicate while preserving order.
+    return list(dict.fromkeys(v.strip() for v in variants if v.strip()))
+
+
 class Retriever:
     """
     Query a Chroma vector store and return the top-k most relevant chunks.
@@ -60,17 +87,71 @@ class Retriever:
             return []
         try:
             store = self._get_store()
-            raw = store.similarity_search_with_score(query, k=self._top_k)
-            results = []
-            for doc, score in raw:
-                if score <= self._threshold:
-                    results.append(
+            candidates: list[dict] = []
+            lower_query = query.lower()
+            is_niv_query = any(token in lower_query for token in (
+                "cpap", "bipap", "vni", "niv", "ventilation non invasive", "ventilation non-invasive"
+            ))
+
+            for variant in _build_query_variants(query):
+                raw = store.similarity_search_with_score(variant, k=self._top_k)
+                for doc, score in raw:
+                    score_val = float(score)
+                    if score_val > self._threshold:
+                        continue
+
+                    text = doc.page_content
+                    if is_niv_query:
+                        low_text = text.lower()
+                        niv_markers = (
+                            "cpap", "bipap", "vni", "niv", "non-invasive ventilation",
+                            "non invasive ventilation", "pression positive", "ventilation"
+                        )
+                        if not any(marker in low_text for marker in niv_markers):
+                            continue
+
+                    candidates.append(
                         {
-                            "text": doc.page_content,
+                            "text": text,
                             "source": doc.metadata.get("source", "unknown"),
-                            "score": float(score),
+                            "score": score_val,
                         }
                     )
+
+            if not candidates:
+                return []
+
+            # Merge variants, keep best scores first, and diversify source coverage.
+            candidates.sort(key=lambda x: x["score"])
+            results: list[dict] = []
+            seen_chunks: set[tuple[str, str]] = set()
+            per_source_count: dict[str, int] = {}
+            max_per_source = 2
+
+            for item in candidates:
+                key = (item["source"], item["text"])
+                if key in seen_chunks:
+                    continue
+                if per_source_count.get(item["source"], 0) >= max_per_source:
+                    continue
+
+                seen_chunks.add(key)
+                per_source_count[item["source"]] = per_source_count.get(item["source"], 0) + 1
+                results.append(item)
+
+                if len(results) >= self._top_k:
+                    return results
+
+            # If source diversification was too restrictive, fill remaining slots.
+            for item in candidates:
+                key = (item["source"], item["text"])
+                if key in seen_chunks:
+                    continue
+                seen_chunks.add(key)
+                results.append(item)
+                if len(results) >= self._top_k:
+                    break
+
             return results
         except Exception as exc:
             _log.error("Retriever.search() failed: %s", exc)

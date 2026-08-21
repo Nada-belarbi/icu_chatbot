@@ -67,7 +67,7 @@ class TestRefuseMedicalAdvice:
 
     def test_explains_system_limits(self):
         result = CRM.get_refuse_medical_advice().lower()
-        assert "personnalisé" in result or "autorisé" in result
+        assert "dépasse" in result or "équipe" in result
 
 
 class TestAllResponsesInFrench:

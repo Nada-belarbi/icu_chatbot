@@ -10,7 +10,7 @@ from __future__ import annotations
 import logging
 from pathlib import Path
 
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_core.documents import Document
 
 from config.settings import CHROMA_DB_PATH, EMBEDDING_MODEL, CHROMA_COLLECTION_NAME
@@ -20,7 +20,10 @@ _log = logging.getLogger(__name__)
 
 def _default_embeddings():
     """Return HuggingFaceEmbeddings with the configured model (lazy import)."""
-    from langchain_community.embeddings import HuggingFaceEmbeddings
+    try:
+        from langchain_huggingface import HuggingFaceEmbeddings
+    except ImportError:
+        from langchain_community.embeddings import HuggingFaceEmbeddings  # type: ignore[no-redef]
 
     return HuggingFaceEmbeddings(
         model_name=EMBEDDING_MODEL,

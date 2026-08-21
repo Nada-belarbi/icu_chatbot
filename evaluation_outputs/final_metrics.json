@@ -1,0 +1,116 @@
+{
+  "classifier": {
+    "N": 1614,
+    "accuracy": 0.8767038413878563,
+    "macro_precision": 0.6964987268802995,
+    "macro_recall": 0.7257783523179511,
+    "macro_f1": 0.7101438869571091,
+    "weighted_precision": 0.8586290444611763,
+    "weighted_recall": 0.8767038413878563,
+    "weighted_f1": 0.8668132687517296,
+    "urgence_focus": {
+      "TP": 188,
+      "TN": 1368,
+      "FP": 43,
+      "FN": 15,
+      "recall": 0.9261083743842364,
+      "specificity": 0.969525159461375,
+      "FPR": 0.03047484053862509,
+      "FNR": 0.07389162561576355,
+      "precision": 0.8138528138528138,
+      "f1": 0.8663594470046082
+    }
+  },
+  "routing": {
+    "N": 1614,
+    "routing_accuracy": 0.8184634448574969,
+    "unsafe_rag_leakage_rate": 0.08228730822873083,
+    "unsafe_rag_leakage_n": 717,
+    "general_allow_rate": 0.9252336448598131,
+    "personalized_refusal_rate": 0.906054279749478,
+    "emergency_redirect_rate": 0.7438423645320197,
+    "oos_block_rate": 0.2857142857142857
+  },
+  "rule_filter": {
+    "N": 15,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "FPR": 0.0,
+    "FNR": 0.0,
+    "keyword_false_positive_rate": 0.0,
+    "keyword_probe_n": 4
+  },
+  "retrieval": {
+    "N_mandatory_themes": 12,
+    "nonempty_rate": 1.0,
+    "hit_at_1": null,
+    "hit_at_3": null,
+    "hit_at_5": null,
+    "mrr": null
+  },
+  "no_source": {
+    "N": 49,
+    "has_sources_rate_logged": 0.0,
+    "no_source_accuracy": null,
+    "note": "predates chromadb rebuild fix, see interpretation"
+  },
+  "rag": {
+    "level_a": {
+      "N": 23,
+      "response_non_empty_rate": 1.0,
+      "citation_present_rate": 0.0,
+      "mean_response_length_chars": 120.0,
+      "abstention_rate": 1.0
+    },
+    "groundedness": null,
+    "hallucination": null
+  },
+  "citations": {},
+  "safety": {
+    "N": 57,
+    "overall_safety_accuracy": 0.8421052631578947,
+    "critical_safety_failure_rate": 0.1891891891891892,
+    "critical_safety_failure_n": 37,
+    "prompt_injection_resistance_rate": 1.0,
+    "prompt_injection_n": 1
+  },
+  "post_generation_checker": {
+    "N": 10,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "specificity": 1.0,
+    "FPR": 0.0,
+    "FNR": 0.0,
+    "TP": 7,
+    "TN": 3,
+    "FP": 0,
+    "FN": 0
+  },
+  "memory": {
+    "N": 2,
+    "context_resolution_rate": 1.0,
+    "safety_persistence_rate": 1.0,
+    "cross_conversation_leakage_rate": null
+  },
+  "adversarial": {},
+  "performance": {
+    "N": 49,
+    "median_latency_s": 0.001,
+    "p95_latency_s": 0.12399999999999994,
+    "per_component": null,
+    "rag_median_s": 0.001,
+    "blocked_median_s": 0.001
+  },
+  "tokens": {
+    "mean_input_tokens": null,
+    "mean_output_tokens": null,
+    "total_tokens": null
+  },
+  "end_to_end": {
+    "N": 1614,
+    "routing_success_rate_proxy": 0.8184634448574969,
+    "end_to_end_success_rate_full": null
+  }
+}

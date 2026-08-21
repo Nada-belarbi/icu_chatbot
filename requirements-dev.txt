@@ -1,0 +1,22 @@
+# Development / training / evaluation dependencies.
+# Install with: pip install -r requirements.txt -r requirements-dev.txt
+-r requirements.txt
+
+# Testing
+pytest
+pytest-cov
+
+# Linting / formatting / type checking
+ruff
+black
+mypy
+
+# Notebooks, model training and evaluation (not required to run the Streamlit app)
+jupyter
+ipykernel
+nbconvert
+matplotlib
+seaborn
+datasets>=5.0.0
+accelerate>=1.14.0
+tensorboard

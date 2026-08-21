@@ -1,0 +1,199 @@
+column,value,count
+organization,SRLF,36
+organization,ICUsteps,30
+organization,SCCM,14
+organization,ESICM,11
+organization,NICE,11
+organization,ELSO,11
+organization,HAS,10
+organization,MedlinePlus / NLM,10
+organization,ESPEN,8
+organization,UCLH NHS,7
+organization,AHRQ,7
+organization,Service-Public.fr,5
+organization,CNIL,5
+organization,KDIGO,4
+organization,Santé publique France,3
+organization,NHS,3
+organization,North Tees and Hartlepool NHS Foundation Trust,3
+organization,AP-HP Henri-Mondor,2
+organization,Royal United Hospitals Bath NHS,2
+organization,Royal Berkshire NHS Foundation Trust,2
+organization,NHLBI / NIH,2
+organization,Northern Care Alliance,2
+organization,SRLF/SFAR,1
+organization,Ministère chargé de la Santé,1
+organization,AP-HP Bicêtre,1
+organization,AP-HP,1
+organization,Chelsea and Westminster Hospital NHS,1
+organization,Worcestershire Acute Hospitals NHS,1
+organization,Mid Cheshire Hospitals NHS,1
+organization,South Tees Hospitals NHS,1
+organization,Frimley Health NHS,1
+organization,ERS / ATS,1
+organization,ATS / ESICM / SCCM,1
+organization,CUH,1
+organization,Royal Papworth NHS,1
+organization,East and North Hertfordshire NHS Trust,1
+organization,Gateshead Health,1
+organization,University Hospitals Sussex NHS Foundation Trust,1
+theme,,58
+theme,personne de confiance,2
+theme,directives anticipées,2
+theme,"fin de vie, soins palliatifs",2
+theme,"delirium, confusion",2
+theme,trachéotomie,2
+theme,nutrition clinique,2
+theme,AKI/AKD,2
+theme,mobilisation précoce,2
+theme,"vocabulaire ICU, cathéters, scope, ventilation, dialyse, nutrition, trachéotomie",1
+theme,"équipe, organisation, kinésithérapie, mobilisation, soutien psychologique",1
+theme,"chambre, équipements, environnement ICU",1
+theme,"journée type, surveillance, examens, soins, sommeil",1
+theme,"oxygène, ventilation, sédation, nutrition, examens, contentions",1
+theme,"soins quotidiens, prévention, mobilisation",1
+theme,"delirium, confusion, hallucinations, cauchemars, contentions",1
+theme,"famille, information, communication",1
+theme,"intubation, communication non verbale, patient inconscient",1
+theme,"droits, information, confidentialité",1
+theme,"admission, premiers jours, proches",1
+theme,"parler, toucher, présence, soutien famille",1
+theme,"fin de vie, limitation/arrêt traitements, décision collégiale",1
+theme,"accompagnement, proches, fin de vie",1
+theme,"directives anticipées, volonté du patient",1
+theme,"don d'organes, décès",1
+theme,"enfants visiteurs, préparation, famille",1
+theme,"sortie ICU, transfert",1
+theme,"transfert, réadaptation, domicile",1
+theme,"PICS, conséquences physiques, cognitives, psychologiques",1
+theme,"retour domicile, famille, vie sociale, reprise travail",1
+theme,"réhabilitation, suivi, récupération",1
+theme,"PICS-F, anxiété, proches",1
+theme,"famille, récupération, retour domicile",1
+theme,"soutien psychologique, aides",1
+theme,"deuil, accompagnement",1
+theme,"visites, proches, organisation",1
+theme,"delirium, prévention, sommeil, environnement",1
+theme,"confort, douleur, sommeil, environnement",1
+theme,"séjour prolongé, complications, récupération",1
+theme,"confort, proches, visites, expérience ICU",1
+theme,"famille, communication, accueil",1
+theme,"soins palliatifs, fin de vie",1
+theme,"sédation, décision collégiale, fin de vie",1
+theme,pneumonie,1
+theme,"confidentialité, secret médical",1
+theme,"droits patient, hospitalisation",1
+theme,infection nosocomiale,1
+theme,"infections, pneumonie associée aux soins",1
+theme,"prévention, surveillance infections",1
+theme,"hygiène, visiteurs, infections",1
+theme,"fonctionnement ICU, proches, équipements",1
+theme,"organisation, supports d'organes",1
+theme,organisation ICU,1
+theme,"accueil, fonctionnement, visites",1
+theme,"patients, familles, ICU",1
+theme,"douleur, sédation, delirium, mobilisation, famille",1
+theme,"douleur, réveil, respiration, sédation, delirium, mobilité, famille",1
+theme,"douleur, agitation, sédation, delirium, sommeil",1
+theme,"douleur, sédation, delirium, immobilité, sommeil",1
+theme,"famille, visites, communication",1
+theme,famille,1
+theme,"sepsis, choc septique",1
+theme,"sepsis, SDRA, pneumonie",1
+theme,"définition ICU, admission, équipe, pathologies, transfert",1
+theme,"monitoring, scope, alarmes, équipements",1
+theme,"famille, équipe, expérience ICU",1
+theme,"intubation, extubation, VNI, trachéotomie, cathéters, drains, dialyse, nutrition",1
+theme,patient/family-centered care,1
+theme,"SDRA/ARDS, ventilation mécanique, PEEP",1
+theme,"fin de vie, soins palliatifs, proches",1
+theme,"réhabilitation, après ICU, PICS",1
+theme,"récupération, réadaptation",1
+theme,récupération patient/proche,1
+theme,delirium,1
+theme,pneumonie communautaire/hospitalière,1
+theme,pneumonie nosocomiale,1
+theme,pneumonie hospitalière,1
+theme,"définition ICU, admission, équipements, sortie",1
+theme,"ICU, organisation",1
+theme,"ventilation, dialyse, nutrition, équipe, équipements",1
+theme,visites,1
+theme,"parler, toucher, photos, musique, journal ICU",1
+theme,"proches, anxiété, PICS-F",1
+theme,"suivi, réhabilitation, PICS",1
+theme,"fin de vie, proches",1
+theme,"équipements, monitoring, lignes, drains, ventilation",1
+theme,"sevrage ventilatoire, extubation, sédation",1
+theme,"VNI, CPAP/BiPAP",1
+theme,"appareils ICU, monitoring",1
+theme,"équipements, CPAP, ventilation",1
+theme,"scope, monitoring, CVC, pompes, respirateur, nutrition",1
+theme,"PICS, delirium, récupération, sortie",1
+theme,"récupération, suivi, PICS",1
+theme,"réhabilitation, domicile, récupération",1
+theme,"ICU général, famille, récupération",1
+theme,"atteinte cérébrale, ICU",1
+theme,"respiration, récupération",1
+theme,fin de vie,1
+theme,récupération,1
+theme,"sang, radiographie, scanner, examens",1
+theme,nutrition entérale/parenterale,1
+theme,nutrition post-ICU,1
+theme,"alimentation, déglutition",1
+theme,"admission programmée, traitements",1
+theme,"trachéotomie, communication",1
+theme,"anxiété, PTSD",1
+theme,"réhabilitation, retour domicile",1
+theme,"réhabilitation, post-ICU",1
+theme,"SpO₂, oxygène, monitoring",1
+theme,"ECG, fréquence cardiaque",1
+theme,"tension, fréquence cardiaque, respiration",1
+theme,"gaz du sang, oxygène, CO₂",1
+theme,insuffisance respiratoire,1
+theme,"SDRA, récupération",1
+theme,"pneumonie, récupération",1
+theme,"VNI, assistance respiratoire",1
+theme,"ventilation mécanique, SDRA, PEEP",1
+theme,ECMO général,1
+theme,"ECMO, famille",1
+theme,principe ECMO,1
+theme,VA/VV ECMO,1
+theme,équipe ECMO,1
+theme,"famille, communication",1
+theme,"surveillance, examens, nutrition, soins",1
+theme,"ECMO, complications",1
+theme,"sevrage ECMO, récupération",1
+theme,vocabulaire ECMO,1
+theme,"nutrition ICU, entérale, parentérale",1
+theme,"nutrition parentérale, sortie",1
+theme,"AKI, insuffisance rénale aiguë, dialyse",1
+theme,"mobilisation, kinésithérapie",1
+theme,mobilisation,1
+theme,"douleur, agitation, delirium",1
+theme,"ventilation, sevrage, extubation",1
+theme,"chatbot, données personnelles",1
+theme,données de santé,1
+theme,"IA, RGPD",1
+theme,"données de santé, réglementation",1
+theme,"IA santé, conformité",1
+language,en,142
+language,fr,62
+document_type,web_page,131
+document_type,html_page,56
+document_type,pdf,17
+country,Royaume-Uni,66
+country,France,62
+country,États-Unis,42
+country,Europe,20
+country,,8
+country,International,4
+country,Europe / États-Unis,1
+country,États-Unis / Europe,1
+status,APPROVED,94
+status,A_VALIDER,42
+status,APPROVED_CONTEXTUAL,33
+status,EXCLU_CONTENU_INVALIDE,16
+status,APPROVED_LEGACY,11
+status,GOVERNANCE_ONLY,5
+status,SUPERSEDED,2
+status,EXCLUDED_DRAFT,1

@@ -1,0 +1,11 @@
+{
+  "test_loss": 1.2312352657318115,
+  "test_accuracy": 0.8767038413878563,
+  "test_macro_f1": 0.7101438869571091,
+  "test_macro_recall": 0.7257783523179511,
+  "test_weighted_f1": 0.8668132687517296,
+  "test_critical_errors": 75,
+  "test_recall_urgence": 0.9261083743842364,
+  "test_recall_avis_medical_personnalise": 0.918580375782881,
+  "test_recall_hors_perimetre": 0.0
+}

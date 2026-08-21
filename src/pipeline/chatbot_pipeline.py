@@ -26,10 +26,12 @@ from src.safety.decision_engine import (
     DecisionEngine,
     DECISION_ALLOW_RAG,
     DECISION_REFUSE,
+    DECISION_REFUSE_OOS,
     DECISION_REDIRECT,
     DECISION_ASK_REFORMULATION,
 )
 from src.safety.controlled_responses import ControlledResponseManager
+from src.safety.guardrails import GuardrailsManager
 from config.settings import MEMORY_MAX_TURNS, CAMEMBERT_CONFIDENCE_THRESHOLD
 
 _log = logging.getLogger(__name__)
@@ -40,6 +42,20 @@ RTYPE_REFUSE = "refuse"
 RTYPE_REDIRECT = "redirect"
 RTYPE_REFORMULATION = "reformulation"
 RTYPE_ERROR = "error"
+
+
+# Greetings — handled before any safety gate
+_GREETINGS = frozenset([
+    "bonjour", "bonsoir", "salut", "hello", "hi", "coucou",
+    "bonjour !", "bonsoir !", "salut !",
+    "bonjour je", "bonjour j", "bonsoir je",
+])
+
+
+def _is_greeting(text: str) -> bool:
+    """Return True if *text* is a greeting with no substantive question."""
+    lower = text.lower().strip()
+    return any(lower == g or lower.startswith(g + " ") for g in _GREETINGS)
 
 
 class PipelineResult:
@@ -105,6 +121,11 @@ class ChatbotPipeline:
         self._rag_chain = rag_chain
         self._post_checker = post_checker
         self._logger = logger
+        self._guardrails = (
+            GuardrailsManager(rag_chain=self._rag_chain, post_checker=self._post_checker)
+            if self._rag_chain is not None and self._post_checker is not None
+            else None
+        )
 
     # ------------------------------------------------------------------
     # Public API
@@ -164,26 +185,46 @@ class ChatbotPipeline:
                 response_type=RTYPE_REFORMULATION,
             )
 
+        # --- Step 1b: greeting shortcut ---
+        if _is_greeting(clean_text):
+            result = PipelineResult(
+                answer=self._responses.get_greeting(),
+                sources=[],
+                decision="greeting",
+                response_type=RTYPE_INFORMATIVE,
+            )
+            if memory is not None:
+                memory.add_user_message(clean_text)
+                memory.add_assistant_message(result.answer)
+            self._log_interaction(clean_text, result)
+            return result
+
         # --- Step 2: get conversation context ---
+        history = memory.get_history() if memory else []
         context_string = memory.get_context_string() if memory else ""
 
         # --- Step 3 + 4 + 5: decide ---
         decision = self._engine.decide(clean_text, context_string=context_string)
 
         # --- Step 6: route ---
-        result = self._route(clean_text, decision)
+        result = self._route(clean_text, decision, history=history)
 
         # --- Step 7: update memory ---
+        # Only store the assistant's message when it's a real RAG answer.
+        # Controlled responses (urgency redirect, refuse, ask_reformulation)
+        # contain boilerplate text (e.g. "SAMU", "urgence médicale") that
+        # would poison the classifier context on the next turn.
         if memory is not None:
             memory.add_user_message(clean_text)
-            memory.add_assistant_message(result.answer)
+            if result.decision == DECISION_ALLOW_RAG:
+                memory.add_assistant_message(result.answer)
 
         # --- Step 7b: log (Phase 15 — no-op until wired) ---
         self._log_interaction(clean_text, result)
 
         return result
 
-    def _route(self, clean_text: str, decision: str) -> PipelineResult:
+    def _route(self, clean_text: str, decision: str, history: list[dict] | None = None) -> PipelineResult:
         """Map decision to the appropriate response path."""
 
         if decision == DECISION_REDIRECT:
@@ -202,6 +243,14 @@ class ChatbotPipeline:
                 response_type=RTYPE_REFUSE,
             )
 
+        if decision == DECISION_REFUSE_OOS:
+            return PipelineResult(
+                answer=self._responses.get_out_of_scope(),
+                sources=[],
+                decision=decision,
+                response_type=RTYPE_REFUSE,
+            )
+
         if decision == DECISION_ASK_REFORMULATION:
             return PipelineResult(
                 answer=self._responses.get_ask_reformulation(),
@@ -211,7 +260,7 @@ class ChatbotPipeline:
             )
 
         if decision == DECISION_ALLOW_RAG:
-            return self._rag_path(clean_text)
+            return self._rag_path(clean_text, history=history)
 
         # Safety-first default
         _log.warning("Unknown decision %r — defaulting to refuse", decision)
@@ -222,7 +271,7 @@ class ChatbotPipeline:
             response_type=RTYPE_REFUSE,
         )
 
-    def _rag_path(self, clean_text: str) -> PipelineResult:
+    def _rag_path(self, clean_text: str, history: list[dict] | None = None) -> PipelineResult:
         """
         RAG path — Retriever → RAGChain → PostGenerationChecker.
         Until Phases 11-13 are wired, returns a placeholder.
@@ -236,7 +285,18 @@ class ChatbotPipeline:
                 response_type=RTYPE_REFUSE,
             )
 
-        docs = self._retriever.search(clean_text)
+        # Enrich retrieval query with last user message to resolve follow-up references
+        # (e.g. "Et pourquoi on en met une ?" needs "trachéotomie" context to retrieve correctly)
+        retrieval_query = clean_text
+        if history:
+            last_user = next(
+                (m["content"] for m in reversed(history) if m["role"] == "user"),
+                None,
+            )
+            if last_user:
+                retrieval_query = f"{last_user} {clean_text}"
+
+        docs = self._retriever.search(retrieval_query)
         if not docs:
             return PipelineResult(
                 answer=self._responses.get_no_source_found(),
@@ -254,8 +314,23 @@ class ChatbotPipeline:
                 response_type=RTYPE_ERROR,
             )
 
+        if self._guardrails is not None:
+            answer, sources, was_modified = self._guardrails.run(
+                query=clean_text,
+                decision=DECISION_ALLOW_RAG,
+                docs=docs,
+                history=history,
+            )
+            response_type = RTYPE_REFUSE if was_modified else RTYPE_INFORMATIVE
+            return PipelineResult(
+                answer=answer,
+                sources=sources,
+                decision=DECISION_ALLOW_RAG,
+                response_type=response_type,
+            )
+
         try:
-            answer, sources = self._rag_chain.generate(clean_text, docs)
+            answer, sources = self._rag_chain.generate(clean_text, docs, history=history)
         except Exception as exc:
             _log.error("RAGChain.generate() failed: %s", exc)
             return PipelineResult(
@@ -265,9 +340,15 @@ class ChatbotPipeline:
                 response_type=RTYPE_ERROR,
             )
 
-        # Phase 13 — PostGenerationChecker (stub)
         if self._post_checker is not None:
-            answer, _ = self._post_checker.check(answer)
+            answer, was_modified = self._post_checker.check(answer)
+            if was_modified:
+                return PipelineResult(
+                    answer=answer,
+                    sources=[],
+                    decision=DECISION_ALLOW_RAG,
+                    response_type=RTYPE_REFUSE,
+                )
 
         return PipelineResult(
             answer=answer,

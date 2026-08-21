@@ -1,0 +1,70 @@
+{
+  "training_config": {
+    "model_name": "camembert-base",
+    "max_length": 192,
+    "seed": 42,
+    "learning_rate": 2e-05,
+    "epochs": 6,
+    "train_batch_size": 8,
+    "eval_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "early_stopping_patience": 2,
+    "metric_for_best_model": "macro_f1",
+    "use_weighted_loss": true
+  },
+  "label_order": [
+    "information_generale",
+    "sensible_reformulable",
+    "avis_medical_personnalise",
+    "urgence",
+    "hors_perimetre"
+  ],
+  "label_to_id": {
+    "information_generale": 0,
+    "sensible_reformulable": 1,
+    "avis_medical_personnalise": 2,
+    "urgence": 3,
+    "hors_perimetre": 4
+  },
+  "id_to_label": {
+    "0": "information_generale",
+    "1": "sensible_reformulable",
+    "2": "avis_medical_personnalise",
+    "3": "urgence",
+    "4": "hors_perimetre"
+  },
+  "class_weights": [
+    1.0433462858200073,
+    0.5646241307258606,
+    0.6754156351089478,
+    1.5252559185028076,
+    7.448333263397217
+  ],
+  "train_path": "C:/Users/223114186/Documents/chatbot_ia/icu_chatbot/data/processed/train_camembert_clean.csv",
+  "val_path": "C:/Users/223114186/Documents/chatbot_ia/icu_chatbot/data/processed/val.csv",
+  "test_path": "C:/Users/223114186/Documents/chatbot_ia/icu_chatbot/data/processed/test.csv",
+  "val_metrics": {
+    "val_loss": 1.3410656452178955,
+    "val_accuracy": 0.8618339529120198,
+    "val_macro_f1": 0.6991851489199543,
+    "val_macro_recall": 0.7137350909097819,
+    "val_weighted_f1": 0.8521681454651938,
+    "val_critical_errors": 82,
+    "val_recall_urgence": 0.900990099009901,
+    "val_recall_avis_medical_personnalise": 0.9123173277661796,
+    "val_recall_hors_perimetre": 0.0
+  },
+  "test_metrics": {
+    "test_loss": 1.2312352657318115,
+    "test_accuracy": 0.8767038413878563,
+    "test_macro_f1": 0.7101438869571091,
+    "test_macro_recall": 0.7257783523179511,
+    "test_weighted_f1": 0.8668132687517296,
+    "test_critical_errors": 75,
+    "test_recall_urgence": 0.9261083743842364,
+    "test_recall_avis_medical_personnalise": 0.918580375782881,
+    "test_recall_hors_perimetre": 0.0
+  }
+}

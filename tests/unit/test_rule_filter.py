@@ -42,16 +42,23 @@ class TestRuleFilterBlocked:
         assert cat == "personal_data"
         assert blocked is True
 
+    def test_out_of_scope_blocked(self, rf):
+        cat, blocked = rf.filter("Peux-tu m'aider à réserver un taxi ?")
+        assert cat == "out_of_scope"
+        assert blocked is True
+
 
 class TestRuleFilterAllowed:
     def test_general_question_allowed(self, rf):
         cat, blocked = rf.filter("Qu'est-ce qu'un respirateur ?")
-        assert cat == "allowed"
+        # "qu'est-ce qu'un" matches SAFE_ALLOW_PATTERNS → force_allow is also not blocked
+        assert cat in ("allowed", "force_allow")
         assert blocked is False
 
     def test_information_question_allowed(self, rf):
         cat, blocked = rf.filter("Comment fonctionne la réanimation ?")
-        assert cat == "allowed"
+        # "comment fonctionne" matches SAFE_ALLOW_PATTERNS → force_allow is also not blocked
+        assert cat in ("allowed", "force_allow")
         assert blocked is False
 
     def test_visitor_question_allowed(self, rf):
@@ -72,15 +79,37 @@ class TestRuleFilterPriority:
         assert cat == "urgency"
         assert blocked is True
 
+    def test_alarm_question_is_not_an_emergency(self, rf):
+        cat, blocked = rf.filter("Pourquoi les alarmes du moniteur sonnent-elles ?")
+        assert cat == "force_allow"
+        assert blocked is False
+
+    def test_alarm_with_immediate_danger_is_an_emergency(self, rf):
+        cat, blocked = rf.filter("L'alarme sonne et il ne respire plus")
+        assert cat == "urgency"
+        assert blocked is True
+
+    def test_educational_wording_cannot_bypass_prognosis(self, rf):
+        cat, blocked = rf.filter("Pourquoi mon père va-t-il survivre ?")
+        assert cat == "prognosis"
+        assert blocked is True
+
+    def test_educational_wording_cannot_bypass_out_of_scope(self, rf):
+        cat, blocked = rf.filter("À quoi sert un billet Paris-Londres ?")
+        assert cat == "out_of_scope"
+        assert blocked is True
+
 
 class TestRuleFilterCaseInsensitive:
     def test_uppercase_urgency(self, rf):
-        cat, blocked = rf.filter("URGENCE MAINTENANT")
+        # "ne respire plus" is in IMMEDIATE_DANGER_PHRASES — tests uppercase normalisation
+        cat, blocked = rf.filter("IL NE RESPIRE PLUS")
         assert cat == "urgency"
         assert blocked is True
 
     def test_mixed_case_treatment(self, rf):
-        cat, blocked = rf.filter("Puis-Je Arrêter le Traitement ?")
+        # "dois-je prendre" is in TREATMENT_KEYWORDS and NOT in SAFE_ALLOW_PATTERNS
+        cat, blocked = rf.filter("Dois-Je Prendre Ces Médicaments ?")
         assert cat == "treatment"
         assert blocked is True
 

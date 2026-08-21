@@ -1,0 +1,11 @@
+{
+  "val_loss": 1.3410656452178955,
+  "val_accuracy": 0.8618339529120198,
+  "val_macro_f1": 0.6991851489199543,
+  "val_macro_recall": 0.7137350909097819,
+  "val_weighted_f1": 0.8521681454651938,
+  "val_critical_errors": 82,
+  "val_recall_urgence": 0.900990099009901,
+  "val_recall_avis_medical_personnalise": 0.9123173277661796,
+  "val_recall_hors_perimetre": 0.0
+}

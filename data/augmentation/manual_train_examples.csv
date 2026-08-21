@@ -1,0 +1,781 @@
+text,label,topic,source
+"Il a une infection sévère, le pronostic est-il engagé",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Question sur ce sujet : Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Peux-tu m'aider : Il a une infection sévère, le pronostic est-il engagé",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Mon frère a une saturation basse, explique la saturation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Le respirateur est arrêté ?,urgence,monitoring,manual_safety_augmentation
+Quel film regarder ce soir ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Le moniteur sonne et la saturation est à 70, pouvez-vous m'aider ?",urgence,monitoring,manual_safety_augmentation
+"Merci de m'expliquer : Mon père a ce scanner, quel est son pronostic",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Donne-moi une recette, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Il a ce diagnostic, quelles sont ses chances de survie",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Ma question est : Le patient ne répond plus,urgence,monitoring,manual_safety_augmentation
+"Je voudrais comprendre : Il a ce diagnostic, quelles sont ses chances de survie",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"J'aimerais une explication : Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"J'aimerais une explication : Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Ma femme a un sepsis, peux-tu expliquer ce terme, merci.",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Bonjour, Recommande un restaurant",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Mon père a ce scanner, quel est son pronostic, pouvez-vous m'aider ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Donne-moi une recette",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Merci de m'expliquer : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Merci de m'expliquer : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pourriez-vous m'orienter : Avec cette évolution, pensez-vous qu'il va s'en sortir",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je veux savoir : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je voudrais comprendre : Il reçoit ce médicament, dois-je m'inquiéter",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Mon proche est intubé, je veux une explication non personnalisée ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, Suspicion d'arrêt cardiaque",urgence,monitoring,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Le patient devient bleu,urgence,monitoring,manual_safety_augmentation
+Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+J'aimerais une explication : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Mon père a ce scanner, quel est son pronostic",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Peux-tu m'aider : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je voudrais comprendre : Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je cherche une réponse sur ce point : Ce compte-rendu change-t-il son diagnostic,avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je voudrais comprendre : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+J'aimerais une explication : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Mon père est intubé, explique-moi l'intubation de façon générale, merci.",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pourriez-vous m'orienter : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Peux-tu m'aider : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Question sur ce sujet : Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Merci de m'expliquer : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Les lèvres sont bleues,urgence,monitoring,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Mon proche est sous sédation, qu'est-ce que la sédation ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, Le patient est inconscient",urgence,monitoring,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je veux savoir : Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Bonjour, Aide-moi à refaire mon CV",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Le respirateur est arrêté,urgence,monitoring,manual_safety_augmentation
+"Avec cette évolution, pensez-vous qu'il va s'en sortir, pouvez-vous m'aider ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Ma question est : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Conseille-moi un programme de sport, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Question sur ce sujet : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je voudrais comprendre : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Peux-tu réserver un taxi, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Faut-il modifier la prise en charge maintenant,avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Aide-moi pour mes devoirs, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Merci de m'expliquer : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Le patient convulse",urgence,monitoring,manual_safety_augmentation
+"Faut-il modifier la prise en charge maintenant, pouvez-vous m'aider ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je cherche une réponse sur ce point : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+J'aimerais une explication : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Dans ce contexte, Quel film regarder ce soir",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Il est en réanimation, faut-il arrêter le traitement",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pourriez-vous m'orienter : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Aide-moi avec une question juridique administrative, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Mon père a ce scanner, quel est son pronostic",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Comment trouver un emploi",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Faut-il modifier la prise en charge maintenant,avis_medical_personnalise,prognosis,manual_safety_augmentation
+Question sur ce sujet : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Mon frère a une saturation basse, explique la saturation, merci.",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je voudrais comprendre : Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Donne-moi une recette ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+Je cherche une réponse sur ce point : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Le moniteur sonne et la saturation est à 70",urgence,monitoring,manual_safety_augmentation
+Question sur ce sujet : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Suspicion d'arrêt cardiaque",urgence,monitoring,manual_safety_augmentation
+"Je veux savoir : Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, Mon père ne respire plus",urgence,monitoring,manual_safety_augmentation
+Je veux savoir : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"J'aimerais une explication : Il a une infection sévère, le pronostic est-il engagé",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Compare des billets d'avion",hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Mon père ne respire plus,urgence,monitoring,manual_safety_augmentation
+"Je veux savoir : Il est en réanimation, faut-il arrêter le traitement",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Merci de m'expliquer : Avec cette évolution, pensez-vous qu'il va s'en sortir",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Ma question est : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"La saturation est à 80 et chute, merci.",urgence,monitoring,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Il a cette saturation, est-ce un danger immédiat",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Dégradation brutale de l'état du patient,urgence,monitoring,manual_safety_augmentation
+Pourriez-vous m'orienter : Ce compte-rendu change-t-il son diagnostic,avis_medical_personnalise,prognosis,manual_safety_augmentation
+Ma question est : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je voudrais comprendre : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Ma question est : Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pourriez-vous m'orienter : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Question sur ce sujet : Mon frère a une saturation basse, explique la saturation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je veux savoir : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Quel film regarder ce soir",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Peux-tu m'aider : Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Mon père ne respire plus ?,urgence,monitoring,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Avec cette évolution, pensez-vous qu'il va s'en sortir",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Quelle musique écouter",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je voudrais comprendre : Mon frère a une saturation basse, explique la saturation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je cherche une réponse sur ce point : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Merci de m'expliquer : Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Mon proche est dans le coma, explique le coma, merci.",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Aide-moi à organiser un voyage, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Dégradation brutale de l'état du patient",urgence,monitoring,manual_safety_augmentation
+Question sur ce sujet : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je veux savoir : Il a ce diagnostic, quelles sont ses chances de survie",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je veux savoir : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+Suspicion d'arrêt cardiaque ?,urgence,monitoring,manual_safety_augmentation
+"Compare des billets d'avion, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Il est en réanimation, faut-il arrêter le traitement",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je veux savoir : La saturation est à 80 et chute,urgence,monitoring,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Bonjour, Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Le scope sonne en continu, merci.",urgence,monitoring,manual_safety_augmentation
+Ma question est : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+La saturation est à 80 et chute ?,urgence,monitoring,manual_safety_augmentation
+J'aimerais une explication : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Comment ouvrir un compte en banque",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Il reçoit ce médicament, dois-je m'inquiéter, pouvez-vous m'aider ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Donne la météo de demain, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Question sur ce sujet : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Le respirateur est arrêté",urgence,monitoring,manual_safety_augmentation
+"Ma question est : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Le patient devient bleu",urgence,monitoring,manual_safety_augmentation
+"Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas, pouvez-vous m'aider ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Merci de m'expliquer : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ce compte-rendu change-t-il son diagnostic ?,avis_medical_personnalise,prognosis,manual_safety_augmentation
+Peux-tu m'aider : Le patient ne répond plus,urgence,monitoring,manual_safety_augmentation
+"Aide-moi à organiser un voyage, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je voudrais comprendre : Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Je voudrais comprendre : Mon père a ce scanner, quel est son pronostic",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Corrige mon code python",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Suspicion d'arrêt cardiaque,urgence,monitoring,manual_safety_augmentation
+Je cherche une réponse sur ce point : Les lèvres sont bleues,urgence,monitoring,manual_safety_augmentation
+Question sur ce sujet : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma femme a un sepsis, peux-tu expliquer ce terme, pouvez-vous m'aider ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je voudrais comprendre : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Aide-moi à organiser un voyage",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma mère a des alarmes de monitoring, à quoi ça sert ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je cherche une réponse sur ce point : Le patient devient bleu,urgence,monitoring,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Le patient devient bleu,urgence,monitoring,manual_safety_augmentation
+On peut discuter d'autre chose ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Merci de m'expliquer : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Dégradation brutale de l'état du patient,urgence,monitoring,manual_safety_augmentation
+"Mon père a ce scanner, quel est son pronostic ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je cherche une réponse sur ce point : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Quel film regarder ce soir, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Comment trouver un emploi ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Mon frère a une saturation basse, explique la saturation ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je cherche une réponse sur ce point : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Ce compte-rendu change-t-il son diagnostic,avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Il a cette saturation, est-ce un danger immédiat",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Peux-tu m'aider : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Il est en réanimation, faut-il arrêter le traitement",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je veux savoir : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Question sur ce sujet : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Quel produit acheter, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Bonjour, Le patient convulse",urgence,monitoring,manual_safety_augmentation
+Comment ouvrir un compte en banque ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+"Dans ce contexte, Peux-tu réserver un taxi",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Il a ce résultat de scanner, quel traitement choisir maintenant, pouvez-vous m'aider ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Mon père ne respire plus,urgence,monitoring,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Mon père ne respire plus,urgence,monitoring,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Corrige mon code python, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Donne-moi une recette",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Traduis ce texte en anglais",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je veux savoir : Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Aide-moi pour mes devoirs, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ce compte-rendu change-t-il son diagnostic,avis_medical_personnalise,prognosis,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Suspicion d'arrêt cardiaque,urgence,monitoring,manual_safety_augmentation
+"Quel film regarder ce soir, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Quel produit acheter",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Le respirateur est arrêté,urgence,monitoring,manual_safety_augmentation
+"Mon père a ce scanner, quel est son pronostic",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Suspicion d'arrêt cardiaque,urgence,monitoring,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+"Je voudrais comprendre : Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Merci de m'expliquer : Il est en réanimation, faut-il arrêter le traitement",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je voudrais comprendre : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Le patient est inconscient,urgence,monitoring,manual_safety_augmentation
+Ma question est : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Le patient devient bleu",urgence,monitoring,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Mon père a ce scanner, quel est son pronostic",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Il a cette saturation, est-ce un danger immédiat",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Comment trouver un emploi, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Le patient ne répond plus,urgence,monitoring,manual_safety_augmentation
+Peux-tu m'aider : Dégradation brutale de l'état du patient,urgence,monitoring,manual_safety_augmentation
+Question sur ce sujet : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Le respirateur est arrêté,urgence,monitoring,manual_safety_augmentation
+Je veux savoir : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+Question sur ce sujet : Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+Je voudrais comprendre : Ce compte-rendu change-t-il son diagnostic,avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Le patient est inconscient, merci.",urgence,monitoring,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Faut-il modifier la prise en charge maintenant,avis_medical_personnalise,prognosis,manual_safety_augmentation
+Peux-tu m'aider : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Ce compte-rendu change-t-il son diagnostic,avis_medical_personnalise,prognosis,manual_safety_augmentation
+Peux-tu m'aider : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+Question sur ce sujet : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma question est : Il reçoit ce médicament, dois-je m'inquiéter",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Mon père est intubé, explique-moi l'intubation de façon générale ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je veux savoir : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"J'aimerais une explication : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Dans ce contexte, Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+J'aimerais une explication : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pourriez-vous m'orienter : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, Donne la météo de demain",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Dégradation brutale de l'état du patient,urgence,monitoring,manual_safety_augmentation
+Ma question est : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Le scope sonne en continu",urgence,monitoring,manual_safety_augmentation
+"Je veux savoir : Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Merci de m'expliquer : Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Le respirateur est arrêté, pouvez-vous m'aider ?",urgence,monitoring,manual_safety_augmentation
+"Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Est-ce possible de clarifier ceci : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Question sur ce sujet : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je veux savoir : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Merci de m'expliquer : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+J'aimerais une explication : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Question sur ce sujet : Il a cette saturation, est-ce un danger immédiat",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Recommande un restaurant ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pourriez-vous m'orienter : Il a cette saturation, est-ce un danger immédiat",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Faut-il modifier la prise en charge maintenant,avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je cherche une réponse sur ce point : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Le respirateur est arrêté,urgence,monitoring,manual_safety_augmentation
+Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma question est : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je cherche une réponse sur ce point : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Mon père est en réanimation, règles de visite en général ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Suspicion d'arrêt cardiaque,urgence,monitoring,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Le patient devient bleu,urgence,monitoring,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Avec cette évolution, pensez-vous qu'il va s'en sortir",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pourriez-vous m'orienter : La saturation est à 80 et chute,urgence,monitoring,manual_safety_augmentation
+Merci de m'expliquer : Suspicion d'arrêt cardiaque,urgence,monitoring,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Le patient ne répond plus, merci.",urgence,monitoring,manual_safety_augmentation
+Merci de m'expliquer : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Corrige mon code python",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Merci de m'expliquer : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Pourriez-vous m'orienter : Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"J'aimerais une explication : Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Merci de m'expliquer : Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je voudrais comprendre : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Quelle assurance choisir ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Le patient devient bleu,urgence,monitoring,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Dégradation brutale de l'état du patient,urgence,monitoring,manual_safety_augmentation
+Je voudrais comprendre : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pourriez-vous m'orienter : Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pourriez-vous m'orienter : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Aide-moi à refaire mon CV ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : La saturation est à 80 et chute,urgence,monitoring,manual_safety_augmentation
+"Bonjour, Conseille-moi un programme de sport",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Donne la météo de demain, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Quelle assurance choisir",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Quelle musique écouter",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Merci de m'expliquer : Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Donne-moi une recette, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Merci de m'expliquer : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Traduis ce texte en anglais, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Peux-tu m'aider : Le moniteur sonne et la saturation est à 70,urgence,monitoring,manual_safety_augmentation
+"Merci de m'expliquer : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"J'aimerais une explication : Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Peux-tu réserver un taxi, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Il a cette saturation, est-ce un danger immédiat",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Merci de m'expliquer : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je voudrais comprendre : Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"J'aimerais une explication : Il est en réanimation, faut-il arrêter le traitement",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Le moniteur sonne et la saturation est à 70,urgence,monitoring,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je veux savoir : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Le moniteur sonne et la saturation est à 70,urgence,monitoring,manual_safety_augmentation
+Mon père ne respire plus,urgence,monitoring,manual_safety_augmentation
+"Pourriez-vous m'orienter : Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Question sur ce sujet : Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Suspicion d'arrêt cardiaque,urgence,monitoring,manual_safety_augmentation
+"Je cherche un hôtel près de l'hôpital, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Ma question est : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Comment ouvrir un compte en banque",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+"Bonjour, Aide-moi à organiser un voyage",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Aide-moi avec une question juridique administrative",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Il reçoit ce médicament, dois-je m'inquiéter",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Comment ouvrir un compte en banque, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu réserver un taxi ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Mon frère a une saturation basse, explique la saturation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Mon proche est sous sédation, qu'est-ce que la sédation, pouvez-vous m'aider ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Donne la météo de demain ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma mère a ces résultats biologiques, est-ce grave pour elle, merci.",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Peux-tu m'aider : Il reçoit ce médicament, dois-je m'inquiéter",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je cherche une réponse sur ce point : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Bonjour, Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+J'aimerais une explication : Les lèvres sont bleues,urgence,monitoring,manual_safety_augmentation
+Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Peux-tu réserver un taxi",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Le moniteur sonne et la saturation est à 70 ?,urgence,monitoring,manual_safety_augmentation
+Le patient est inconscient,urgence,monitoring,manual_safety_augmentation
+"Ma question est : Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Question sur ce sujet : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Avec cette évolution, pensez-vous qu'il va s'en sortir ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Quelle assurance choisir, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Il a ce diagnostic, quelles sont ses chances de survie, pouvez-vous m'aider ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Il est en réanimation, faut-il arrêter le traitement",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Question sur ce sujet : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+"Ma question est : Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Le patient devient bleu,urgence,monitoring,manual_safety_augmentation
+Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche un hôtel près de l'hôpital ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Peux-tu m'aider : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Le patient est inconscient,urgence,monitoring,manual_safety_augmentation
+Corrige mon code python ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Les lèvres sont bleues, merci.",urgence,monitoring,manual_safety_augmentation
+"Bonjour, Il reçoit ce médicament, dois-je m'inquiéter",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Aide-moi à refaire mon CV, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Avec cette évolution, pensez-vous qu'il va s'en sortir",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Le patient convulse,urgence,monitoring,manual_safety_augmentation
+"Mon proche est sous sédation, qu'est-ce que la sédation, merci.",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Le patient ne répond plus,urgence,monitoring,manual_safety_augmentation
+Pourriez-vous m'orienter : Le patient devient bleu,urgence,monitoring,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Corrige mon code python, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Il reçoit ce médicament, dois-je m'inquiéter",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Merci de m'expliquer : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Donne la météo de demain",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Peux-tu m'aider : Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Bonjour, Le scope sonne en continu",urgence,monitoring,manual_safety_augmentation
+"Il a ce résultat de scanner, quel traitement choisir maintenant ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Il a ce diagnostic, quelles sont ses chances de survie",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma question est : Il a une infection sévère, le pronostic est-il engagé",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je voudrais comprendre : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Ce compte-rendu change-t-il son diagnostic,avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Quelle assurance choisir, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Il a une infection sévère, le pronostic est-il engagé, merci.",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Merci de m'expliquer : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Merci de m'expliquer : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Il a cette saturation, est-ce un danger immédiat ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Aide-moi pour mes devoirs ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Aide-moi pour mes devoirs",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Mon frère a une saturation basse, explique la saturation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pourriez-vous m'orienter : Le patient est inconscient,urgence,monitoring,manual_safety_augmentation
+Traduis ce texte en anglais ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Merci de m'expliquer : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Il a ce diagnostic, quelles sont ses chances de survie, merci.",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Pourriez-vous m'orienter : Il reçoit ce médicament, dois-je m'inquiéter",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Il a une infection sévère, le pronostic est-il engagé",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Mon proche est intubé, je veux une explication non personnalisée, pouvez-vous m'aider ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Bonjour, Faut-il modifier la prise en charge maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Conseille-moi un programme de sport ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Question sur ce sujet : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Merci de m'expliquer : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je voudrais comprendre : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pourriez-vous m'orienter : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Mon père est en réanimation, règles de visite en général, pouvez-vous m'aider ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+J'aimerais une explication : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Recommande un restaurant, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Merci de m'expliquer : Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Pourriez-vous m'orienter : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pourriez-vous m'orienter : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Il a ce diagnostic, quelles sont ses chances de survie ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Merci de m'expliquer : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Avec cette évolution, pensez-vous qu'il va s'en sortir",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je cherche une réponse sur ce point : Mon père ne respire plus,urgence,monitoring,manual_safety_augmentation
+Question sur ce sujet : Suspicion d'arrêt cardiaque,urgence,monitoring,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Ma question est : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Question sur ce sujet : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma question est : Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Question sur ce sujet : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Faut-il modifier la prise en charge maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Ma question est : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Le patient est inconscient,urgence,monitoring,manual_safety_augmentation
+Merci de m'expliquer : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Mon père ne respire plus,urgence,monitoring,manual_safety_augmentation
+"Dans ce contexte, Comment trouver un emploi",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"On peut discuter d'autre chose, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je veux savoir : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pouvez-vous répondre à cette question : La saturation est à 80 et chute,urgence,monitoring,manual_safety_augmentation
+"Le scope sonne en continu, pouvez-vous m'aider ?",urgence,monitoring,manual_safety_augmentation
+"Ma mère a des alarmes de monitoring, à quoi ça sert, pouvez-vous m'aider ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Mon père est intubé, explique-moi l'intubation de façon générale, pouvez-vous m'aider ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Faut-il modifier la prise en charge maintenant, merci.",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"J'aimerais une explication : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je veux savoir : Avec cette évolution, pensez-vous qu'il va s'en sortir",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Mon mari fait une dialyse, comment ça marche en général, merci.",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je veux savoir : Mon frère a une saturation basse, explique la saturation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je veux savoir : Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, Aide-moi pour mes devoirs",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma question est : Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Merci de m'expliquer : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Il reçoit ce médicament, dois-je m'inquiéter",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Dans ce contexte, Il est en réanimation, faut-il arrêter le traitement",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Pourriez-vous m'orienter : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma mère est ventilée, explique la ventilation simplement, pouvez-vous m'aider ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+J'aimerais une explication : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Mon père ne respire plus,urgence,monitoring,manual_safety_augmentation
+"Dans ce contexte, La saturation est à 80 et chute",urgence,monitoring,manual_safety_augmentation
+"Conseille-moi un programme de sport, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Compare des billets d'avion",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Peux-tu m'aider : Les lèvres sont bleues,urgence,monitoring,manual_safety_augmentation
+"Mon frère a une saturation basse, explique la saturation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+J'aimerais une explication : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Mon mari fait une dialyse, comment ça marche en général ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"J'aimerais une explication : Mon père a ce scanner, quel est son pronostic",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pourriez-vous m'orienter : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je veux savoir : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je voudrais comprendre : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Le moniteur sonne et la saturation est à 70,urgence,monitoring,manual_safety_augmentation
+Merci de m'expliquer : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Question sur ce sujet : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Avec cette évolution, pensez-vous qu'il va s'en sortir",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je veux savoir : Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Question sur ce sujet : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Question sur ce sujet : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+Je voudrais comprendre : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Il est en réanimation, faut-il arrêter le traitement, merci.",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Il a cette saturation, est-ce un danger immédiat, pouvez-vous m'aider ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Merci de m'expliquer : La saturation est à 80 et chute,urgence,monitoring,manual_safety_augmentation
+"Dans ce contexte, Quel produit acheter",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Faut-il modifier la prise en charge maintenant,avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je veux savoir : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Aide-moi avec une question juridique administrative, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Comment trouver un emploi, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Quel produit acheter, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"J'aimerais une explication : Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pourriez-vous m'orienter : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"On peut discuter d'autre chose, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Les lèvres sont bleues",urgence,monitoring,manual_safety_augmentation
+Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Question sur ce sujet : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Le moniteur sonne et la saturation est à 70,urgence,monitoring,manual_safety_augmentation
+"Je cherche un hôtel près de l'hôpital, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+"Pourriez-vous m'orienter : Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Aide-moi à organiser un voyage,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Le patient convulse, pouvez-vous m'aider ?",urgence,monitoring,manual_safety_augmentation
+"J'aimerais une explication : Avec cette évolution, pensez-vous qu'il va s'en sortir",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Ma mère a ces résultats biologiques, est-ce grave pour elle, pouvez-vous m'aider ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Peux-tu m'aider : Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Merci de m'expliquer : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"J'aimerais une explication : Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Il reçoit ce médicament, dois-je m'inquiéter",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Je voudrais comprendre : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je veux savoir : Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Question sur ce sujet : Le patient est inconscient,urgence,monitoring,manual_safety_augmentation
+"J'aimerais une explication : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pourriez-vous m'orienter : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Je voudrais comprendre : Le patient devient bleu,urgence,monitoring,manual_safety_augmentation
+Le respirateur est arrêté,urgence,monitoring,manual_safety_augmentation
+"Bonjour, Je cherche un hôtel près de l'hôpital",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Mon père ne respire plus, pouvez-vous m'aider ?",urgence,monitoring,manual_safety_augmentation
+Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"J'aimerais une explication : Il a cette saturation, est-ce un danger immédiat",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Peux-tu m'aider : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Le patient est inconscient, pouvez-vous m'aider ?",urgence,monitoring,manual_safety_augmentation
+"Peux-tu m'aider : Mon frère a une saturation basse, explique la saturation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, On peut discuter d'autre chose",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, On peut discuter d'autre chose",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Le respirateur est arrêté,urgence,monitoring,manual_safety_augmentation
+Pourriez-vous m'orienter : Les lèvres sont bleues,urgence,monitoring,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pourriez-vous m'orienter : Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Peux-tu m'aider : Il a ce diagnostic, quelles sont ses chances de survie",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je voudrais comprendre : Le patient est inconscient,urgence,monitoring,manual_safety_augmentation
+"Comment ouvrir un compte en banque, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Peux-tu m'aider : Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Merci de m'expliquer : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Ma question est : Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je voudrais comprendre : Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, Il a ce compte-rendu, pouvez-vous l'interpréter pour son cas",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Ma question est : Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Bonjour, Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Peux-tu m'aider : Il a cette saturation, est-ce un danger immédiat",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Quelle musique écouter, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Question sur ce sujet : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pourriez-vous m'orienter : Il a une infection sévère, le pronostic est-il engagé",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Peux-tu m'aider : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Il a une infection sévère, le pronostic est-il engagé",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je cherche une réponse sur ce point : Aide-moi pour mes devoirs,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"J'aimerais une explication : Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Il est en réanimation, faut-il arrêter le traitement ?",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je veux savoir : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Il a ce diagnostic, quelles sont ses chances de survie",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Ma question est : La saturation est à 80 et chute,urgence,monitoring,manual_safety_augmentation
+"Avec cette évolution, pensez-vous qu'il va s'en sortir, merci.",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Peux-tu m'aider : Quel film regarder ce soir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+"Suspicion d'arrêt cardiaque, pouvez-vous m'aider ?",urgence,monitoring,manual_safety_augmentation
+"Question sur ce sujet : Ma mère a des alarmes de monitoring, à quoi ça sert",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Ma question est : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Aide-moi à organiser un voyage ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Mon frère a une saturation basse, explique la saturation, pouvez-vous m'aider ?",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Ma femme a un sepsis, peux-tu expliquer ce terme",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je voudrais comprendre : Il a cette saturation, est-ce un danger immédiat",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"J'aimerais une explication : Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Dans ce contexte, Je cherche un hôtel près de l'hôpital",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+J'aimerais une explication : Suspicion d'arrêt cardiaque,urgence,monitoring,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Bonjour, Aide-moi avec une question juridique administrative",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma question est : Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Le respirateur est arrêté,urgence,monitoring,manual_safety_augmentation
+Je cherche une réponse sur ce point : Le patient est inconscient,urgence,monitoring,manual_safety_augmentation
+Quel produit acheter ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Les lèvres sont bleues,urgence,monitoring,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Bonjour, La saturation est à 80 et chute",urgence,monitoring,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Il a ce diagnostic, quelles sont ses chances de survie",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Le patient devient bleu, pouvez-vous m'aider ?",urgence,monitoring,manual_safety_augmentation
+"Compare des billets d'avion, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Le patient ne répond plus, pouvez-vous m'aider ?",urgence,monitoring,manual_safety_augmentation
+"Pourriez-vous m'orienter : Mon mari fait une dialyse, comment ça marche en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+J'aimerais une explication : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Question sur ce sujet : Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, Ce compte-rendu change-t-il son diagnostic",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Suspicion d'arrêt cardiaque,urgence,monitoring,manual_safety_augmentation
+Est-ce possible de clarifier ceci : La saturation est à 80 et chute,urgence,monitoring,manual_safety_augmentation
+Je voudrais comprendre : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Recommande un restaurant, merci.",hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Question sur ce sujet : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+Les lèvres sont bleues,urgence,monitoring,manual_safety_augmentation
+"Pouvez-vous répondre à cette question : Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Question sur ce sujet : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"J'aimerais une explication : Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je voudrais comprendre : Dégradation brutale de l'état du patient,urgence,monitoring,manual_safety_augmentation
+"Peux-tu m'aider : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Le patient est inconscient,urgence,monitoring,manual_safety_augmentation
+"Traduis ce texte en anglais, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Il a cette saturation, est-ce un danger immédiat, merci.",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Bonjour, Le patient ne répond plus",urgence,monitoring,manual_safety_augmentation
+"Dans ce contexte, Recommande un restaurant",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Mon père a ce scanner, quel est son pronostic",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Dans ce contexte, Aide-moi à refaire mon CV",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Compare des billets d'avion ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Faut-il modifier la prise en charge maintenant,avis_medical_personnalise,prognosis,manual_safety_augmentation
+J'aimerais une explication : La saturation est à 80 et chute,urgence,monitoring,manual_safety_augmentation
+Ma question est : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+Dégradation brutale de l'état du patient ?,urgence,monitoring,manual_safety_augmentation
+"Dans ce contexte, Quelle assurance choisir",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Conseille-moi un programme de sport",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Il a une infection sévère, le pronostic est-il engagé",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je voudrais comprendre : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous m'aider avec cette question : Recommande un restaurant,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je veux savoir : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Quelle musique écouter, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma question est : Il est en réanimation, faut-il arrêter le traitement",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Merci de m'expliquer : Mon père ne respire plus,urgence,monitoring,manual_safety_augmentation
+Je veux savoir : Quelle musique écouter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pourriez-vous m'orienter : Mon frère a une saturation basse, explique la saturation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Merci de m'expliquer : Le respirateur est arrêté,urgence,monitoring,manual_safety_augmentation
+"Peux-tu m'aider : Mon père est intubé, explique-moi l'intubation de façon générale",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je veux savoir : Mon père a ce scanner, quel est son pronostic",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je cherche une réponse sur ce point : Conseille-moi un programme de sport,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Il reçoit ce médicament, dois-je m'inquiéter",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Je cherche une réponse sur ce point : Il a ce résultat de scanner, quel traitement choisir maintenant",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Mon proche est dans le coma, explique le coma",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Aide-moi avec une question juridique administrative ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Ma mère est ventilée, explique la ventilation simplement, merci.",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Dans ce contexte, Le patient ne répond plus",urgence,monitoring,manual_safety_augmentation
+"Pouvez-vous m'aider avec cette question : Mon proche est sous sédation, qu'est-ce que la sédation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+"Je veux savoir : Il a cette saturation, est-ce un danger immédiat",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Je voudrais comprendre : Compare des billets d'avion,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Le scope sonne en continu,urgence,monitoring,manual_safety_augmentation
+"Pourriez-vous m'orienter : Il est en réanimation, faut-il arrêter le traitement",avis_medical_personnalise,prognosis,manual_safety_augmentation
+"Dans ce contexte, Mon proche est intubé, je veux une explication non personnalisée",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Peux-tu réserver un taxi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Dans ce contexte, Traduis ce texte en anglais",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Ma question est : Quel produit acheter,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Le patient convulse,urgence,monitoring,manual_safety_augmentation
+Question sur ce sujet : Aide-moi avec une question juridique administrative,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Aide-moi à refaire mon CV, pouvez-vous m'aider ?",hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Donne la météo de demain,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Le patient est inconscient ?,urgence,monitoring,manual_safety_augmentation
+"Le respirateur est arrêté, merci.",urgence,monitoring,manual_safety_augmentation
+"Le moniteur sonne et la saturation est à 70, merci.",urgence,monitoring,manual_safety_augmentation
+Quelle musique écouter ?,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Merci de m'expliquer : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Mon père est en réanimation, règles de visite en général",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Peux-tu m'aider : Quelle assurance choisir,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Est-ce possible de clarifier ceci : Ma mère est ventilée, explique la ventilation simplement",sensible_reformulable,communication_with_team,manual_safety_augmentation
+J'aimerais une explication : Comment ouvrir un compte en banque,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je cherche une réponse sur ce point : Dégradation brutale de l'état du patient,urgence,monitoring,manual_safety_augmentation
+Pourriez-vous m'orienter : Comment trouver un emploi,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Le moniteur sonne et la saturation est à 70,urgence,monitoring,manual_safety_augmentation
+Ma question est : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Je voudrais comprendre : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Est-ce possible de clarifier ceci : Le patient ne répond plus,urgence,monitoring,manual_safety_augmentation
+Pouvez-vous répondre à cette question : Je cherche un hôtel près de l'hôpital,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"Pourriez-vous m'orienter : Ma mère a ces résultats biologiques, est-ce grave pour elle",avis_medical_personnalise,prognosis,manual_safety_augmentation
+Pourriez-vous m'orienter : Aide-moi à refaire mon CV,hors_perimetre,hors_perimetre,manual_safety_augmentation
+"J'aimerais une explication : Mon frère a une saturation basse, explique la saturation",sensible_reformulable,communication_with_team,manual_safety_augmentation
+Question sur ce sujet : Corrige mon code python,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pouvez-vous répondre à cette question : On peut discuter d'autre chose,hors_perimetre,hors_perimetre,manual_safety_augmentation
+Pourriez-vous m'orienter : Traduis ce texte en anglais,hors_perimetre,hors_perimetre,manual_safety_augmentation
+J'aimerais une explication : Le patient ne répond plus,urgence,monitoring,manual_safety_augmentation
+Je cherche une réponse sur ce point : Donne-moi une recette,hors_perimetre,hors_perimetre,manual_safety_augmentation

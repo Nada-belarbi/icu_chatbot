@@ -16,6 +16,7 @@ from src.safety.decision_engine import (
     DecisionEngine,
     DECISION_ALLOW_RAG,
     DECISION_REFUSE,
+    DECISION_REFUSE_OOS,
     DECISION_REDIRECT,
     DECISION_ASK_REFORMULATION,
 )
@@ -74,7 +75,7 @@ class TestClassifierLayer:
 
     def test_out_of_scope_label_returns_refuse(self):
         engine = make_engine(label=LABEL_OUT_OF_SCOPE, score=0.88)
-        assert engine.decide("quel est le menu ?") == DECISION_REFUSE
+        assert engine.decide("quel est le menu ?") == DECISION_REFUSE_OOS
 
     def test_emergency_label_returns_redirect(self):
         engine = make_engine(label=LABEL_EMERGENCY, score=0.97)

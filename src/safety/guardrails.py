@@ -41,7 +41,7 @@ class GuardrailsManager:
     # ------------------------------------------------------------------
 
     def run(
-        self, query: str, decision: str, docs: list[dict]
+        self, query: str, decision: str, docs: list[dict], history: list[dict] | None = None
     ) -> tuple[str, list[str], bool]:
         """
         Execute the full guarded RAG path.
@@ -73,7 +73,7 @@ class GuardrailsManager:
 
         # Level 2 — RAGChain (system prompt injected inside RAGChain)
         try:
-            answer, sources = self._rag_chain.generate(query, docs)
+            answer, sources = self._rag_chain.generate(query, docs, history=history)
         except Exception as exc:
             _log.error("RAGChain.generate() failed in GuardrailsManager: %s", exc)
             return self._responses.get_api_unavailable(), [], False

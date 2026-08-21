@@ -6,8 +6,10 @@
 
 from config.safety_config import (
     LABEL_EMERGENCY,
+    LABEL_GENERAL,
     LABEL_MEDICAL_ADVICE,
     LABEL_OUT_OF_SCOPE,
+    LABEL_SENSITIVE,
 )
 from config.settings import CAMEMBERT_CONFIDENCE_THRESHOLD
 from src.safety.rule_filter import RuleFilter
@@ -15,11 +17,14 @@ from src.safety.query_classifier import BaseQueryClassifier
 
 # Decision constants
 DECISION_ALLOW_RAG = "allow_rag"
-DECISION_REFUSE = "refuse"
+DECISION_REFUSE = "refuse"          # avis médical personnalisé
+DECISION_REFUSE_OOS = "refuse_oos"   # hors périmètre
 DECISION_REDIRECT = "redirect"
 DECISION_ASK_REFORMULATION = "ask_reformulation"
 
-_REFUSE_LABELS = {LABEL_MEDICAL_ADVICE, LABEL_OUT_OF_SCOPE}
+_REFUSE_LABELS = {LABEL_MEDICAL_ADVICE}
+_REFUSE_OOS_LABELS = {LABEL_OUT_OF_SCOPE}
+_ALLOW_LABELS = {LABEL_GENERAL, LABEL_SENSITIVE}
 
 
 class DecisionEngine:
@@ -35,7 +40,7 @@ class DecisionEngine:
        - score < threshold → ``ask_reformulation``
        - label ``urgence`` → ``redirect``
        - label in {``avis_medical_personnalise``, ``hors_perimetre``} → ``refuse``
-       - label in {``information_generale``, ``sensible``} → ``allow_rag``
+       - label in {``information_generale``, ``sensible_reformulable``} → ``allow_rag``
     3. Default fallback → ``refuse``  (safety-first)
 
     Parameters
@@ -87,7 +92,13 @@ class DecisionEngine:
         if blocked:
             if category == "urgency":
                 return DECISION_REDIRECT
+            if category == "out_of_scope":
+                return DECISION_REFUSE_OOS
             return DECISION_REFUSE
+
+        # force_allow: clearly educational question, skip CamemBERT
+        if category == "force_allow":
+            return DECISION_ALLOW_RAG
 
         # --- Step 2: semantic classifier (with memory context) ---
         classifier_input = (
@@ -104,8 +115,10 @@ class DecisionEngine:
         if label in _REFUSE_LABELS:
             return DECISION_REFUSE
 
-        # information_generale or sensible with sufficient confidence
-        if score >= self._threshold:
+        if label in _REFUSE_OOS_LABELS:
+            return DECISION_REFUSE_OOS
+
+        if label in _ALLOW_LABELS:
             return DECISION_ALLOW_RAG
 
         # Safety-first default

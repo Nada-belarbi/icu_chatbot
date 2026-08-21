@@ -37,10 +37,11 @@ class TestMemoryIntegration:
         mem.add_assistant_message("Je comprends votre inquiétude.")
 
         context = mem.get_context_string()
-        engine.decide("est-ce grave ?", context_string=context)
+        # Neutral question: no blocked rule, no safe-allow pattern → classifier called
+        engine.decide("les soins intensifs en reanimation", context_string=context)
 
         assert "mon père est en réanimation" in spy.last_text
-        assert "est-ce grave ?" in spy.last_text
+        assert "les soins intensifs en reanimation" in spy.last_text
 
     def test_context_appears_before_current_question(self):
         spy = SpyClassifier()
@@ -54,10 +55,11 @@ class TestMemoryIntegration:
         mem.add_assistant_message("Le respirateur assiste la respiration.")
 
         context = mem.get_context_string()
-        engine.decide("combien de temps ?", context_string=context)
+        # Neutral question — doesn't trigger rules or safe-allow bypass
+        engine.decide("la surveillance medicale en reanimation", context_string=context)
 
         pos_context = spy.last_text.find("il est sous respirateur")
-        pos_question = spy.last_text.find("combien de temps ?")
+        pos_question = spy.last_text.find("la surveillance medicale en reanimation")
         assert pos_context < pos_question
 
     def test_empty_context_passes_text_unchanged(self):
@@ -67,8 +69,9 @@ class TestMemoryIntegration:
             classifier=spy,
             confidence_threshold=0.70,
         )
-        engine.decide("qu'est-ce qu'un respirateur ?", context_string="")
-        assert spy.last_text == "qu'est-ce qu'un respirateur ?"
+        # Neutral question — no rule match, no safe-allow bypass → classifier called
+        engine.decide("les soins intensifs en reanimation", context_string="")
+        assert spy.last_text == "les soins intensifs en reanimation"
 
     def test_context_limited_to_max_turns(self):
         spy = SpyClassifier()

@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    env:
+      # Dummy value only — config/settings.py requires OPENAI_API_KEY to be non-empty
+      # to import successfully, but no test in this workflow calls the real OpenAI API.
+      OPENAI_API_KEY: "sk-ci-placeholder-not-a-real-key"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Validate environment script (structure only, no network)
+        run: python scripts/validate_environment.py
+        continue-on-error: true # models/ and data/rag_documents/chroma_db/ are not committed to git
+
+      - name: Lint (ruff)
+        run: ruff check .
+        continue-on-error: true # not yet enforced as a hard gate; see pyproject.toml
+
+      - name: Formatting check (black)
+        run: black --check .
+        continue-on-error: true # not yet enforced as a hard gate
+
+      - name: Unit tests
+        run: pytest tests/unit -m "not slow"
+
+      - name: Safety tests
+        run: pytest tests/security
+
+      - name: Integration tests
+        run: pytest tests/integration
+
+      - name: Coverage
+        run: pytest --cov=src --cov-report=term-missing --cov-report=xml
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage.xml

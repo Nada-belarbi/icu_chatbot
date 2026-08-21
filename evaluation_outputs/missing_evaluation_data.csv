@@ -1,0 +1,15 @@
+metric,missing_data,action_needed
+retrieval_eval,data\rag_documents\retrieval_gold_set.csv,create or export this artifact before the metric can be computed
+rag_human_evaluation,evaluation_outputs\rag_human_evaluation.csv,create or export this artifact before the metric can be computed
+retrieval_hit_at_k_mrr,C:\Users\223114186\Documents\chatbot_ia\icu_chatbot\data\rag_documents\retrieval_gold_set.csv,"annotate question_id, question, expected_source_id(s) then re-run this section"
+no_source_accuracy,in_corpus=True/False annotated dataset,create a dataset of in-corpus vs out-of-corpus medical questions
+groundedness,rag_human_evaluation.csv annotations,annotate rag_human_evaluation.csv
+hallucination_rate_claim_level,rag_human_evaluation.csv annotations,annotate rag_human_evaluation.csv
+hallucination_rate_answer_level,rag_human_evaluation.csv annotations,annotate rag_human_evaluation.csv
+citation_correctness,rag_human_evaluation.csv annotations,annotate rag_human_evaluation.csv
+citation_completeness,rag_human_evaluation.csv annotations,annotate rag_human_evaluation.csv
+cross_conversation_leakage_rate,no pytest re-execution in this notebook,cite tests/unit/test_conversation_repository.py pass/fail status from the CI run
+per_component_latency,AnonymizedLogger does not log component-level timings,instrument TextCleaner/RuleFilter/Classifier/Retriever/LLM/PostGenerationChecker with time.perf_counter()
+token_usage,no input_tokens/output_tokens field logged anywhere,log OpenAI API usage field
+api_cost,INPUT_COST_PER_MILLION/OUTPUT_COST_PER_MILLION not set,provide official pricing in this cell
+end_to_end_success_rate_full,"retrieval correctness, groundedness, citation correctness NOT_AVAILABLE","annotate retrieval_gold_set.csv and rag_human_evaluation.csv, then combine with routing_df"

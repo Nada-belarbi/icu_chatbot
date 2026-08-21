@@ -1,0 +1,21 @@
+services:
+  app:
+    build: .
+    image: icu-chatbot:local
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      # Chroma index and raw corpus must already exist on the host
+      # (built via `python scripts/index_rag_documents.py`).
+      - ./data/rag_documents:/app/data/rag_documents
+      # Fine-tuned CamemBERT checkpoint (large binaries, not baked into the image).
+      - ./models/camembert_classifier:/app/models/camembert_classifier
+      # Local auth + encrypted conversation history must survive container restarts.
+      - ./data/auth:/app/data/auth
+      - ./data/conversations:/app/data/conversations
+      - ./data/private_conversations:/app/data/private_conversations
+      # Anonymized interaction logs.
+      - ./logs:/app/logs
+    restart: unless-stopped

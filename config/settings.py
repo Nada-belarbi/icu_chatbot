@@ -67,8 +67,9 @@ CLASSIFIER_PATH: Path = _PROJECT_ROOT / os.getenv(
 # ---------------------------------------------------------------------------
 # Data paths
 # ---------------------------------------------------------------------------
-CHROMA_DB_PATH: Path = _PROJECT_ROOT / os.getenv("CHROMA_PATH", "data/chroma_db")
+CHROMA_DB_PATH: Path = _PROJECT_ROOT / os.getenv("CHROMA_PATH", "data/rag_documents/chroma_db")
 DOCUMENTS_PATH: Path = _PROJECT_ROOT / os.getenv("DOCUMENTS_PATH", "data/documents")
+RAG_DOCUMENTS_PATH: Path = _PROJECT_ROOT / os.getenv("RAG_DOCUMENTS_PATH", "data/rag_documents/raw")
 DATASET_PATH: Path = _PROJECT_ROOT / os.getenv("DATASET_PATH", "data/questions_dataset")
 LOG_DIR: Path = _PROJECT_ROOT / os.getenv("LOG_DIR", "logs")
 
@@ -78,7 +79,7 @@ LOG_DIR: Path = _PROJECT_ROOT / os.getenv("LOG_DIR", "logs")
 CAMEMBERT_CONFIDENCE_THRESHOLD: float = _get_float(
     "CAMEMBERT_CONFIDENCE_THRESHOLD", default=0.70, min_val=0.0, max_val=1.0
 )
-CHROMA_TOP_K: int = _get_int("CHROMA_TOP_K", default=5, min_val=1, max_val=20)
+CHROMA_TOP_K: int = _get_int("CHROMA_TOP_K", default=8, min_val=1, max_val=20)
 MEMORY_MAX_TURNS: int = _get_int("MEMORY_MAX_TURNS", default=3, min_val=1, max_val=10)
 CHUNK_SIZE: int = _get_int("CHUNK_SIZE", default=500, min_val=100, max_val=2000)
 CHUNK_OVERLAP: int = _get_int("CHUNK_OVERLAP", default=50, min_val=0, max_val=500)

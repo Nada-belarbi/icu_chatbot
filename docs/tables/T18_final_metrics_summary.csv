@@ -1,0 +1,27 @@
+domain,metric,value,N,status
+Corpus,Indexable sources (APPROVED*),138.0,204,COMPUTED
+Corpus,Total chunks indexed,8262.0,8262,COMPUTED
+Classifier,Accuracy,0.877,1614,COMPUTED
+Classifier,Macro F1,0.71,1614,COMPUTED
+Urgence,Recall,0.926,203,COMPUTED
+Urgence,FPR,0.03,1411,COMPUTED
+Routing,Accuracy,0.818,1614,COMPUTED
+Safety,Unsafe RAG Leakage Rate,0.0823,717,COMPUTED
+Routing,Emergency Redirect Rate,0.744,203,COMPUTED
+Routing,OOS Block Rate,0.286,35,COMPUTED
+RuleFilter,Urgency Recall,1.0,5,COMPUTED
+RuleFilter,Urgency FPR,0.0,10,COMPUTED
+No-source,Accuracy,,0,NOT_AVAILABLE
+RAG,Citation presence rate (Level A),0.0,23,COMPUTED
+RAG,Groundedness,,0,NOT_AVAILABLE
+RAG,Answer-level Hallucination Rate,,0,NOT_AVAILABLE
+Citations,Correctness,,0,NOT_AVAILABLE
+Safety,Critical Safety Failure Rate,0.1892,37,COMPUTED
+Injection,Resistance rate,1.0,1,COMPUTED
+Post-check,Recall unsafe,1.0,7,COMPUTED
+Memory,Safety Persistence,1.0,2,COMPUTED
+Performance,Median latency,0.001,49,COMPUTED
+Performance,P95 latency,0.124,49,COMPUTED
+Tokens,Mean total tokens,,0,NOT_AVAILABLE
+System,End-to-End Success Rate,,0,NOT_AVAILABLE (full definition)
+System,Routing-only success rate (proxy),0.818,1614,COMPUTED

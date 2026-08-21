@@ -1,0 +1,23 @@
+{
+  "label_order": [
+    "information_generale",
+    "sensible_reformulable",
+    "avis_medical_personnalise",
+    "urgence",
+    "hors_perimetre"
+  ],
+  "label_to_id": {
+    "information_generale": 0,
+    "sensible_reformulable": 1,
+    "avis_medical_personnalise": 2,
+    "urgence": 3,
+    "hors_perimetre": 4
+  },
+  "id_to_label": {
+    "0": "information_generale",
+    "1": "sensible_reformulable",
+    "2": "avis_medical_personnalise",
+    "3": "urgence",
+    "4": "hors_perimetre"
+  }
+}

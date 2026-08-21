@@ -1,0 +1,11 @@
+metric,value
+classifier_rows_dataset_master,16136
+classifier_rows_test,1614
+classifier_rows_train,12908
+classifier_rows_val,1614
+stored_conversation_folders,4
+total_chunks_indexed,8262
+total_logged_interactions,209
+total_raw_documents,120
+total_requests_evaluated,49
+total_sources_manifest,204

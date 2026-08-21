@@ -27,49 +27,59 @@ class ControlledResponseManager:
     @staticmethod
     def get_urgency_redirect() -> str:
         return (
-            "⚠️ **Situation urgente détectée.**\n\n"
-            "Je ne suis pas en mesure de répondre à des situations d'urgence médicale. "
-            "Veuillez **contacter immédiatement l'équipe médicale** présente ou appelez le **15 (SAMU)** "
-            "si vous êtes hors de l'hôpital.\n\n"
-            "Votre sécurité est la priorité absolue."
-        )
-
-    @staticmethod
-    def get_refuse_medical_advice() -> str:
-        return (
-            "Je comprends votre question, mais je ne suis pas autorisé à fournir "
-            "des conseils médicaux personnalisés — diagnostic, dosage ou pronostic inclus.\n\n"
-            "Pour toute question concernant votre situation spécifique, "
-            "**adressez-vous directement à l'équipe soignante** qui vous prend en charge. "
-            "Elle dispose de toutes les informations nécessaires pour vous répondre avec précision."
-        )
-
-    @staticmethod
-    def get_ask_reformulation() -> str:
-        return (
-            "Je n'ai pas bien compris votre question. Pourriez-vous la reformuler "
-            "de façon plus précise ?\n\n"
-            "Par exemple, vous pouvez me demander des informations générales sur "
-            "les soins en réanimation, les équipements ou l'organisation du service."
-        )
-
-    @staticmethod
-    def get_no_source_found() -> str:
-        return (
-            "Je n'ai pas trouvé de document correspondant à votre question "
-            "dans ma base de connaissances.\n\n"
-            "Si vous souhaitez des informations sur ce sujet, je vous encourage à "
-            "**en parler directement avec l'équipe médicale ou paramédicale**."
+            "⚠️ **Situation urgente — agissez immédiatement.**\n\n"
+            "Si vous êtes **dans le service**, prévenez immédiatement l'équipe soignante "
+            "ou appuyez sur la sonnette d'appel.\n\n"
+            "Si vous êtes **hors de l'hôpital**, appelez le **15 (SAMU)** ou le **112**."
         )
 
     @staticmethod
     def get_out_of_scope() -> str:
         return (
-            "Votre question dépasse le périmètre de ce système. "
-            "Je suis uniquement conçu pour répondre à des questions générales "
-            "sur les soins en réanimation.\n\n"
-            "Pour toute autre demande, veuillez vous adresser à l'équipe soignante "
-            "ou au secrétariat du service."
+            "Cette question sort du domaine de la réanimation — "
+            "je ne suis pas en mesure d'y répondre.\n\n"
+            "N'hésitez pas à me poser une question sur le fonctionnement du service, "
+            "les équipements, les soins courants ou l'organisation des visites."
+        )
+
+    @staticmethod
+    def get_refuse_medical_advice() -> str:
+        return (
+            "Je comprends que vous cherchez des réponses, et c'est tout à fait normal "
+            "dans cette situation.\n\n"
+            "Ce type de question — qui concerne directement l'état ou le traitement d'une "
+            "personne — dépasse ce que je peux vous dire en tant qu'assistant d'information. "
+            "**L'équipe médicale qui suit votre proche** est la seule à pouvoir vous répondre "
+            "avec précision : n'hésitez pas à leur poser cette question lors du prochain échange."
+        )
+
+    @staticmethod
+    def get_ask_reformulation() -> str:
+        return (
+            "Je n'ai pas bien saisi votre question — pourriez-vous la reformuler ?\n\n"
+            "Par exemple, vous pouvez me demander à quoi sert un équipement, "
+            "comment se déroule une procédure, ou comment fonctionne l'organisation du service."
+        )
+
+    @staticmethod
+    def get_no_source_found() -> str:
+        return (
+            "Votre question concerne bien la réanimation, mais je n'ai pas trouvé "
+            "d'information suffisamment fiable dans mes documents pour y répondre.\n\n"
+            "Je vous encourage à **en parler directement avec l'équipe soignante**, "
+            "qui pourra vous expliquer cela en tenant compte de la situation de votre proche."
+        )
+
+    @staticmethod
+    def get_greeting() -> str:
+        return (
+            "Bonjour ! Je suis l'assistant d'information du service de réanimation.\n\n"
+            "Je suis ici pour répondre à vos questions générales sur la réanimation : "
+            "équipements, rôle des soignants, organisation du service, etc.\n\n"
+            "N'hésitez pas à me poser votre question. \n\n"
+            "⚠️ *Je ne peux pas fournir d'avis médical personnalisé. "
+            "Pour toute situation urgente ou question concernant votre proche spécifiquement, "
+            "adressez-vous directement à l'équipe soignante ou appelez le 15.*"
         )
 
     # ------------------------------------------------------------------

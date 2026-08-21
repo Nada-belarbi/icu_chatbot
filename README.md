@@ -1,356 +1,341 @@
-# Chatbot conversationnel pour la réanimation
+# ICU Information Assistant
 
-A conversational AI assistant providing **general medical information** to family members of ICU patients.  
-Built with a hybrid RAG pipeline and a strict multi-layer safety system.
-
-> ⚠️ **This system never provides individualized medical advice.**  
-> It is a prototype only. It is **not suitable for real hospital deployment** in its current form (OpenAI API data sovereignty constraints).
-
----
+> ⚠️ **This system never provides individualized medical advice, diagnosis, treatment or
+> prognosis.** It is a prototype (POC/MVS) and is **not suitable for real hospital deployment**
+> in its current form (OpenAI API data-sovereignty constraints, no clinical validation).
 
 ## Table of contents
 
-1. [Project overview](#1-project-overview)
-2. [Architecture](#2-architecture)
-3. [Project structure](#3-project-structure)
-4. [Safety pipeline](#4-safety-pipeline)
-5. [Document strategy](#5-document-strategy)
-6. [Fallback & error handling](#6-fallback--error-handling)
-7. [Installation](#7-installation)
-8. [Usage](#8-usage)
-9. [Running tests](#9-running-tests)
-10. [Development order](#10-development-order)
-11. [Ethical & regulatory limits](#11-ethical--regulatory-limits)
+1. [Overview](#1-overview)
+2. [Main features](#2-main-features)
+3. [Safety scope](#3-safety-scope)
+4. [Architecture](#4-architecture)
+5. [Technology stack](#5-technology-stack)
+6. [Project structure](#6-project-structure)
+7. [Prerequisites](#7-prerequisites)
+8. [Installation](#8-installation)
+9. [Environment configuration](#9-environment-configuration)
+10. [Building the knowledge base](#10-building-the-knowledge-base)
+11. [Loading the classifier](#11-loading-the-classifier)
+12. [Running the application](#12-running-the-application)
+13. [Running tests](#13-running-tests)
+14. [Evaluation](#14-evaluation)
+15. [Docker](#15-docker)
+16. [Deployment](#16-deployment)
+17. [Logging](#17-logging)
+18. [Troubleshooting](#18-troubleshooting)
+19. [Security and privacy](#19-security-and-privacy)
+20. [Known limitations](#20-known-limitations)
+21. [License](#21-license)
 
 ---
 
-## 1. Project overview
+## 1. Overview
 
-Family members of ICU patients face high emotional stress and limited access to clear medical information. This chatbot aims to:
+An assistant providing **general information** about ICU (intensive/critical care) practices to
+family members of patients, in French. It uses a Retrieval-Augmented Generation (RAG) pipeline
+grounded in an institutional medical corpus (learned societies, hospitals, health authorities),
+with a multi-layer safety pipeline that systematically refuses personalized medical advice,
+diagnosis, treatment or prognosis requests, and redirects emergencies immediately.
 
-- Answer **general** questions about ICU care in plain French
-- Prepare families for conversations with healthcare professionals
-- Systematically **refuse** personalized medical advice, diagnosis, prognosis, and treatment requests
-- Redirect emergencies to the medical team immediately
+## 2. Main features
 
-**Tech stack**
+- RAG-based general medical information retrieval, grounded in cited institutional sources
+- Chroma vector database (local, persisted on disk)
+- CamemBERT query classification (French, fine-tuned) with a deterministic keyword `RuleFilter`
+- `DecisionEngine` routing to `allow_rag` / `refuse` / `refuse_oos` / `redirect` / `ask_reformulation`
+- Controlled response templates for every non-`allow_rag` outcome
+- LLM generation (OpenAI API) grounded only in retrieved sources
+- Post-generation safety checking (`PostGenerationChecker`) before any response is shown
+- Conversation memory (short context window fed to the classifier, not the LLM directly)
+- Source citations displayed with every RAG-based answer
+- Local authentication (scrypt password hashing) and encrypted, per-user conversation history
 
-| Layer | Technology |
+## 3. Safety scope
+
+| The assistant DOES | The assistant NEVER does |
 |---|---|
-| UI | Streamlit |
-| RAG orchestration | LangChain |
-| Vector store | ChromaDB (local) |
-| Embeddings | sentence-transformers (local) |
-| LLM | OpenAI API (prototype only) |
-| Query classifier | CamemBERT (fine-tuned, French) |
-| Memory | Custom `ConversationMemoryManager` (`st.session_state`) |
+| Explain general ICU concepts (ventilation, monitoring, visiting policies, etc.) | Give a diagnosis, treatment or prognosis for a specific patient |
+| Cite the institutional documents it used | Answer emergencies conversationally (it redirects instead) |
+| Refuse or redirect when a request is out of scope or unsafe | Answer when the corpus has no relevant source (it abstains) |
+| Ask the user to rephrase when confidence is low | Use the LLM's own medical knowledge outside the retrieved context |
 
----
+## 4. Architecture
 
-## 2. Architecture
+There are two separate pipelines: an offline **knowledge-base build** pipeline (run when the
+corpus or model changes) and the **runtime** pipeline (run once per user message).
 
-There are **two separate pipelines**: an offline setup pipeline (run once) and the runtime pipeline (run per user message).
-
-### Offline pipeline (run once before starting the app)
-
-```
-data/questions_dataset/          data/documents/
-         │                               │
-         ▼ 01_prepare_dataset.ipynb      ▼ 03_index_documents.ipynb
-  dataset_clean.csv              document_loader.py → vector_store.py
-         │                               │
-         ▼ 02_train_camembert.ipynb      ▼
-  models/camembert_classifier/   data/chroma_db/
-         │                               │
-         └──────────┬────────────────────┘
-                    ▼
-             loaded at runtime by
-     query_classifier.py   retriever.py
-```
-
-### Runtime pipeline (per user message)
-
-```
+```text
 User question
       │
       ▼
  TextCleaner
       │
-      ▼  ┌─ ConversationMemoryManager (last N turns injected as context)
+      ▼  ┌─ ConversationMemoryManager (last N turns injected as classifier context)
       ▼
- RuleFilter ──────────────────────────────────────────► BLOCK / REDIRECT
+ RuleFilter ──────────────────────────────────────────► redirect / refuse / refuse_oos
       │ (not blocked)
       ▼
  CamembertQueryClassifier  (loads from models/camembert_classifier/)
       │ (label + confidence score)
       ▼
  DecisionEngine
-      ├─ allow_rag  ──► Retriever (queries chroma_db/) ──► RAGChain ──► PostGenerationChecker ──► Response
-      ├─ refuse          ──► ControlledResponseManager
-      ├─ redirect        ──► ControlledResponseManager (emergency)
-      └─ ask_reformulation ► ControlledResponseManager
-                                                                               │
-                                                                               ▼
-                                                                       AnonymizedLogger
+      ├─ allow_rag  ──► Retriever (queries Chroma) ──► RAGChain (OpenAI) ──► GuardrailsManager /
+      │                                                                      PostGenerationChecker
+      ├─ refuse / refuse_oos / redirect / ask_reformulation ──► ControlledResponseManager
+      │
+      ▼
+ AnonymizedLogger (every request, regardless of branch)
 ```
 
-**Key design principles:**
-- The LLM is only called after all safety gates pass — never automatically
-- `chroma_db/` and `models/camembert_classifier/` are the bridges between offline and runtime — both must exist before launching `app.py`
-- Conversation memory feeds the **classifier** as context, not the LLM — it is a safety feature, not just UX
-  - Keep **only the last 2–3 cleaned messages** — injecting too much history degrades classifier accuracy
-  - Implemented as a plain Python list in `st.session_state`, not LangChain memory (LangChain memory API changes frequently across versions)
-- No user accounts or persistent profiles — `st.session_state` handles session scope; memory is wiped on tab close
-- `ChatbotPipeline` in `src/pipeline/chatbot_pipeline.py` is the single orchestrator — `app.py` calls only this
+Detailed diagrams (sequence, security chain, document pipeline) are in
+[docs/figures/architecture/](docs/figures/architecture/). A full narrative description of the
+architecture is in the academic report (`report_v2/`).
 
----
+## 5. Technology stack
 
-## 3. Project structure
+| Layer | Technology |
+|---|---|
+| UI | Streamlit |
+| RAG orchestration | LangChain (`langchain-chroma`, `langchain-openai`) |
+| Vector store | ChromaDB (local, persisted) |
+| Embeddings | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (local) |
+| LLM | OpenAI API (prototype only) |
+| Query classifier | `HybridQueryClassifier` in production: CamemBERT (fine-tuned, French) as primary, with a TF-IDF + LinearSVC baseline as a safety-net specialist for the `hors_perimetre` class |
+| Auth | scrypt password hashing (`src/auth/local_auth.py`) |
+| Conversation storage | Fernet-encrypted local storage (`src/memory/conversation_repository.py`) |
 
-```
+## 6. Project structure
+
+```text
 icu_chatbot/
-│
-├── app.py                                # Streamlit entry point
-├── .env.example                          # Environment variable template
-├── .gitignore
-├── requirements.txt
+├── app.py                       # Streamlit entry point (composition root only)
+├── requirements.txt             # Runtime dependencies
+├── requirements-dev.txt         # Testing / linting / notebooks / training
+├── pyproject.toml               # Ruff / Black / Mypy configuration
 ├── pytest.ini
+├── .env.example
 │
 ├── config/
-│   ├── settings.py                       # Paths, thresholds, model names, API settings
-│   └── safety_config.py                  # Safety rules, classifier classes, refusal messages
-│
-├── data/
-│   ├── documents/                        # Validated source documents for the RAG (PDF, TXT, DOCX)
-│   ├── questions_dataset/                # Annotated dataset for CamemBERT fine-tuning (CSV)
-│   └── chroma_db/                        # Chroma persistent vector store (auto-generated, not committed)
+│   ├── settings.py              # Paths, thresholds, model names — loaded from .env
+│   ├── safety_config.py         # Rule keywords, labels, thresholds
+│   └── label_schema.py          # Classifier label constants
 │
 ├── src/
-│   ├── memory/
-│   │   └── conversation_memory.py        # Session-scoped conversation history (no PII, no persistence)
-│   │
-│   ├── preprocessing/
-│   │   └── text_cleaner.py               # Input normalization (whitespace, encoding)
-│   │
-│   ├── safety/
-│   │   ├── controlled_responses.py       # All pre-written refusal / redirection messages
-│   │   ├── rule_filter.py                # Fast keyword/regex rules — no ML cost
-│   │   ├── query_classifier.py           # CamemBERT classifier (+ MockClassifier for early dev)
-│   │   ├── decision_engine.py            # Combines rule output + ML label + score → action
-│   │   ├── guardrails.py                 # Pre / during / post LLM controls (LangChain)
-│   │   └── post_checker.py               # Last gate: scans response before display
-│   │
-│   ├── rag/
-│   │   ├── document_loader.py            # Loads and chunks source documents
-│   │   ├── vector_store.py               # Creates / loads Chroma collection
-│   │   ├── retriever.py                  # Top-k similarity search
-│   │   └── rag_chain.py                  # LangChain chain: docs → prompt → OpenAI → answer + sources
-│   │
-│   ├── audit/
-│   │   └── anonymized_logger.py          # Logs decisions anonymously (no raw user text stored)
-│   │                                       # NOTE: named 'audit' not 'logging' to avoid
-│   │                                       # shadowing Python's stdlib logging module
-│   ├── pipeline/
-│   │   └── chatbot_pipeline.py           # Central orchestrator — single entry point for app.py
-│   │                                       # Calls: cleaner→memory→rule_filter→classifier→
-│   │                                       #        decision_engine→retriever→rag_chain→
-│   │                                       #        post_checker→logger
-│   │                                       # Handles all fallback cases internally
-│   │
-│   └── evaluation/
-│       ├── test_questions.py             # 50-question validated bank (5 categories)
-│       └── evaluator.py                  # Runs pipeline on test bank, computes metrics
+│   ├── frontend/                # Streamlit UI (ui.py, styles.py, icons.py, formatting.py)
+│   ├── auth/                    # LocalAuthService (scrypt)
+│   ├── memory/                  # ConversationMemoryManager, ConversationRepository (encrypted)
+│   ├── preprocessing/           # TextCleaner
+│   ├── safety/                  # RuleFilter, QueryClassifier(s), DecisionEngine,
+│   │                            # ControlledResponseManager, GuardrailsManager, PostGenerationChecker
+│   ├── rag/                     # DocumentLoader, VectorStoreManager, Retriever, RAGChain
+│   ├── audit/                   # AnonymizedLogger
+│   ├── pipeline/                # ChatbotPipeline — single orchestrator, only class app.py calls
+│   ├── ml/                      # CamemBERT training/evaluation utilities (used by notebooks/scripts)
+│   └── evaluation/               # Baseline classifier evaluation utilities
+│
+├── data/
+│   ├── rag_documents/
+│   │   ├── raw/                 # Source documents, organized by organization (SRLF, HAS, NHS, ...)
+│   │   ├── chroma_db/           # Chroma persistent vector store (committed via git so a fresh clone needs no reindexing)
+│   │   └── sources.csv          # Corpus manifest — source of truth for provenance/approval status
+│   ├── processed/               # Classifier train/val/test/dataset_master CSVs
+│   ├── augmentation/            # Manual safety-test and augmentation examples
+│   └── auth/, conversations/, private_conversations/   # Local user + encrypted conversation data
 │
 ├── models/
-│   └── camembert_classifier/             # Saved fine-tuned model weights (not committed to git)
+│   └── camembert_classifier/    # Fine-tuned model weights (model.safetensors committed via Git LFS)
 │
-├── notebooks/
-│   ├── 01_prepare_dataset.ipynb          # Clean + annotate + split the classifier dataset
-│   ├── 02_train_camembert.ipynb          # Fine-tune CamemBERT, evaluate, save model
-│   ├── 03_index_documents.ipynb          # Load documents, embed, index into Chroma
-│   ├── 04_test_pipeline_modules.ipynb    # Validate every src/ module in isolation + in sequence
-│   └── 05_evaluate_chatbot.ipynb         # Full end-to-end evaluation on 50-question test bank
+├── notebooks/                   # Training / evaluation only — never required by the runtime app
+│   ├── 01_icu_classifier_dataset_analysis.ipynb
+│   ├── 02_baseline_text_classifiers.ipynb
+│   ├── 03_baseline_augmented_rulefilter.ipynb
+│   ├── 04_camembert_training_pipeline.ipynb
+│   ├── 05_camembert_evaluation_report.ipynb
+│   ├── 06_safety_pipeline_audit.ipynb
+│   ├── 07_index_rag_documents.ipynb
+│   └── FINAL_PROJECT_EVALUATION.ipynb   # Official quantitative evaluation notebook
 │
-└── tests/
-    ├── unit/                             # One test file per component
-    │   ├── test_text_cleaner.py
-    │   ├── test_rule_filter.py
-    │   ├── test_decision_engine.py
-    │   ├── test_memory_manager.py
-    │   ├── test_post_checker.py
-    │   └── test_controlled_responses.py
-    ├── integration/
-    │   └── test_pipeline.py              # Full pipeline with MockClassifier + MockOpenAI
-    └── security/
-        └── test_safety.py                # Adversarial inputs, prompt injection attempts
+├── scripts/                     # CLI entry points (dataset build, training, evaluation, indexing)
+│
+├── tests/
+│   ├── unit/                    # One test module per component (20 files)
+│   ├── integration/              # Multi-component tests (pipeline, memory+decision, artifacts)
+│   └── security/                 # Adversarial / safety-critical tests
+│
+├── evaluation_outputs/           # final_metrics.json, data_availability.csv, error_cases.csv, ...
+├── docs/                          # Figures, tables and deployment/troubleshooting notes
+├── report_v2/                     # Academic report (LaTeX sources + compiled PDF), delivered separately
+└── logs/                          # Anonymized interaction logs (not committed)
 ```
 
----
+> **Note:** `tests/` is currently organized as `unit/` / `integration/` / `security/`. The
+> `security/` folder is the safety-critical adversarial suite (equivalent to a `safety` marker,
+> already declared in `pytest.ini`).
 
-## 4. Safety pipeline
+## 7. Prerequisites
 
-> The safety module stubs in `src/safety/` are intentionally kept separate from
-> `src/pipeline/chatbot_pipeline.py`. Each can be developed, mocked, and tested
-> in isolation. The pipeline wires them together.
+- Python 3.12
+- [Git LFS](https://git-lfs.com/) (`git lfs install`) — the trained CamemBERT checkpoint
+  (`models/camembert_classifier/model.safetensors`, ~420MB) is stored via Git LFS since it
+  exceeds GitHub's 100MB per-file limit; without Git LFS installed *before* cloning, you get a
+  small pointer file instead of the real weights
+- An OpenAI API key (for the LLM generation step only — retrieval and classification run locally)
+- ~2 GB free disk space (CamemBERT weights + embedding model + Chroma index)
 
-The system uses **5 decision outcomes** — the LLM is never called for the last four:
-
-| Decision | Trigger | Output |
-|---|---|---|
-| `allow_rag` | General question, high confidence | RAG → LLM → post-check → response |
-| `refuse` | Medical advice / out-of-scope | Controlled refusal message |
-| `redirect` | Emergency situation | Immediate redirect to medical team |
-| `ask_reformulation` | Low classifier confidence | Ask user to rephrase |
-
-**Three-level guardrails:**
-1. **Pre-generation** — blocks LLM call if safety conditions not met
-2. **During generation** — strict system prompt (no diagnosis, no treatment, source-only)
-3. **Post-generation** — `PostGenerationChecker` scans response before display; replaces if unsafe
-
-**Classifier classes (CamemBERT):**
-- `information_generale`
-- `sensible`
-- `avis_medical_personnalise`
-- `urgence`
-- `hors_perimetre`
-
----
-
-## 5. Document strategy
-
-The RAG system is only as safe as the documents it cites. All documents placed in `data/documents/` must meet these criteria:
-
-| Criterion | Requirement |
-|---|---|
-| **Medical validation** | Reviewed and approved by a qualified healthcare professional |
-| **Source** | Official bodies only (HAS, SFAR, CHU guidelines, validated patient information sheets) |
-| **Date** | Each document must include a production or last-review date |
-| **Traceability** | Filename must encode the source and date, e.g. `SFAR_sedation_guide_2024.pdf` |
-| **Language** | French only |
-| **No web content** | Never index arbitrary web pages or unvalidated online text |
-| **Versioning** | When a document is updated, the old version is archived and the index is rebuilt (re-run notebook 03) |
-
-> If `data/documents/` is empty or no relevant chunk is found for a query,
-> the chatbot returns a controlled `no_source_found` message — it never invents an answer.
-
----
-
-## 6. Fallback & error handling
-
-`ChatbotPipeline` catches all failure modes internally. The UI (`app.py`) always receives a safe string response — it never crashes.
-
-| Failure | Fallback response |
-|---|---|
-| Empty / whitespace user input | `ask_reformulation` message |
-| Chroma DB empty or not initialised | `no_source_found` controlled message |
-| Retriever returns no results | `no_source_found` controlled message |
-| OpenAI API call fails (timeout, quota) | `api_unavailable` controlled message |
-| `PostGenerationChecker` rejects the answer | `refuse_medical_advice` controlled message |
-| Any unexpected exception | `generic_error` controlled message + anonymous error log |
-
-All fallback messages are defined in `src/safety/controlled_responses.py`. The pipeline logs the failure type (not the user's raw text) via `AnonymizedLogger`.
-
----
-
-## 7. Installation
+## 8. Installation
 
 ```bash
-# 1. Clone the repository
+git lfs install        # once per machine, before cloning
 git clone <repo-url>
 cd icu_chatbot
 
-# 2. Create and activate a virtual environment
 python -m venv .venv
-.venv\Scripts\activate        # Windows
-# source .venv/bin/activate   # Linux / macOS
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Configure environment variables
-copy .env.example .env        # Windows
-# cp .env.example .env        # Linux / macOS
-# Edit .env and add your OPENAI_API_KEY
 ```
 
-### One-time offline setup (run in order before first launch)
+Windows:
 
-| Step | Notebook | What it produces |
-|---|---|---|
-| 1 | `notebooks/01_prepare_dataset.ipynb` | `data/questions_dataset/dataset_clean.csv` |
-| 2 | `notebooks/02_train_camembert.ipynb` | `models/camembert_classifier/` |
-| 3 | `notebooks/03_index_documents.ipynb` | `data/chroma_db/` |
+```bash
+.venv\Scripts\activate
+```
 
-> Steps 1 and 2 require a labelled dataset in `data/questions_dataset/`.  
-> Step 3 requires at least one document in `data/documents/`.  
-> Steps 1–3 only need to be re-run when data or documents change.
+Linux/macOS:
 
----
+```bash
+source .venv/bin/activate
+```
 
-## 8. Usage
+Then:
+
+```bash
+pip install -r requirements.txt
+# add -r requirements-dev.txt for tests, linting, and notebooks
+```
+
+## 9. Environment configuration
+
+```bash
+copy .env.example .env        # Windows
+# cp .env.example .env        # Linux / macOS
+```
+
+Edit `.env` and set `OPENAI_API_KEY` (required — the app raises a clear
+`EnvironmentError` at startup if it is missing, see `config/settings.py`). All other variables
+have working defaults; see `.env.example` for the full list (paths, `CAMEMBERT_CONFIDENCE_THRESHOLD`,
+`CHROMA_TOP_K`, `CHUNK_SIZE`/`CHUNK_OVERLAP`, `MEMORY_MAX_TURNS`).
+
+## 10. Building the knowledge base
+
+The Chroma index (`data/rag_documents/chroma_db/`) and the corpus manifest
+(`data/rag_documents/sources.csv`) are already committed to this repository — a fresh clone
+does **not** need to rebuild the index to run the app. Re-run the build only after adding or
+changing documents:
+
+```bash
+python scripts/index_rag_documents.py
+```
+
+This loads and chunks the source documents (`CHUNK_SIZE`/`CHUNK_OVERLAP` from `.env`), embeds them
+locally, and persists the collection to `data/rag_documents/chroma_db/`. Commit the updated index
+afterward if you want the change to reach other clones of this repository.
+
+## 11. Loading the classifier
+
+The runtime loads the already-trained CamemBERT checkpoint from `models/camembert_classifier/`
+(committed via Git LFS, see [Prerequisites](#7-prerequisites)) — no notebook is required to run
+the app. To retrain or re-evaluate the classifier, see
+`notebooks/04_camembert_training_pipeline.ipynb` and `notebooks/05_camembert_evaluation_report.ipynb`,
+or the equivalent CLI scripts `scripts/train_camembert.py` / `scripts/evaluate_camembert.py`.
+
+## 12. Running the application
 
 ```bash
 streamlit run app.py
 ```
 
-Open [http://localhost:8501](http://localhost:8501) in your browser.
+Open [http://localhost:8501](http://localhost:8501). The Chroma index and the CamemBERT model must
+already exist (see sections 10 and 11) before the first run.
 
-**First run:** place validated documents in `data/documents/` and run the indexing step above before starting the app.
-
----
-
-## 9. Running tests
+## 13. Running tests
 
 ```bash
-# All tests
-pytest
-
-# Unit tests only
+pytest                     # all 252 tests
 pytest tests/unit/
-
-# Security tests only
-pytest tests/security/
-
-# With coverage
-pytest --cov=src
+pytest tests/security/     # adversarial / safety-critical suite
+pytest --cov=src --cov-report=term-missing
 ```
 
----
+## 14. Evaluation
 
-## 10. Development order
+The official, reproducible quantitative evaluation lives in
+[`notebooks/FINAL_PROJECT_EVALUATION.ipynb`](notebooks/FINAL_PROJECT_EVALUATION.ipynb). It computes
+every metric from real project artifacts only (no invented numbers) and exports:
 
-Follow this commit sequence to minimise blockers:
+- `evaluation_outputs/final_metrics.json` — single source of numbers for any report
+- `evaluation_outputs/data_availability.csv`, `error_cases.csv`, `missing_evaluation_data.csv`
+- `docs/tables/*.csv` and `docs/figures/evaluation/*.svg`/`*.png`
 
-| # | Commit | Why this position |
+## 15. Docker
+
+A `Dockerfile` and `docker-compose.yml` are provided. The image installs `requirements.txt` and
+copies only `app.py`, `config/`, `src/` and `scripts/`; `.env`, `data/`, `models/` and `logs/` are
+mounted as volumes (see `docker-compose.yml`) so the Chroma index, the CamemBERT weights and
+conversation data survive container rebuilds and are never baked into the image.
+
+```bash
+docker compose build
+docker compose up
+```
+
+This has not been verified end-to-end in every environment (no running Docker daemon was
+available when this section was last checked) — verify locally with the commands above before
+relying on it for a real run.
+
+## 16. Deployment
+
+This prototype has **not** been deployed to a hospital environment and is not currently packaged
+for one (see [Known limitations](#20-known-limitations)). See `docs/deployment/DEPLOYMENT.md` for
+the real, executable steps (build, prepare data, run locally or via Docker) and what is not yet
+decided (hosting target).
+
+## 17. Logging
+
+`src/audit/anonymized_logger.py` writes one JSON line per request to `logs/interactions.jsonl`:
+timestamp, a SHA-256 hash of the query (never the raw text), predicted label, confidence,
+decision, sources used, response type, and whether the post-generation checker modified the
+response. Logs are excluded from version control (`.gitignore`).
+
+## 18. Troubleshooting
+
+| Symptom | Probable cause | Solution |
 |---|---|---|
-| 1 | Project structure | Foundation for all imports |
-| 2 | `config/settings.py` + `safety_config.py` | Every module imports from here |
-| 3 | `controlled_responses.py` | Every safety gate needs refusal messages |
-| 4 | `text_cleaner.py` | First step of every request |
-| 5 | `rule_filter.py` | Fastest safety layer, fully testable alone |
-| 6 | `query_classifier.py` — **MockClassifier** | `DecisionEngine` depends on classifier interface — define it early |
-| 7 | `conversation_memory.py` | Simple list in `st.session_state`, no LangChain dependency |
-| 8 | `decision_engine.py` | Now has all its dependencies (rule_filter + mock classifier) |
-| 9 | `chatbot_pipeline.py` (skeleton) | Wire the modules built so far; grow it as you add more |
-| 10 | `document_loader.py` + `vector_store.py` | RAG prerequisite — run notebook 03 after this |
-| 11 | `retriever.py` | RAG prerequisite |
-| 12 | `rag_chain.py` | Core generation |
-| 13 | `post_checker.py` | Last safety gate |
-| 14 | `guardrails.py` | Wraps the full chain |
-| 15 | `app.py` (Streamlit UI) | Calls only `ChatbotPipeline.run()` |
-| 16 | Dataset preparation (notebook 01) | Build + annotate the classifier training data |
-| 17 | `02_train_camembert.ipynb` | Train the real classifier |
-| 18 | `query_classifier.py` — real CamemBERT | Drop-in replacement for mock |
-| 19 | `evaluator.py` + final tests | Measure and document |
+| `EnvironmentError: OPENAI_API_KEY is not set` at startup | `.env` missing or empty key | `copy .env.example .env` and fill in the key |
+| Classifier fails to load / errors mentioning a tiny or invalid `model.safetensors` | Repository was cloned without Git LFS, so the file is a small text pointer instead of the real weights | Install [Git LFS](https://git-lfs.com/), then run `git lfs pull` in the repo |
+| Every answer is "no source found" | Chroma index missing, empty, or unreadable by the installed `chromadb` version | Re-run `python scripts/index_rag_documents.py`; confirm `chromadb`/`langchain-chroma` versions match the pins in `requirements.txt` |
+| Classifier fails to load | `models/camembert_classifier/` missing or incomplete | Train it via `notebooks/04_camembert_training_pipeline.ipynb` or restore the checkpoint |
+| Streamlit shows stale UI after editing `src/frontend/` | An old `streamlit run` process is still serving the previous version | Stop the old process (check the port with `Get-NetTCPConnection -LocalPort 8501`) and restart |
+| Slow first response (~60-90s) | CamemBERT + embeddings cold start | Expected on first load per process; subsequent requests are fast |
 
-> **Key rule:** `MockClassifier` and `CamembertQueryClassifier` share the same interface (`classify(text) -> (label, score)`). Swap them without touching any other module.
+## 19. Security and privacy
 
----
+- Do not enter information that could identify a specific patient (name, exact dates, medical
+  record numbers) — the assistant is not designed to store or process such data safely.
+- Conversation history is encrypted at rest (`ConversationRepository`) and scoped per authenticated
+  user; logs never store raw user text, only anonymized hashes.
+- Never commit `.env`, API keys, or trained model weights to version control (see `.gitignore`).
 
-## 11. Ethical & regulatory limits
+## 20. Known limitations
 
-- This system **does not process personally identifiable health data**
-- Logs store only anonymized hashes — never raw user text
-- OpenAI API is used for the prototype only; a production deployment in a hospital environment would require a **100% local model** (data sovereignty)
-- The system is not a medical device and must never be presented as one
-- All responses citing this system should be reviewed by a healthcare professional before any clinical use
+- General information only — not diagnostic, not therapeutic, not prognostic.
+- Answers are limited to what the indexed corpus covers; see `data/rag_documents/sources.csv` for
+  the full source manifest and its approval statuses.
+- Prototype / MVS stage — not a certified medical device, not validated for clinical use, not
+  suitable for real hospital deployment (OpenAI API data-sovereignty constraints).
+- Quantitative results (accuracy, safety rates, known gaps) are tracked in
+  `evaluation_outputs/final_metrics.json` and `docs/tables/`/`docs/figures/evaluation/` — see the
+  academic report (`report_v2/`) for the full analysis.
+
+## 21. License
+
+See `LICENSE` — all rights reserved until an explicit open-source license is chosen. Do not
+redistribute.

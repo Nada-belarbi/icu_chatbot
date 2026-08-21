@@ -1,3 +1,8 @@
+# Academic report deliverables (LaTeX sources, build artifacts and PDFs) — delivered
+# separately, not part of the pushed repository.
+report/
+report_v2/
+
 # Environment
 .env
 *.env
@@ -30,13 +35,36 @@ ENV/
 *.swp
 *.swo
 
-# Chroma database (runtime data, not committed)
-data/chroma_db/
+# Chroma database: the built index IS committed (data/rag_documents/chroma_db/) so a
+# fresh clone works without rebuilding it. Only temporary rebuild/backup copies are ignored.
+data/rag_documents/chroma_db_rebuild/
+data/rag_documents/chroma_db_old/
 
-# Trained model weights (large binaries)
-models/camembert_classifier/*.bin
-models/camembert_classifier/*.safetensors
-models/camembert_classifier/*.pt
+# Private local account and encrypted conversation data
+data/auth/
+data/private_conversations/
+data/.chat_storage.key
+
+# Legacy pre-encryption conversation storage (plaintext, real user data) — dead code path,
+# never delete/rename, just never push it.
+data/conversations/
+
+# Trained model weights: the deployed model.safetensors IS committed, via Git LFS
+# (see .gitattributes) since it is >100MB — a fresh clone needs no separate training step.
+# Full training checkpoints (weights + optimizer state, >800MB each) are NOT needed at
+# runtime and stay excluded, along with any nested .bin/.pt files they contain.
+models/camembert_classifier/checkpoint-*/
+models/camembert_classifier/runs/
+models/camembert_classifier/**/*.bin
+models/camembert_classifier/**/*.pt
+
+# Local-only backup snapshots of the model (own README says "do NOT commit binary model
+# files") — never intended to be committed, and contain multi-GB checkpoint/optimizer files
+# that would exceed GitHub's 100MB hard file-size limit.
+models/camembert_classifier_frozen_*/
+
+# Leftover LaTeX/PDF export artifacts (auto-generated temp folders, random hash names)
+media-*/
 
 # Logs
 logs/
@@ -45,6 +73,16 @@ logs/
 # Notebooks checkpoints
 notebooks/.ipynb_checkpoints/
 .ipynb_checkpoints/
+
+# Test / lint / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Scratch/temp working directory (smoke tests, ad-hoc tmp dirs)
+.tmp/
 
 # OS
 .DS_Store

@@ -1,0 +1,2252 @@
+text,true_label,predicted_label,topic,source,confidence
+Le glaucome aigu par fermeture de l'angle survient le plus souvent chez :,avis_medical_personnalise,information_generale,prognosis,mediqal,0.7412887811660767
+"(cochez la réponse juste) Le ""glissement antigénique"" observé chez les virus de la grippe a les caractères suivants :
+1. Il ne concerne que les virus du type A
+2. Il peut entraîner une modification antigénique de l'hémagglutinine
+3. Il peut entraîner une modification antigénique de la neuraminidase
+4. Il a pour origine des échanges de gènes entre souches animales et humaines
+5. Il peut rendre nécessaire une mise à jour du vaccin tous les ans",hors_perimetre,information_generale,infection,mediqal,0.989738404750824
+"Compte rendu d'hospitalisation du service de Gastro-entérologie
+
+Madame Lucette Heime, 79 ans, est hospitalisée en hôpital de jour de Gastro-entérologie le 05/09/2025.
+
+Motif d'hospitalisation
+
+Angiocholite
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+Médicaux:
+
+Infarctus du myocarde stenté en 2015
+
+Démence vasculaire
+
+HTA
+
+Dyslipidémie
+
+Chirurgicaux:
+
+Carcinome épidermoïde cutané opéré en 2021
+
+Familiaux:
+
+Diabète de type 2 chez la soeur
+
+Allergies:
+
+Fruits de mer (éruption cutanée, Quincke)
+
+Mode de vie
+
+Patiente vivant en EHPAD, une fille présente.
+
+N'est pas autonome pour les actes de la vie quotidienne.
+
+Retraitée, ancienne réceptionniste.
+
+Pas d'intoxication alcoolotabagique.
+
+Traitement à l'entrée
+
+KARDEGIC 100 mg: 1 sachet le midi
+
+ATORVASTATINE 40 mg: 1 cp le soir
+
+PERINDOPRIL 2 mg: 1 cp matin
+
+OMEPRAZOLE 20 mg: 1 cp soir
+
+Histoire de la maladie
+
+Patiente adressée aux urgences de BRISTOU le 03/09/2025 pour fièvre à 39 °C.
+
+Aux urgences de BRISTOU le 03/09/2025:
+
+Constantes: TA 152/98 mmHg, FC 98 bpm, Temp 39.7 °C, Sat 99 %
+
+Clinique: Ictère cutanéo conjonctival avec palpation d'une masse abdominale en HCD
+
+Pas d'autre point d'appel infectieux clinique
+
+Biologie: GB 15.3 G/l, CRP 150 mg/l
+
+Pas de trouble ionique
+
+AST 182 U/l, ALT 163 U/l, gGT 600 U/l, PAL 810 U/l, bilirubine totale 210 µmol/l dont 193 de conjuguée
+
+Hémocultures prélevées en cours
+
+ECBU négatif
+
+TDM AP: Dilatation des voies biliaires intra-hépatiques sur une sténose de la VBP en regard du
+
+[...]
+
+Conclusion
+
+Patiente hospitalisée pour drainage en urgence d'une angiocholite sur sténose suspecte de la VBP:
+
+- Pose d'une prothèse permettant de rétablir un drainage satisfaisant des voies biliaires
+
+- Prélèvement cytologique réalisé, résultat en attente
+
+- Transfert à BRISTOU pour suite de la PEC",urgence,sensible_reformulable,lab_results,parhaf,0.934552013874054
+"Compte rendu d'hospitalisation du service de Cancérologie
+
+Monsieur François-xavier Lebreton, 66 ans, est hospitalisé en hôpital de jour de Cancérologie le 10/02/2024 .
+
+MOTIF D'ENTRÉE : C6 ATEZOLIZUMAB AVASTIN
+
+ANTECEDENTS :
+
+Atrésie des voies biliaires opérée, intervention de Kasaï.
+
+Cirrhose biliaire secondaire.
+
+Plusieurs chirurgies hépatiques en raison de plusieurs épisodes d'angiocholite pour des calculs intrahépatiques.
+
+Pas d'autre antécédent notable notamment cardio-vasculaire.
+
+Pas d'allergie connue.
+
+Habitus: Tabagisme 4 à 5 cigarettes/jour, pas de consommation d'alcool.
+
+Un filsà Elbaf. Le patient est bûcheron. Il travaille toujours. Il est parfaitement autonome.
+
+INTERCURE :
+
+Se sent plus apaisé depuis le début du SEROPLEX, décrit toujours un moment de tension le midi mais ne souhaite pas rependre plus de LEXOMIL. Nous convenons d'augmenter le SEROPLEX à 15mg dans ce cas et de réévaluer dans un mois.
+
+Nausées grade I, soulagée par le PRIMPERAN.
+
+Constipation régulée par les laxatifs.
+
+Meilleur appétit depuis l'introduction de SEROPLEX, poids stable.
+
+Troubles de l'équilibre persistants, TDMc normal => imputabilité du traitement antidépresseur/anxiolytique/antalgique possible.
+
+Surveillance tensionnelle correcte.
+
+Pas de saignement extériorisé.
+
+EXAMEN CLINIQUE :
+
+Poids : 45 kg Taille : 151 cm IMC : 19.7 kg/m²
+
+Evaluation OMS :
+
+- Cardio : BDC réguliers sans souffle perçu, pas de signe d'IC, pas de signe de TVP.
+
+- Pneumo : MV +/+ sans bruit surajouté.
+
+- Abdo : douloureux en flanc droit connu.
+
+EXAMEN PARACLINIQUE :
+
+Bilan biologique : Normal le 15/01/24
+
+Marqueurs récents : Non
+
+Imagerie de réévaluation : Non
+
+Autre(s) examen(s) : TDMc : normal
+
+CONCLUSION / SYNTHÈSE :
+
+Administration du traitement : Oui
+
+Traitement : C6 ATEZOLIZUMAB AVASTIN
+
+Examens prévus dans l'intercure :
+
+Consultation Dr Tamalou + IRM début avril.
+
+Conclusion :
+
+C6 ATEZOLIZUMAB AVASTIN",hors_perimetre,sensible_reformulable,imaging,parhaf,0.7542943954467773
+"Dans une communication interventriculaire à haut débit, quel est l’intérêt de la transfusion sanguine ou de l’administration d’érythropoïétine en cas de signes de congestion cardiaque ?",hors_perimetre,information_generale,communication_with_team,mediqal,0.996505618095398
+"Compte rendu d'hospitalisation du service de Cancérologie
+
+Madame Huguette Milleliri, 77 ans, est hospitalisée en hôpital de jour de Cancérologie le 14/04/2025. .
+
+Motif d'hospitalisation : C2 CARBOPLATINE TAXOL DOSTARLIMAB J1=J21
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+HTA
+
+DT2
+
+Hypothyroïdie
+
+Insuffisance cardiaque FEVG 45% en Août 2023
+
+AIT en 2019
+
+Chirurgicaux:
+
+G2P2 - 2 césariennes
+
+Cholécystectomie sur lithiase biliaire récidivante en 2017
+
+PTG gauche 2020
+
+ATCD familiaux : cancer côlon chez le père vers 60 ans
+
+Mode de vie :
+
+Vit en maison avec son mari.
+
+2 filles qui vivent à Rennes. Allaitement maternel.
+
+Patiente retraitée était journaliste dans la presse locale.
+
+Réglée à 13 ans, ménopause à 50 ans.
+
+Pas d'intoxication alcoolo tabagique ou autre, reste autonome dans les activités quotidiennes.
+
+Traitement à l'entrée
+
+ENTRESTO 49/51mg matin et soir
+
+FORXIGA 10mg matin
+
+BISOPROLOL 1,25mg matin
+
+KARDEGIC 160mg matin
+
+LEVOTHYROX 75µg matin
+
+MACROGOL 2 sachets le matin
+
+PARACETAMOL 500mg 1 à 2 toutes les 8h si douleur
+
+SPASFON lyocs 80mg toutes les 6h si douleur
+
+Histoire de la maladie
+
+Notion de douleur abdominale et constipation persistante en début 2025 avec apparition de métrorragies fin Janvier 2025.
+
+Consultation en gynécologie en Février 2025 avec le Dr DUF, réalisation de biopsies de l'endomètre à la pipelle de Cornier et réalisation d'une échographie puis d'un scanner abdomino pelvien et d'une IRM pelvienne.
+
+Biopsie confirmant la présence d
+
+[...]
+
+Conclusion
+
+C2 CARBOPLATINE PACLITAXEL DOSTARLIMAB dans le cadre de la prise en charge d'un ADK de l'endomètre métastatique dMMR.
+
+Prochaine cure dans 3 semaines en HDJ d'oncologie.
+
+IRM pelvienne et scanner TAP après 4 cycles puis consultation avec son oncologue le Dr RADEU",hors_perimetre,sensible_reformulable,lab_results,parhaf,0.974018394947052
+"dear sir, my name is bhawri solanki age63 female i have blood sugar frm last 15 years,and 2nd of this month i had suffagation pblm,after consuting with doctor iwas reported a shrinkage in kidney (RIGHT KIDNEY 7.2 x 3.4 and left kidney is 8.0 x3.6) doctors says there is no need of dialysis and not possible for transplant. now i want a perfect diet chart for this disease",avis_medical_personnalise,sensible_reformulable,dialysis,chatdoctor,0.5766763687133789
+"My six year old son is complaining of dizziness when waking up....last month he had nosebleeds during the night almost every night for a week, could he be anemic? Also in October he had an accident where he was knocked unconscious is it possible these things are related?",urgence,sensible_reformulable,coma,chatdoctor,0.9828014969825745
+"Compte rendu de consultation d'oncologie médicale
+
+Le 17/10/2025.
+
+Je vois ce jour en consultation Madame Lysiane Alise âgée de 80 ans, suivie pour un lymphome folliculaire B, grade 1--2, diagnostiqué en avril 2024 sur biopsie d'une adénopathie inguinale gauche.
+
+Le bilan initial (TEP, scanner thoraco-abdomino-pelvien et myélogramme) retrouvait une atteinte ganglionnaire sus et sous-diaphragmatique, avec une infiltration médullaire modérée, classant la maladie au stade IIIA selon Ann Arbor.
+
+Compte tenu de la gêne clinique (périmètre de marche réduit par les adénopathies inguinales, fatigue, LDH élevés), un traitement a été initié en juin 2024 par rituximab + bendamustine (R-Benda).
+
+À ce jour, 6 cycles ont été réalisés, sans complication majeure, hormis une fatigue cumulative et quelques épisodes de neutropénie grade 2 maintenant résolus.
+
+Cliniquement, elle rapporte aujourd'hui une nette amélioration de sa forme générale. La douleur inguinale initiale a disparu, le périmètre de marche est normal, et la qualité de vie s'est globalement améliorée. À l'examen, aucune adénopathie palpable, pas d'hépato-splénomégalie. Reprise d'un score OMS à 0.
+
+Le bilan biologique du 15.10.2025 est sans anomalies majeures, NCS.
+
+Le TEP-scanner de surveillance à environ un an de la fin de la chimiothérapie réalisé le 10 octobre, met en évidence une disparition complète des hyperfixations ganglionnaires avec un score de Deauville à 2, compatible avec une réponse métabolique complète.
+
+Au total poursuite d'un aspect de rémission complète et du programme de surveillance. Pas d'indication à du rituximab de maintenance après discussion en RCP.
+
+Nous nous reverrons dans 6 mois avec un nouveau TEP.
+
+Bien confraternellement,
+
+Diagnostics fréquemment associés à ce diagnostic :
+
+- Tumeur maligne secondaire des os et de la moelle osseuse [Infiltration médullaire métastatique] [C795]
+
+- Tumeur maligne secondaire et non précisée des ganglions lymphatiques inguinaux et du membre inférieur [C774]
+
+- Neutropénie post-chimiothérapique [D70]",avis_medical_personnalise,sensible_reformulable,lab_results,parhaf,0.9250739216804504
+"Dear  Sai sir,My name is Lakshmi. am living in Hassan. my sister having heart problem. we have taken her heart x-ray, ecg, after that doctor told in her heart one whole is there. Doctor told us 5 years u ve take injection, that injection is 3 months once required. we dont know it will cure or not. we are worrying about this alot. for this problem we need your assist. basically we are from poor family. please guide us wt we ve to do next. Lakshmi",avis_medical_personnalise,sensible_reformulable,monitoring,chatdoctor,0.9867197871208191
+"Compte rendu d'hospitalisation du service de Cancérologie
+
+Madame Marie Bouchut, 80 ans, est hospitalisée dans le service de Cancérologie du 12 au 13 juin 2025 pour sa 2e cure de FOLFOX dans le cadre d'un cancer rectal T3 N-.
+
+Cette patiente a été traitée en 2005 pour un cancer du col de l'utérus à l'âge de 60 ans pour lequel elle garde des séquelles de sa radiothérapie à type de cystite et de syndrome de l'intestin irritable. Porteuse d'une PTH gauche 2023.
+
+Il a été décidé en concertation avec la patiente de proposer une épargne de l'amputation rectale car même si celle-ci était possible chirurgicalement, la patiente en bon état général, elle refusait catégoriquement le geste.
+
+La concertation avec les radiothérapeutes propose également une épargne de rayon au vu de l'antécédent de radiothérapie et de la dose cumulée qui serait sous-optimale pour le traitement.
+
+Même si le traitement est sous-optimal, la patiente préfère une chimiothérapie seule.
+
+La patiente présente une légère neutropénie de grade I ne contre-indiquant pas la cure à la biologie et un érythème palmoplantaire de grade I pour lequel consignes de crèmes hydratantes ont été donnés.
+
+Administration sous couvert d'une prophylaxie antiémétique et d'une hydratation FLUOROURACILE, LEUCOVORINE et OXALIPLATINE 2e cure en hospitalisation complète devant un épisode mal caractérisé de douleur thoracique en cours de 5 FU à la premiere cure. La biologie montrant une anémie de grade 1 isolée.
+
+Nous administrons cette 2e cure sans aucune complication et avec un ECG inchangé.
+
+Nous constatons un tempérament très anxieux avec mise en place HYDROXYZINE à la demande permettant de calmer les crises d'angoisses.
+
+Nous programmons une imagerie d'évaluation après 2 cycles supplémentaires.
+
+Nous restons à votre entière disposition pour toute information complémentaire",hors_perimetre,sensible_reformulable,monitoring,parhaf,0.8763221502304077
+"Compte rendu d'hospitalisation du service de Cancérologie
+
+Monsieur Furkan Godien, 78 ans, est hospitalisé en hôpital de jour de Cancérologie le 21/04/25. .
+
+Motif d'hospitalisation : C2J1 GEMZAR
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+AVCi sylvien gauche 2020 - hémiparésie séquellaire droite
+
+AOMI - pose stent fémorale et poplité gauche en 2021
+
+HTA
+
+IRC sur tableau de néphropathie diabétique - DFG 30ml/min
+
+DT2 depuis 1995
+
+Insuffisance respiratoire mixte obstructive et restrictive
+
+Obésité
+
+Chirurgical :
+
+Fracture LEFORT 2 post AVP
+PTH droite 2009
+
+Bypass gastrique 2005
+
+Mode de vie:
+
+Vit seul en maison de plain pieds, n'a pas d'enfant.
+
+Vit avec sa soeur qui est l'aidante principale.
+
+Retraité, était marin dans la marine marchande. Possible exposition à l'amiante.
+
+Tabac actif 5-10 cigarettes / jour - tabagisme environ 70 PA
+
+OH régulier, 3 à 5 unités par jour
+
+2 passages IDE par jour pour administration traitements
+
+Sédentaire, ne sort presque jamais de chez lui
+
+Traitement à l'entrée
+
+KARDEGIC 160mg matin
+
+IRBESARTAN/HYDROCHLOROTHIAZIDE 300/25mg matin
+
+AMLOR 5mg soir
+
+INSULINE lantus 10ui soir
+
+INSULINE Novorapid postprandial adaptée à la glycémie
+
+SERTRALINE 25mg
+
+SERESTA 10mg en si besoin
+
+PARACETAMOL 1g MMS si besoin
+
+VENTOLINE aérosol si besoin
+
+BRONCHODUAL une bouffée le matin
+
+INNOHEP 175ui/kg par jour
+
+Histoire de la maladie
+
+Consultation aux urgences en Février 2025 pour dyspnée aiguë avec diagnostic d'une embolie pulmonaire sous segmentaire d
+
+[...]
+
+Conclusion
+
+C2J1 GEMZAR dans le cadre de la prise en charge d'un adénocarcinome bronchique multimétastatique.
+
+Prochaine cure dans une semaine en HDJ d'oncologie.
+
+Bilan de réévaluation par TEP scan et TDMc après la fin du 2ème cycle puis consultation oncologique avec le Dr QUOIF.",urgence,sensible_reformulable,oxygen_saturation,parhaf,0.9387540817260742
+"Compte rendu d'hospitalisation du service de Néphrologie
+
+Monsieur Francois Saidi, 49 ans, est hospitalisé en hôpital de jour de Néphrologie le 26 novembre 2025.
+
+Motif d'hospitalisation
+
+Évaluation pré-dialyse.
+
+Antécédents médicaux
+
+- Insuffisance rénale chronique découverte en 2023, biopsie en faveur d'une néphropathie à IgA, conclusion de néphropathie secondaire à la cirrhose.
+
+- Cirrhose d'origine mixte découverte en 2021 dans un contexte de méléna.
+
+- Varices oesophagiennes traitées.
+
+- Obésité.
+
+- Infection à Helicobacter pylori traitée.
+
+- Hypertension artérielle.
+
+Antécédents chirurgicaux
+
+- Création de FAV radio-céphalique gauche en avril 2025.
+
+Antécédents familiaux
+
+Aucun.
+
+Allergies
+
+Aucunes.
+
+Mode de vie
+
+Patient vivant seul au domicile, séparé. A deux enfants, vivant avec leur mère. Travail comme préparateur en pharmacie, actuellement en arrêt maladie. N'a jamais fumé, intoxication éthylique sevrée depuis 2021.
+
+Traitement à l'entrée
+
+PROPRANOLOL 40 mg deux par jour, LASILIX 125 mg/j, KAYEXALATE 2 doses par jour, VELPHORO 1/j, EUPRESSYL 60 mg 3/j, FORXIGA 10 mg/j, UVEDOSE 50.000 tous les 15 jours.
+
+Histoire de la maladie
+
+Patient présentant une insuffisance rénale terminale, en cours de préparation à la dialyse, hospitalisé en HDJ pour une évaluation pluridisciplinaire avant l'orientation vers l'hémodialyse.
+
+Examen clinique :
+
+Pression artérielle 148/97 mmHg, fréquence cardiaque 51 bpm, SpO2 95% en AA, apyrétique.
+
+Examen général : bon état général, absence de
+
+[...]
+
+Conclusion
+
+Patient en état de surcharge, majoration du traitement diurétique.
+
+Absence d'indication urgente à l'initiation de l'hémodialyse.
+
+Retard de développement de l'abord vasculaire sur sténose de la veine de drainage, ATL programmée en décembre.
+
+Acidose métabolique et hypocalcémie supplémentées.
+
+Anémie par carence martiale supplémentée.
+
+Évaluation pluridisciplinaire réalisée.",urgence,sensible_reformulable,end_of_life,parhaf,0.8475297689437866
+"Compte rendu d'hospitalisation du service de Pneumologie
+
+Madame Anne Bonin, 63 ans, est hospitalisée en hôpital de jour de Pneumologie le 2 mars 2024
+
+Motif d'hospitalisation
+
+Fibroscopie bronchique en ambulatoire
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+- Hypertension artérielle.
+
+- Dyslipidémie.
+
+- Cholécystectomie
+
+Mode de vie .
+
+Elle vit seul au domicile. Tabagisme actif à 1 paquet/jour depuis l'âge de 13 ans.
+
+Travail en serres de tomates.
+
+Traitement à l'entrée
+
+- LERCAN 10 mg
+
+- TAHOR 20 mg
+
+Histoire de la maladie
+
+La patiente est adressée en hôpital de jour de pneumologie dans le cadre de réalisation d'une endoscopie bronchique sous sédation dirigé dans le cadre de la découverte d'une lésion pulmonaire lobaire moyenne de 3 cm sur un scanner thoracique de dépistage.
+
+Examen clinique : saturation à 95% en air ambiant.
+
+Examen clinique sans particularité.
+
+Examens complémentaires : fibroscopie bronchique sous sédation, par PROPOFOL.
+
+Fibroscopie : passage par la narine droite
+
+Corde vocale, trachée, carène sans anomalie.
+
+A droite, bourgeon exophytique à l'entrée de la lobaire moyenne, 5 biopsies, saignement spontanément taris.
+
+À gauche, pas d'anomalie endoluminale jusqu'en segmentaire.
+
+Evolution dans le service
+
+Suites simples.
+
+Traitement de sortie
+
+Pas de modification.
+
+Conclusion
+
+Consultation avec le Docteur Y suite à la fibroscopie pour résultat.",avis_medical_personnalise,sensible_reformulable,sedation,parhaf,0.9522044658660889
+"Hello, Well my mom is having chest pains when she breathes deeply in and out and she has sharp pains when she is moving in lower back area she already went to the hospital and they said they do not know so is there anything she could have. She had x-ray done, sonogram, and mri. WHy is she still having these pains while taking zofran 4mg, Zantac, and vicodin?",avis_medical_personnalise,sensible_reformulable,imaging,chatdoctor,0.9830900430679321
+"Dear Dr. Grief, My papa is 73 yrs old and has renal failure as his creatinine levels in the blood are very high ranging from 3.8-5.8 mg/dL. He needs dialysis every alternate day and has been in the intensive care unit for ~ 3 weeks. Will his kidneys recover?. The urine output is normal but the filtration capacity is not restored. Can you suggest???",avis_medical_personnalise,sensible_reformulable,dialysis,chatdoctor,0.7171130180358887
+"Monsieur G. revient consulter quelques mois plus tard pour une sensation d'insécurité de sa cheville lors de la marche en terrain accidenté. N'ayant pas suivi votre premier traitement, il se plaint également de douleurs. Quel est le diagnostic le plus probable?",avis_medical_personnalise,sensible_reformulable,medication,mediqal,0.8236784934997559
+"Compte rendu d'hospitalisation du service de Pneumologie
+
+Madame Mariette Taibi, 50 ans, est hospitalisée en hôpital de jour de Pneumologie le 23 septembre 2025. .
+
+Motif d'hospitalisation : réévaluation FPI et HTAP
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+- Fibrose pulmonaire idiopathique diagnostiquée en 2022, actuellement au stade d'insuffisance respiratoire chronique sous OLD 2L/min au repos et 4L/min à l'effort, sous OFEV compliqué d'hypertension pulmonaire groupe 3 sous Adcirca
+
+- Cancer sein opéré en 2021
+
+- Canal lombaire étroit opéré en 2015
+
+Mode de vie
+
+En invalidité, travaillait comme factrice, pas d'enfant
+Vit seule au domicile, aide ménagère 2 fois par semaine
+Autonome par ailleurs
+Tabagisme sevré estimé 20 PA
+
+Traitement à l'entrée
+
+- OFEV 150 mg matin et soir
+
+- ADCIRCA 40 mg matin
+
+- LASILIX 60 mg matin
+
+- DIFFU K, 600 mg matin et midi
+
+- PARACETAMOL si besoin
+
+Histoire de la maladie
+
+Patiente de 50 ans, suivie initialement pour une FPI sous OFEV et OLD (2L/min au repos, 4L/min à l'effort), compliqué d'une HTP groupe 3 depuis 2023 sous Adcirca et Lasilix vu en hôpital de jour pour réévaluation.
+
+Depuis la dernière visite en HDJ, elle a présenté un épisode infectieux respiratoire à type de pneumopathie à E coli avec cours séjour en hospitalisation de bonne évolution sous antibiothérapie, déplétion hydrosodée.
+
+Elle ne rapporte pas d'autre évènements, la situation clinique est décrite comme stable avec toujours une dyspnée NYHA 2, elle pratiqu
+
+[...]
+
+Conclusion
+
+Patiente de 50 ans suivie pour FPI et HTAP groupe 3 vue pour réévaluation.
+Stabilité clinique, fonctionnelle et scannographique de la FPI.
+Majoration des PAPS, VMax IT avec tableau clinique et biologique de surcharge, majoration de la déplétion hydrosodée.
+Dénutrition modérée, ajout de CNO.
+Suivi en HDJ.",urgence,sensible_reformulable,oxygen_saturation,parhaf,0.8014403581619263
+"In 2004, I received a tiny dog bite that caused a blood infection which led to severe sepsis and amputation of four fingers and all ten toes. I had a hip replacement three years before that, and my right hip deteriorated and almost dislocated within three years of the toe amps. I can walk, but only 30-40 feet before my lower back seizes up and my legs just won t function. The pain is debilitating, but there s no when I sit. Is it likely that the TMAs have affected the muscles or spine in my lower back?",avis_medical_personnalise,sensible_reformulable,sepsis,chatdoctor,0.9684288501739502
+"My 17 year old son had a head injury on the left side of his head that resulted in a subdural hemotoma on 9/6. The nuerosurgeon s operated and removed the hemotoma and also fixed a severe skull fracture , put in titanium plates and screws. Son has some blood and a small blood clot on the right side of his brain due to the brain ricochet from his fall, they did not treat that. He was released from the hospital on 9/12. He was released back to school on 9/24; however, he complains of dizziness to the point of feeling like he is going to pass out when reading and complains of a thumping in his head on the left side all leading to severe headaches. No nausea as he was having before with the immediate issues with the head injury. His follow up appointment is not until 10/15 due to some new hospital scheduling system (he was supposed to have a follow up in 2 weeks). At what point should I consider his complaints normal or consider them more serious requiring an emergency visit to the hospital?",urgence,sensible_reformulable,visits,chatdoctor,0.9665650129318237
+"Compte rendu d'hospitalisation du service de HEMATOLOGIE CLINIQUE
+
+Madame Lahna Pointelette, 57 ans, est hospitalisée en hôpital de jour de HEMATOLOGIE CLINIQUE le 27 Juin 2024.
+
+Motif d'hospitalisation
+
+Surveillance post chimiothérapie
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+ - HTA
+
+ - Adénome hypophysaire sous surveillance
+
+ - Gonarthrose
+
+ - Lymphome hodgkinien stade III B
+
+Mode de vie (toxiques, profession, autres - par exemple activité physique, nombre de gestités et parités chez les femmes, situation sociale)
+
+ - Professeure de français
+
+ - Elle vit avec son copain et ses 2 chiens
+
+Traitement à l'entrée
+
+ Cotrimoxazole 800/160 : 1 cp x 3 / sem (Lundi, Mercredi, Vendredi)
+
+ Lederfoline : 25 mg le dimanche
+
+ Valaciclovir 500 mg : 1 x 2 / jour
+
+ Allopurinol 300 mg: 1 cp / jour
+
+Histoire de la maladie
+
+La patiente est à J7 de sa 1^(ère) cure ABVD avec une surveillance du bilan sanguin 3 x par semaine. La patiente est convoquée suite à la découverte d'une neutropénie.
+
+La patiente ne rapporte pas de syndrome infectieux
+
+Examen clinique :
+
+Légère pâleur cutanéomuqueuse
+
+Quelques adénopathies supra centimétriques au niveau cervical, axillaire et inguinal.
+
+Pas de foyer infectieux
+
+Examens complémentaires :
+
+NFS : hémoglobine 11,4 g/dl,
+
+Plaquettes 152 G/l,
+
+Leucocytes 2,67 G/l, polynucléaires neutrophiles 0,19 G/l , lymphocytes 1,40 G/l.
+
+CRP: 5 mg/L
+
+Uree: 0.25 g/L creatinine: 5,49 mg/l
+
+ALAT: 16 UI/L ASAT: 26 UI/L
+
+Biochimie : sodium 141 mmol/l, potassium 3,8 mmol/l, chlore 106 mmol/l, protéines 85 g/l, albumine 46 g/l, calcium 2,4 mmol/l, phosphates 0,8 mmol/l
+
+LDH 365 UI/l
+
+Evolution dans le service
+
+ • Administration du facteur de croissance filgrastim 30 MUI : 1 injection/ jour en sous cutané
+
+ • Retour à domicile
+
+ • Surveillance de la température à heure fixe
+
+ • Continuer la prise de sang 3 fois par semaines
+
+Traitement de sortie
+
+ - filgrastim 30 MUI : 1 injection/ jour en sous cutané
+
+ - Surveillance de la température à heure fixe
+
+ - Continuer la prise de sang 3 fois par semaines
+
+ - Zinnat et ofloxacine si fièvre
+
+Conclusion : neutropénie grade 4 sans fièvre post chimiothérapie",hors_perimetre,sensible_reformulable,lab_results,parhaf,0.9825255870819092
+"COMPTE-RENDU ANATOMO PATHOLOGIQUE
+
+NATURE DU PRÉLÈVEMENT :
+
+Biopsie hépatique d'une lésion suspecte du segment VI.
+
+RENSEIGNEMENTS CLINIQUES :
+
+Patient de 77 ans ayant un antécédent d'adénocarcinome colique droit NOS pT3N0M0, pMMR, traité il y a trois ans. Découverte au scanner de surveillance d'une lésion hépatique suspecte du segment VI. Biopsie échoguidée du segment VI pour bilan d'extension.
+
+TECHNIQUE :
+
+Trois carottes biopsiques parvenues fixées, incluses en totalité en deux blocs.
+
+Fixation formol 4%.
+
+Coloration HES.
+
+Bloc d'intérêt : A (50% de cellules tumorales).
+
+EXAMEN MICROSCOPIQUE :
+
+On observe une prolifération adénocarcinomateuse infiltrante, moyennement différenciée, formant des massifs cribriformes et des travées. Les cellules tumorales présentent des atypies marquées et de nombreuses mitoses.
+
+Etude immunohistochimique sur automate Benchmark Ultra (bloc A) :
+
+- CK7 (anticorps DAKO, clone OV-TL 12/30, dilution 1/200) : négatif
+
+- CK20 (anticorps DAKO, clone Ks20,8, dilution 1/100) : positif
+
+- CDX2 (anticorps BIOGENEX, clone cdx2 88, dilution 1/50) : positif
+
+CONCLUSION :
+
+Biopsie hépatique d'une lésion suspecte du segment VI
+
+Récidive métastatique de l'adénocarcinome NOS colique connu.
+
+La recherche de mutation KRAS, NRAS, BRAF en biologie moléculaire est en cours et fera l'objet d'un compte rendu complémentaire.
+
+HHFFAMA0",avis_medical_personnalise,sensible_reformulable,lab_results,parhaf,0.9065618515014648
+"my mom is having intense lower abdomen pains, she says its like someone is inside her occasionally slashing across her belly with razor blades. She cannot keep food down and is dry heaving, and is extremely cold and does not have a fever . My mom is 50 and has had a hysterectomy a long time ago. what do I do, should I call an ambulance or what?",avis_medical_personnalise,sensible_reformulable,infection,chatdoctor,0.7785767912864685
+"L'enfant est reconduit 24 heures plus tard auprès du médecin traitant. Il constate la persistance de l'hypertrophie amygdalienne et des ronchus, et il précise l'absence de râles sibilants à l'auscultation thoracique. En revanche il constate l'apparition d'un tympan gauche congestif et d'un tympan droit congestif, bombé et opaque. Selon les propos du médecin, le contexte allergique familial et le risque d'induire des résistances microbiennes par des modifications antibiotiques trop rapides doivent conduire au maintien de l'antibiothérapie par macrolides. Estimez‐vous cette attitude légitime ? Argumentez votre réponse",avis_medical_personnalise,information_generale,communication_with_team,mediqal,0.980815589427948
+"Compte rendu d'hospitalisation du service de Cancérologie
+
+Je revois en consultation Mme Gisèle BOILAY, 58 ans en hôpital de jour pour support transfusionnel.
+
+Je ne reviens pas sur les multiples antécédents de la patiente à savoir une obésité avec un IMC à 34,1 diabète de type 2, une dysthyroïdie supplémentée, un hypercorticisme suivi en endocrinologie.
+
+La patiente est en cours de traitement par GEMCITABINE monothérapie en Xème ligne de traitement de son cancer du sein métastatique pleural, pulmonaire, hépatique.
+
+Bien que l'anémie soit d'origine probablement chimio-induite, il a été découvert chez son jeune frère un cancer du côlon métastatique et afin de ne pas méconnaître un 2e cancer sous-jacent, je propose à la patiente de réaliser une colonoscopie auprès de nos confrères gastro-entérologues.
+
+Après obtention du consentement oral et explication des modalités des objectifs de la transfusion, administration de deux culots de globules rouges devant une anémie de grade III en cours de traitement de chimiothérapie.
+
+Je reverrai pour ma part la patiente en hôpital de jour vendredi pour la poursuite de son traitement par GEMCITABINE hebdomadaire
+
+En restant à votre entière disposition",hors_perimetre,sensible_reformulable,medication,parhaf,0.9817540049552917
+"Compte rendu de consultation de Chirurgie orthopédique
+
+Le 17/03/2025
+
+Je vois ce jour en consultation Madame Ainoa Dosbonnet, droitière, qui consulte pour une tuméfaction de la paume de la main droite, évoluant depuis plusieurs mois. La patiente décrit une gêne progressive à la flexion du 3ème doigt, sans douleur franche, ni antécédent traumatique ni inflammatoire.
+
+À l'examen clinique , je palpe une masse sous-cutanée, ferme, mobile, non douloureuse, centrée sur la gaine des fléchisseurs de D3 en zone 2 palmaire, sans adhérence cutanée associée. La flexion active est quasi complète avec une gêne en fin de flexion mais une distance pulpe-paume respectée. Pas de déficit sensitif ni moteur distal.
+
+Une échographie a été réalisée en ville et retrouve une formation anéchogène bien limitée, de 10 mm de grand axe, au contact de la gaine des fléchisseurs présentant une ténosynovite minime à son contact, compatible avec un kyste synovial de la main, sans autre anomalie associée.
+
+Devant la gêne fonctionnelle et l'absence de régression spontanée, une indication chirurgicale est retenue pour exérèse de kyste et envoi en anatomopathologie . Une ténosynovectomie de D3 sera associée. L'intervention aura lieu en ambulatoire.
+
+La patiente a été informée des risques de la chirurgie à savoir : récidive, raideur, blessure tendineuse ou nerveuse. Le consentement éclairé a été recueilli.
+
+Compte rendu opératoire de Chirurgie orthopédique
+
+Rappel clinique : kyste de la gaine de D3 avec ténosynov
+
+[...]
+
+résultats de l'analyse anatomopathologique et vérifier l'absence d'enraidissement post-opératoire.
+
+Un traitement médicamenteux spécifique de sortie a été notifié sur les ordonnances jointes.
+
+Le traitement habituel est à poursuivre selon les consignes médicales jusqu'à la prochaine consultation avec le médecin traitant.
+
+Veuillez agréer, cher confrère, en l'expression de mes sentiments les meilleurs.",urgence,sensible_reformulable,communication_with_team,parhaf,0.9774999022483826
+"Compte rendu de consultation d'oncologie médicale
+
+Le 05/05/2025
+
+Je vois ce jour en consultation Madame Andree Dhotel dans le cadre du suivi d'un adénocarcinome bronchique métastatique cérébral avec remaniement de ALK.
+
+ATCD:
+
+Non tabagique
+
+Carcinome mammaire RH+ HER2-, SBR III pT2N0MX - tumorectomie, chimiothérapie et radiothérapie adjuvante en 2014 - 3 ans d'hormonothérapie par létrozole
+
+HTA
+
+Rhizarthrose bilatérale
+
+Chirurgie canal carpien droite 2021
+
+Traitements actuels:
+
+IRBESARTAN 150mg matin
+
+CACIDT D3
+
+UVEDOSE 100 000ui tous 3 mois
+
+IXALGI si besoin
+
+KEPPRA 500mg matin et soir
+
+SERESTA 10mg sb
+
+Rappel de l'histoire oncologique:
+
+Mars 2020, sur bilan d'AEG et toux chronique chez une patiente non fumeuse réalisation d'un scanner thoracique par le médecin traitant. Découverte d'une masse du LSD, d'adénopathies sous carénaire, médiastinales, hilaires bilatérales.
+
+Réalisation de biopsie bronchique au CHU confirmant la présence d'un adénocarcinome bronchique TTF1+, CK7+, CK20-
+
+PDL1 50% - présence d'un remaniement de ALK (HIP1::ALK)
+
+Bilan d'extension par TEP et IRM cérébrale.
+
+Retrouvant la présence de plusieurs lésions cérébrales (6) d'allure secondaire infracentimétrique (pariéto occipital droit et gauche).
+
+Mai 2020 validation d'une 1ère ligne métastatique par CERITINIB 150mg.
+
+Réponse complète extracérébrale en Septembre 2020. Stabilité des lésions cérébrales.
+
+Progression de deux lésions cérébrales en Juin 2022 traitée par radiothérapie stéréotaxique - 3 fraction
+
+[...]
+
+résultats et la bonne tolérance du traitement, nous décidons après discussion avec la patiente de poursuivre le traitement à la même posologie et de se revoir dans 3 mois après réalisation d'une nouvelle IRMc et scanner TAP dont je fais la demande ce jour.
+
+Bien confraternellement,",hors_perimetre,sensible_reformulable,lab_results,parhaf,0.8964561223983765
+recently our 27 year old son had a chest x-ray due to a fall he sustained...they found he has a bruised lung but also found a nodule on the lung...we lived in AZ 15 years ago...could this possibly be from Valley Fever as I know many people get it and never know it. thank you,avis_medical_personnalise,sensible_reformulable,imaging,chatdoctor,0.9285019040107727
+"Dans une consultation d'hôpital, on étudie l'apparition d'accidents vasculaires cérébraux dans un groupe de sujets hypertendus et dans un groupe de sujets normotendus. A l'issue de ces observations, on remarque un nombre significativement plus élevé d'accidents vasculaires dans le groupe des hypertendus. Vous pouvez déduire de ce type d'enquête que :",avis_medical_personnalise,information_generale,prognosis,mediqal,0.9953409433364868
+"Compte rendu d'hospitalisation du service de Cancérologie
+
+Monsieur Fiacre Nigron, 83 ans, est hospitalisé en hôpital de jour de cancérologie le 02/03/2025 .
+
+Motif de consultation : Consultation de fin de traitement d'une radiothérapie thoracique séquentielle dans le cadre de la prise en charge d'un carcinome épidermoïde bronchique lingulaire T3 N2 M0 stade IIIb.
+
+Histoire de la maladie:
+
+- En janvier 2024, devant une dyspnée d'intensité progressive stadée MRC2 avec mise en évidence à la radiographie pulmonaire d'une opacité lingulaire et un scanner thoracique confirmant une masse tissulaire lingulaire de 49 mm de grand axe associée à une condensation pseudo nodulaire apicale gauche de 17 mm et des adénomégalies hilaires médiastinales.
+
+- Biopsie:carcinome épidermoïde peu différencié non kératinisant
+
+- EBUS : cytoponction des ganglions en 4L, 10L et 4R, pas de cellule suspecte.
+
+- Les EFR réalisées en mai 2024 retrouvaient un VEMS à 1,88 soit 88% de la normale et une DLCO à 2,41 soit 37% de la théorique.
+
+- RCP thoracique en juillet 2024: lobectomie supérieure gauche.
+
+- Le dossier est rediscuté en RCP, finalement vu la dyspnée du patient on s'oriente vers une radiochimiothérapie séquentielle.
+
+- RCP le 27 octobre 2024 après 2 cures de TAXOL CARBOPLATINE hebdomadaire : 2 cycles supplémentaires.
+
+- TDM TAP et TEP de décembre 2024: réponse partielle.
+
+- RCP janvier 2025 : radiothérapie séquentielle.
+
+Modalités de la radiothérapie :
+
+- Radiothérapie séquentielle pulmonaire à la dose totale de 66 Gy en 33 fractions de 2 Gy par technique d'arcthérapie dynamique.
+
+- Etalement du 20/01 au 02/03/2025.
+
+Cliniquement, ce jour :
+
+- Patient PS 1, asthénie de grade I-II.
+
+- Poids à 60 kg, contre un poids de forme de 63 kg. Appétit conservé néanmoins.
+
+- Dyspnée mMRC-2 moins marquée selon le patient, notamment à la montée des escaliers.
+
+- Pas de toux ni expectoration, pas d'hémoptysie. Auscultation pulmonaire sans particularité.
+
+- Sur le plan digestif, il n'est pas rapporté de dysphagie ou d'odynophagie, absence de RGO par ailleurs.
+
+- Pas de plainte algique ou fonctionnelle particulière.
+
+En pratique :
+
+- Bonne tolérance immédiate de la radiothérapie externe.
+
+- Prochaine consultation en radiothérapie dans 3 mois avec les résultats d'un scanner cTAP de réévaluation que nous demandons ce jour.",avis_medical_personnalise,sensible_reformulable,oxygen_saturation,parhaf,0.9377121925354004
+"COMPTE-RENDU ANATOMO PATHOLOGIQUE
+
+NATURE DU PRÉLÈVEMENT :
+
+Biopsies de la zone d'anastomose colo-rectale.
+
+RENSEIGNEMENTS CLINIQUES :
+
+Patient de 65 ans, opéré un an auparavant d'un adénocarcinome lieberkühnien du haut rectum.
+
+Lors d'une endoscopie de surveillance, découverte d'une élévation polypoïde hémorragique sur la zone d'anastomose colo-rectale.
+
+Bourgeon cicatriciel ou récidive tumorale ?
+
+EXAMEN MACROSCOPIQUE :
+
+Cinq fragments biopsiques mesurant entre 0,2 et 0,4 cm, fixés en formol et inclus en totalité en deux blocs.
+
+EXAMEN MICROSCOPIQUE :
+
+Les prélèvements montrent un tissu de granulation fibro-inflammatoire remanié, parsemé de dépôts d'hémosidérine et de granulomes à corps étranger centrés sur du matériel exogène évoquant des fils de suture.
+
+Au sein de ces remaniements cicatriciels, on individualise de nombreuses cellules épithéliales isolées atypiques, à cytoplasme amphophile et noyaux hyperchromatiques, nucléolés.
+
+Immunohistochimie :
+
+- AE1/AE3 (DAKO, clone AE1-AE3, dilution 1/200) : positivité cytoplasmique des cellules tumorales isolées.
+
+- CDX2 (BIOGENEX, clone CDX2-88, dilution 1/50) : positivité nucléaire diffuse sur les cellules tumorales isolées.
+
+- CD68 (DAKO, clone KP1, dilution 1/100) : marquage cytoplasmique intense des macrophages et des cellules granulomateuses.
+
+Compte tenu de l'absence d'information disponible sur le statut MMR du cancer primitif, le panel a été refait :
+
+- MLH1 (Ventana, clone M1, pré-dilué) : exprimé.
+
+- PMS2 (Ventana, clone EPR3947, pré-dilué) : exprimé.
+
+- MSH2 (Ventana, clone G219-1129, pré-dilué) : exprimé.
+
+- MSH6 (Ventana, clone 44, pré-dilué) : exprimé.
+
+Profil immunohistochimique en faveur d'un statut MMR stable (p.MMR-IHC).
+
+CONCLUSION :
+
+Biopsies de la zone d'anastomose colo-rectale :
+
+Présence de nombreuses cellules tumorales atypiques au sein d'un tissu cicatriciel compatibles avec une récidive focale de l'adénocarcinome lieberkühnien NOS connu.
+
+Phénotype immunohistochimique : p.MMR
+
+BHDRA7A0",urgence,information_generale,monitoring,parhaf,0.6440036296844482
+"Compte rendu d'hospitalisation du service de HEMATOLOGIE CLINIQUE
+
+Monsieur Jean Michel, 57 ans, est hospitalisé en hôpital de jour de HEMATOLOGIE CLINIQUE le 18/09/2025
+
+Motif d'hospitalisation: Adénopathies cervicales d'évolution récente (2 mois).
+
+Antécédents:
+Reflux gastro-oesophagien
+Syndrome d'apnée du sommeil
+
+Mode de vie:
+Vit avec sa femme et leurs 3 enfants dans un appart au centre ville
+Chauffeur de taxi
+Pas d'aide à domicile
+Vaccination à jours
+Pas d'animaux de compagnie.
+
+Traitement à l'entrée:
+Aucun
+
+Histoire de la maladie:
+Apparition de deux adénopathies cervicales droite depuis 2 mois.
+Le patient ne rapporte pas de contage infectieux, pas d'animaux de compagnie.
+Il ne se dit pas gêné dans la vie de tous les jours.
+Absence d'altération de l'état général, absence de signe B retrouvé à l'interrogatoire.
+Le patient pèse 80kg.
+
+Examen clinique :
+
+Sur le plan général,
+Patient orienté, cohérent, Glasgow 15, apyrétique.
+TA 13/8, 90bom, SpO2 97% en air ambiant.
+Sur le plan hématologique,
+Absence de signe B,
+Pas de pâleur cutanéo-muqueuse, absence d'hépato-splénomégalie.
+On retrouve des adénopathies cervicales bilatérales (1.5-2cm), indolores, non inflammatoires, mobiles.
+Adénopathies axillaires bilatérales supra-centimétriques.
+
+Sur le plan cardiovasculaire.
+Bruits du cœur réguliers, sans souffle, absence de signe d'insuffisance cardiaque droite ou gauche, pas d'hypoperfusion périphérique, pas d'argument pour une maladie thrombo-embolique veineuse.
+Sur le pulmonaire,
+MV+/+ sans bruit surajouté, absence de signe de lutte.
+Sur le plan abdominal,
+Abdomen souple, dépressible, indolore, absence d'organomégalie, pas de signe d'insuffisance hépato-cellulaire, absence d'hypertension portale.
+Pas de trouble du transit, pas de nausées/vomissements.
+
+Examen paraclinique
+L'hémogramme objective une hémoglobine à 13,4 g/dl VGM 87 fl des plaquettes à 245 G/L, des leucocytes à 36 G/L avec PPN à 2.6 G/L et lymphocytes à 33 G/l.
+
+Le frottis sanguin retrouve une lymphocytose monomorphe de petit taille avec quelques ombres de Gumprecht
+Pas de syndrome inflammatoire biologique: CRP à 3 mg/l
+Ionogramme sans particularité avec DFG 115 ml/min
+Bilan d'hémostase normal montre : TP : 100% TCA 30 s Fibrinogène : 3 g/l
+
+Evolution dans le service:
+
+Sur le plan hématologique,
+Immunophénotypage lymphocytaire sur sang périphériques: population de cellules B avec monotypie Kappa CD 5+ CD200+ avec score de Matutes à 5/5
+Electrophorèse des protéines sans particularité
+Test de Coombs direct négatif
+IgVH non mutée, absence de mutation TP53 ou del17p
+
+TEPscanner baseline.
+Adénopathies cervico-axillaires bilatérales faiblement fixantes, sans critère de transformation agressive.
+Absence d'atteinte viscérale ou osseuse.
+
+Traitement de sortie:
+Pas de traitement.
+
+Conclusion: LLC stade A sans critères de traitement chez un patient de 57 ans",hors_perimetre,sensible_reformulable,oxygen_saturation,parhaf,0.9689584970474243
+"Compte rendu de consultation d'oncologie médicale
+
+Le 28/10/2024
+
+Je vois ce jour en consultation Monsieur Jose Khelifi pour discuter de la prise en charge par radiothérapie en conditions stéréotaxiques d'un nodule lobaire supérieur gauche correspondant à une lésion secondaire unique d'un carcinome épidermoïde de la corde vocale en progression lente sur un TEP-scanner du 17/09/2024.
+
+Ce TEP-scanner a été effectué dans le cadre du bilan d'extension d'un carcinome épidermoïde de la corde vocale qui doit bénéficier d'une radiothérapie.
+
+Ce patient présente pour antécédents respiratoires :
+
+- un carcinome épidermoïde broncho-pulmonaire pT2aN0M0 traité par lobectomie supérieure droite en Février 2011 (Hôpital Tenon), puis 4 cycles de chimiothérapie adjuvante par CISPLATINE et NAVELBINE.
+
+- une BPCO post-tabagique (tabagisme sevré) de stade II.
+
+- un syndrome d'apnées du sommeil appareillé par une PPC avec une bonne observance.
+
+Je rappelle ses autres antécédents (patient ancien expert-comptable, ayant fumé 70 PA jusqu'à 59 ans, marié, père de 2 enfants) :
+
+- BPCO emphysémateuse de stade II diagnostiquée en Janvier 2011 (VEMS à 68 % th au diagnostic)
+
+- Syndrome d'apnées-hypopnées obstructives du sommeil sévère : IAH au diagnostic à 58/h (Décembre 2015 Clinique du Souffle « Les clarines »), actuellement appareillé par une PPC auto-pilotée 6/15 cm d'H2O (prestataire SOS oxygène).
+
+- Insuffisance rénale chronique de stade III sur probable néphro-angiosclérose (suivi annuel). Créatininémie en Septembre 2018 à 131 µmol/L (DFG à 49 ml/min).
+
+- Dyslipidémie
+
+- Adénocarcinome de prostate (Novembre 2019) : prostatectomie totale robot-assistée en Novembre 2019. Contrôle de PSA tous les 3 mois.
+
+- Artériopathie oblitérante des membres inférieurs
+
+- Canal lombaire étroit responsable d'une cruralgie droite.
+
+- Fracture du bras droit en 2012
+
+- Appendicectomie dans l'enfance
+
+- Cervicarthrose
+
+- Hypertension artérielle.
+
+Traitement à domicile :
+
+SPIOLTO Respimat : 2.0.0, BRONCHODUAL : 2 bouffées en cas de besoin,
+
+TAHOR, IRBESARTAN 300 mg, LERCANIDIPINE (depuis Juillet 2021), RESITUNE, BRINTELLIX 5,
+
+KAYEXALATE, BICARBONATE DE SODIUM, OROCAL 600, JARDIANCE 10 mg.
+
+Vaccination anti-pneumococcique faite en Novembre 2022.
+
+Histoire de la maladie :
+
+C'est dans le cadre de la découverte récente d'un carcinome épidermoïde de la corde vocale qu'a été effectué un TEP-scanner le 17/09/2024 retrouvant un nodule lobaire supérieur gauche.
+
+Le dossier a été discuté en RCP thoracique le 17/10/2024 et il est proposé de contrôler les EFR-TCO et de discuter d'une chirurgie après épreuve d'effort et en cas de contre-indication, proposer une radiothérapie stéréotaxique.
+
+Explorations fonctionnelles respiratoires le 18/10/2024 :
+
+Trouble ventilatoire obstructif de stade II et distension thoracique avec altération de la diffusion alvéolo-capillaire : VEMS à 1,89 l soit 64 % des valeurs théoriques, indice de Tiffeneau à 53 %, CVF à 3,56 l soit 92 % des valeurs théoriques, CPT à 7,51 l s",hors_perimetre,sensible_reformulable,lab_results,parhaf,0.8371232748031616
+My gf has a regular 30-31 day cycle every month and her LMP was on 31.7.13. We had unprotected sex on 24.8.13. I didnt ejaculate inside bt i cant b sure.. Now she had unwanted-72  within 18 hours.. Bt she is mentally very much stressd ryt now.. I am too worried for her.. Now wat cn i do to confirm and ensure that is not pregnant? Also how much there is too worry?? How much time has to pass before she has withdrawal bleeding?? Wat shud b our next? Please help us out,avis_medical_personnalise,sensible_reformulable,end_of_life,chatdoctor,0.9188486933708191
+"COMPTE-RENDU ANATOMO PATHOLOGIQUE
+
+NATURE DU PRELEVEMENT : AMPUTATION ABDOMINO-PERINEALE
+
+RENSEIGNEMENTS CLINIQUES : Patiente de 59 ans, présentant une lésion circonférentielle du bas rectum envahissant le canal anal.
+
+Données chirurgicales :
+
+Marge pariétale distale : 5 cm
+
+Perforation tumorale : Non Brèche peropératoire : Non
+
+Evaluation de l'intégrité du mésorectum selon les critères de Quirke : Complet
+
+Caractère macroscopique de l'exérèse : Complet
+
+Extension régionale ayant nécessité un élargissement de l'exérèse : Non
+
+EXAMEN MACROSCOPIQUE :
+
+Type de fixation : Pièce fraiche
+
+Longueur de la résection : 25 cm
+
+Pour amputation, longueur canal anal : 4 cm
+
+Distance tumeur / tranche de section distale : 6 cm
+
+Pour amputation, distance tumeur / ligne pectinée : 1 cm
+
+Taille tumorale (diamètre maximum) : hauteur 6.5 cm, largeur 4.5 cm
+
+Pourcentage d'envahissement de la circonférence : 3/4
+
+Aspect de la tumeur : Ulcéro-bourgeonnante
+
+Perforation (si tumeur sus-péritonéale) : Non
+
+Adhérence/Infiltration d'un autre organe : Non
+
+Intégrité du mésorectum : complet
+
+Lésions associées : aucune
+
+Prélèvements : 01 : pot 1 : GG, 02 : pot 2 : limite colique, 03-07 : pot 2 : limite anale , 08 : pot 2 : tumeur, 09 : pot 2 : tumeur, 10 : pot 2 : tumeur, 11 : pot 2 : tumeur, 12 : pot 2 : tumeur, 13 : pot 2 : tumeur, 14 : pot 2 : curage péri tumorale, 15 : pot 2 : curage péri tumorale, 16 : pot 2 : curage péri tumorale 1 GG /2, 17 : pot 2 : curage péri tumorale, 18 : pot 2 : curage péri tum
+
+[...]
+
+CONCLUSION :
+
+PROCTECTOMIE AVEC EPM (19cm) :
+
+Adenocarcinome Lieberkhunien bien différencié du bas rectum, envahissant le canal anal, mesurant 6.5cm de grand axe. La tumeur infiltre la sous-séreuse.
+
+Absence d'embole vasculaire tumorale, ou d'engainement péri-nerveux.
+
+Présence de Budding (score 2).
+
+La lésion tumorale se situe à distance des limites de résection chirurgicale.
+
+Absence de ganglion métastatique, sur 15 ganglions analysés.
+
+Phénotype MSS : absence de perte d'expression des protéines MLH1/PMS2/MSH2/MSH6
+
+Classification pTNM (UICC 2017) : pT3 N0 (0/15N) Mx R0. Phénotype MSS
+
+Analyse moléculaire par NGS (bloc 10): présence d'une mutation G12C du gène KRAS conférant une résistance aux traitements par Anticorps monoclonaux anti-EGFR.",avis_medical_personnalise,information_generale,medication,parhaf,0.9698323011398315
+"Compte rendu d'hospitalisation du service de HEMATOLOGIE CLINIQUE
+
+Madame Alyana Bouhia, 28 ans, est hospitalisée en hôpital de jour de HEMATOLOGIE CLINIQUE le 02 Avril 2024.
+
+Motif d'hospitalisation Pâleur cutanéo-muqueuse
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+Pas d'antécédents particuliers
+
+Mode de vie
+
+Institutrice
+
+Tabagisme occasionnel
+
+Activité physique irrégulière
+
+Célibataire
+
+Sans enfants
+
+Traitement à l'entrée
+
+Aucun
+
+Histoire de la maladie
+
+Remonte à plusieurs mois par l'installation insidieuse d'une pâleur cutanéo-muqueuse. L'évolution a été marquée par l'installation d'une dyspnée à l'effort, des vertiges.
+
+La patiente rapporte des menstruations trop abondantes et trop fréquentes avec cycle menstruel régulier depuis la puberté. Le tout évoluant dans un contexte de conservation de l'état général.
+
+Examen clinique :
+
+TA: 99/56 mmHg
+
+FC: 120 bpm rythme régulier
+
+Poids: 56 Kg Taille: 163 cm
+
+Pâleur cutanée
+
+Conjonctives décolorés
+
+Aires ganglionnaires libres
+
+Pas de splénomégalie ni d'hépatomégalie
+
+Examens complémentaires :
+
+Hémogramme: Hb: 7,5 g/dl VGM: 70 fl TCMH: 23 pg plaquettes: 470 G/L
+
+GB: 7500/mm³ PNN: 3458/ mm³ Lym: 1782/ mm³
+
+Frottis sanguin: Aniso poikylocytose
+
+Groupage sanguine: A rhésus+
+
+CRP: 5 mg/L
+
+Urée: 0.15 g/L créatinine: 6,49 mg/l
+
+ALAT: 6 UI/L ASAT: 16 UI/L
+
+Ferritine: 4 mg/L
+
+TP: 95%
+
+TCA temps patient: 33 sec
+
+TCA temps témoin: 30 sec
+
+Fibrinogène: 3,4 g/L
+
+Evolution dans le service
+
+ • La patiente présente une anémie ferriprive sévère sans anomalies du bilan d'hémostase
+
+ • Prise en charge thérapeutique: prise d'une voie périphérique et hydratation au sérum salé 0,9%
+
+ • Administration de 1000 mg du carboxymaltose ferrique (FERINJECT) sur 30 minutes par voie intra veineuse
+
+ • Une échographie abdomino pelvienne a été réalisée : sans anomalies
+
+ • Le bilan de la maladie de Willebrand (Facteur VIII, VWF : Act, VWF : Ag): Facteur VIII: 80% VWF : Act 35 % VWF : Ag 40%, rapport VWF:RCo/VWF:Ag : 1,14 à la maladie de Willebrand type 1
+
+ Traitement de sortie
+
+ • Acide tranexamique 500 mg : 1 comprimé / 4heures durant les jours de menstruation
+
+ • RDV HDJ dans une semaine pour 500 mg du Ferinject
+
+Conclusion : anémie ferriprive sur maladie de Willebrand type I",hors_perimetre,sensible_reformulable,oxygen_saturation,parhaf,0.9297808408737183
+Interpréter cet hémogramme après calculé les constantes érythrocytaires.,avis_medical_personnalise,information_generale,monitoring,mediqal,0.9192450046539307
+Discuter le traitement antibiotique instauré à l’administration de Monsieur B. Vous paraît-il judicieux ?,hors_perimetre,information_generale,infection,mediqal,0.9965991377830505
+La crise aiguë de glaucome par fermeture de l'angle iridocornéen survient généralement chez des sujets anatomiquement prédisposés. Citer le ou les éléments de cette prédisposition :,avis_medical_personnalise,information_generale,prognosis,mediqal,0.9834409952163696
+"Compte rendu de consultation de Chirurgie viscérale
+
+Le 19/03/2024
+
+Je vois ce jour en consultation Monsieur Pierre Boudjenah, 44 ans, pour discuter d'une cholécystectomie coelioscopique pour lithiase biliaire compliquée d'une cholécystite aiguë lithiasique.
+
+Il présente comme principal antécédent un hypospadias suivi au CHU. Il n'a pas d'allergie connue. Il prend comme traitement de la Méthadone car il est ancien toxicomane. Il est actuellement sans emploi. Il a un poids de 119 kilos pour une taille de 1m85 (IMC 35 kg/m²).
+
+Pour rappel l'histoire de la maladie remonte à début février 2024 où il a présenté des douleurs en hypochondre droit et épigastrique associées à de la fièvre. Le bilan biologique retrouve un syndrome inflammatoire biologique avec une CRP à 39 mg/l et des leucocytes à 18 Giga/l associés à une perturbation du bilan hépatique avec des ALAT à 55 UI/l, des ASAT normales à 35 UI/l, des GammaGT à 114 UI/l et des phosphatases alcalines à 67 UI/l. Le bilan scanographique retrouvait un épaississement de la paroi de la vésicule biliaire mesuré jusqu'à 11 mm en faveur d'une cholécystite aiguë avec présence de lithiase vésiculaire. A noter un calcul non obstructif au niveau des calices du rein droit à 6 mm sans dilatation pyélocalicielle associée. Nous avions initialement prévu une intervention chirurgicale en urgence pour cholécystectomie cependant devant une majoration franche du syndrome inflammatoire un bilan complet exhaustif a été réalisé avec détection d'une infection à Coronavirus contre indiquait une anesthésie générale. La cholécystite a donc été traitée médicalement par antibiothérapie avec une bonne évolution.
+
+Nous le revoyons ce jour afin de discuter de l'indication chirurgicale. Il existe effectivement une indication à une cholécystectomie coelioscopique étant donné l'épisode compliqué de lithiase biliaire. Nous expliquons au patient les complications de cette chirurgie à savoir le risque de plaie de voie biliaire, de collection, d'hémorragie, de conversion. Nous retenons une date opératoire pour le 29 mars 2024.
+
+Nous vous tiendrons informé des suites évolutives.
+
+Bien confraternellement,
+
+Compte rendu opératoire de Chirurgie viscérale
+
+Rappel clinique : Patient de 44 ans, hospitalisé en février 2024 pour une cholécystite aiguë lithiasique traitée médicalement. Indication à une cholécystectomie coelioscopique.
+
+Date de l'intervention : 29/03/2024
+
+Chirurgien : Dr Janine Dupuy d angeac
+
+Intervention : Cholécystectomie coelioscopique
+
+Installation en décubitus, dorsal bras croix.
+
+Anesthésie générale.
+
+Badigeonnage à la bétadine.
+
+Champage stérile.
+
+Open coelioscopie sus ombilical sans difficulté permettant l'introduction d'un trocart de 10mm et
+
+l'insufflation du pneumopéritoine à 12 mmHg.
+
+Trocart de 10mm en hypocondre gauche, 5mm sous xyphoidien et 5mm latéro ombilical droit.
+
+Vésicule biliaire inflammatoire.
+
+Dissection du triangle de calot jusqu'à obtenir la Critical view of safety.
+
+Repérage du canal cystique qui est d",urgence,sensible_reformulable,lab_results,parhaf,0.5469342470169067
+"Compte rendu d'hospitalisation du service de Médecine interne
+
+Madame Arizona Delaurier, 72 ans, est hospitalisée en hôpital de jour de Médecine interne le 12/09/2025.
+
+Motif d'hospitalisation Douleurs diffuses
+
+Antécédents :
+
+Hypothyroïdie
+
+Maladie de Ménière
+
+Cholécystectomie
+
+Allergie : Aucune
+
+Mode de vie :
+
+Mme DELAURIER vit seule au domicile. Elle est autonome pour les activités de la vie quotidienne.
+
+Pas de tabagisme, pas de consommation d'alcool.
+
+Traitement à l'entrée :
+
+Levothyrox 125 ug le matin
+
+Paracétamol 1 g si besoin
+
+Histoire de la maladie :
+
+Mme DELAURIER est adressée en HDJ de Médecine interne pour exploration de douleurs diffuses avec altération de l'état général.
+
+L'interrogatoire retrouve l'existence de douleurs prédominant au rachis cervical, aux deux épaules et à la fesse droite. Ces douleurs prédominent le matin, il existe un dérouillage estimé à 1h30 et 1 à 3 réveils nocturnes.
+
+Il existe également une asthénie avec perte de 3 kg sur les 3 derniers mois.
+
+Absence de céphalée ou trouble visuel.
+
+Examen clinique :
+
+TA 135/70 mmHg, FC 78/min, SpO2 96% en AA, Température 36,8 °C.
+
+Patiente vigilante, correctement orientée, pas de déficit moteur ni sensitif, réflexes ostéo-tendineux présents et symétriques.
+Raideur et douleur prédominant aux ceintures scapulaire et pelvienne, avec limitation des amplitudes aux mobilisations passives et actives des épaules et hanches.
+
+Pas d'arthrite périphérique, pas de synovite.
+bruits du cœur réguliers, pas de souffle
+
+[...]
+
+Conclusion :
+
+Diagnostic de PPR sans ACG associée
+
+Introduction d'une corticothérapie orale pour une durée prolongée avec décroissance progressive
+
+Consultation de suivi dans 1 mois.",avis_medical_personnalise,sensible_reformulable,oxygen_saturation,parhaf,0.6018388271331787
+"Hello. My 6-yr old daughter fell and bumped her head this morning, i dont how hard it was, she fell from about 3 feet but it only left a small and not swelling bump. she did not fall unconscious or show other signs of concussion. but this night while taking a bath, her nose bled. it stopped, but happened again while on her sleep. What should we do?",urgence,avis_medical_personnalise,coma,chatdoctor,0.9418106079101562
+"Marlène fait un nouvel épisode de cystite trois mois plus tard alors qu’elle est enceinte. Une souche d’E. coli est isolée, dont voici l’antibiogramme :
+amoxicilline : résistant
+amoxicilline + acide clavulanique : sensible
+cefotaxime : sensible
+gentamicine : sensible
+ofloxacine : sensible
+Pour chacun de ces antibiotiques, indiquer s’il peut être prescrit pour traiter cette
+infection et argumenter votre réponse.",hors_perimetre,information_generale,infection,mediqal,0.8407943844795227
+"Compte rendu d'hospitalisation du service de Gastro-entérologie
+
+Monsieur Georges Predari, 70 ans, est hospitalisé en hôpital de jour de Gastro-entérologie le 01/12/2024.
+
+Motif d'hospitalisation
+
+Bilan endoscopique
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+- Diabète de type 2
+
+- Dyslipidémie
+
+- Arthrose lombaire
+
+- Appendicectomie dans l'adolescence
+
+- Multiples chirurgies orthopédiques à l'âge de 30 ans post AVP (poignet, coude, épaule droite).
+
+- Chirurgie de la cataracte en 2017
+
+Mode de vie
+
+Ancien agent d'entretien à la retraite.
+
+Vit avec sa femme. 2 enfants.
+
+Difficultés à la marche en raison d'une arthrose, aidée par une canne.
+
+Consomme un verre de vin par repas, pas de consommation tabagique.
+
+Traitement à l'entrée
+
+- Stagid 700 mg : 2 cp par jour
+
+- Atorvastatine 40 mg : 1 cp par jour
+
+- Oméprazole 20 mg par jour si besoin
+
+- Tramadol 50 mg : 1 cp si douleurs
+
+Histoire de la maladie
+
+Il y a 3 semaines, début novembre 2024, hospitalisation en médecine interne pour une fièvre aiguë, associée à une asthénie importante et une perte d'appétit. Le bilan étiologique a mis en évidence des hémocultures positives en 12h à Streptococcus Gallolyticus, sans point d'appel infectieux clinique ou biologique :
+
+- ECBU, radio thorax, et scanner TAP : pas de foyer infectieux mis en évidence, doute sur un épaississement colique droit focal à confronter à un examen endoscopique.
+
+- Échographie cardiaque transthoracique : absence de végétation visible, FeVG préservée p
+
+[...]
+
+Conclusion
+
+Bactériémie à Streptocoque faisant découvrir une lésion suspecte colique droite biopsiée. Pas de lésion à distance sur une TDM TAP récente.
+
+RDV en HGE dans 7 jours avec les résultats histologiques pour la suite de la prise en charge.",urgence,sensible_reformulable,lab_results,parhaf,0.9703173637390137
+"Please can you give me some advice for my father. He is a 63-year old male with several health issues. He has COPD, Diabeties Type 2, Fibromyalgia in his legs due to diabetic neuropathy, Herniated disks in his back, Stomach aneurym which has been monitored, Has had several mini heart attacks with heart failure ( at this points was hospitalized due to lack of oxygen), Heart blood flow is only working 25% and that lead to a cardiac pacemaker defib put in at Hershey Medical Center about 2 weeks ago and now is experiening heaviness in chest, Shortness of breath while moving around or even sweeping a small amount of the floor, I m very concernd most of all about what he just told me tonight and that was that he stopped taking his Lyrica due to feeling uncomfortable when the medication would start to wear off. He stopped this 2 weeks ago and did not tell his doctor because he is very stubborn. He will not go to the emergency room, I know this. Im very concerned due to his creatine levels being 4.5 to 5.0 for the last 4 to 5 years. He will not get a kidney transplant for several years to be at the top of the list. I need help on what I should do? Just not feeling himself at this point and I see this in him and he has explained some of his symptoms to me. Is he going into kidney failure due to not taking his Lyrica? And should have slowly decreased this medication? He does not want to be on it anymore. Please help, he is everything to me.",urgence,sensible_reformulable,dialysis,chatdoctor,0.9801903367042542
+"Hi doctor, I am 36 years old female, I have been suffering from diabetes since my 2nd childbirth in 2001.My diabetes management is rather bad my reading ranges more than 15 after food. I was on metformin 3 times a day 500mg, daonil 2 times a day. All these medications leads me to have cold sweat and tremors. I todl my doctor but they ask me to continue. Since I am working I actually cut down as it affects me during working hours.  My father has a history of diabetes and he passed on 5 years back due to ischaemic heart disease. He was a smoker and had 3 blockages in his valves - 85, 75, 80%. He was not suitable for a bypass due to his heart functioning was below 45%. Recently a few months back I had chest pain and i went for a treadmill test the results shows ard 88% and the doc say he will not put me on medication first. I would like to do a full medical check up that has links to diabetes. What are he check ups should i go for? I intend to do it in India, so which hospital would you recommend in Chennai or Tanjore?",avis_medical_personnalise,sensible_reformulable,medication,chatdoctor,0.9608705043792725
+Votre jeune collaborateur vous demande comment est prévue l’indemnisation en cas de survenue d’un préjudice au cours de la recherche. Que lui répondez vous ?,avis_medical_personnalise,sensible_reformulable,lab_results,mediqal,0.9750992059707642
+"Si le traitement médical ne donne pas un résultat suffisamment durable, on peut envisager :",avis_medical_personnalise,information_generale,medication,mediqal,0.8920872807502747
+Une aspiration bronchique est réalisée. L’examen cytobactériologique révèle la présence en quantité significative de l’espèce Streptococcus pneumoniae. Le traitement antibiotique instauré est-il efficace vis à vis de cette espèce bactérienne ? Quel traitement est à proposer compte tenu de l’épidémiologie de la résistance aux antibiotiques chez cette espèce ?,avis_medical_personnalise,information_generale,infection,mediqal,0.9945369362831116
+"Compte rendu de consultation d'oncologie médicale
+
+Le 28/04/2025.
+
+Je vois ce jour en consultation Monsieur Raymond Pettazzoni en consultation de suivi dans le cadre de la prise en charge d'un adénocarcinome colique métastatique en 2ème ligne thérapeutique par FOLFIRI + AFLIBERCEPT.
+
+Rappel ATCD principaux du patient:
+
+-adénocarcinome colique métastatique hépatique, pulmonaire, péritonéal - diagnostic 11/24
+
+-FA permanente depuis 2017
+
+-cardiopathie ischémique FEVG 55%, stenté CX en 2020 - bilan cardio pré chimio Novembre 24 stable
+
+-HTA
+
+-gastrite chronique
+
+Rappel des traitements du patient:
+
+-XARELTO 20mg matin
+
+-RAMIPRIL 5mg matin
+
+-PANTOPRAOZOLE 20mg matin
+
+-DIFFU-K 600mg : 2 cp matin
+
+-SPASFON lyocs 80mg sb
+
+-PARACETAMOL 1g sb
+
+-METEOSPASMYL sb MMS
+
+-TIORFAN MMS sb
+
+-LOPERAMIDE 2mg un cp à chaque épisode de diarrhée, jusqu'a 8 par jour max
+
+-ZOPHREN 4mg sb
+
+-PRIMPERAN 10mg sb
+
+Pour rappel, patient pris en charge pour un adénocarcinome de l'angle colique droit métastatique d'emblé au niveau péritonéal, pulmonaire et hépatique diagnostiqué en Octobre 2024 sur un tableau de syndrome subocclusif.
+
+Tumeur KRAS muté G12D, NRAS sauvage, BRAF sauvage. Statut MSS.
+
+UGT absence allèle 1A1*28 - uracilémie dans les normes.
+
+-1ère ligne thérapeutique par FOLFOX + AVASTIN de Novembre 2024 à Janvier 2025, 6 cures puis progression RECIST +33% au scanner TAP de deux lésions hépatiques et apparition d'une nouvelle lésion, stabilité de la carcinose péritonéale et de la lésion colique.
+
+-2
+
+[...]
+
+Conclusion : stabilité de la maladie selon les critères RECIST.
+
+J'annonce ce jour au patient les résultats du scanner TAP de réévaluation plutôt encourageant montrant une stabilité de la maladie selon les critères RECIST et même une légère diminution de certaines lésions.
+
+Nous convenons avec le patient de poursuivre le traitement à l'identique par FOLFIRI + AFLIBERCEPT pour 6 cycles supplémentaires puis de réaliser un nouveau scanner TAP de réévaluation par la suite.
+
+Possibilité de réduire la dose de l'IRINOTECAN à 100mg/m2 si mauvaise tolérance digestive / clinique.
+
+Je reverrai donc le patient dans 3 mois (soit 6 cycles de FOLFIRI + AFLIBERCEPT) après la réalisation d'un nouveau scanner TAP et d'un bilan biologique complet avant ma consultation.
+
+Bien à vous, confraternellement,
+
+Diagnostics fréquemment associés à ce diagnostic :
+
+- Tumeur maligne secondaire du poumon [C780]
+
+- Tumeur maligne secondaire du rétropéritoine et du péritoine [C786]
+
+- Hyperkaliémies, autres et sans précision [E8758]
+
+- Myocardiopathie ischémique [I255]
+
+- Fibrillation auriculaire chronique [permanente] [I482]",hors_perimetre,sensible_reformulable,lab_results,parhaf,0.5514415502548218
+"Compte rendu d'hospitalisation du service de Médecine interne
+
+Madame Houaria Lagoune, 68 ans, est hospitalisée en hôpital de jour de Médecine interne le 09/01/2025.
+
+Motif d'hospitalisation
+
+Cure de RITUXIMAB 375 mg/m2 à M12.
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+- Hypertension artérielle,
+
+- Adénocarcinome du bas rectum opéré en 2020 avec colostomie en place, suivi par le Docteur LOBE en gastro-entérologie et BRIK en chirurgie digestive à la Clinique Sainte Marthe (dernière consultation en novembre 2023 : ACE négatif, scanner TAP rassurant)
+
+- Notion d'une thrombose veineuse superficielle en 2023
+
+- Vascularite à ANCA anti-PR3 positive avec atteinte rénale, pulmonaire et articulaire, diagnostiquée en décembre 2023 dans un contexte d'hémorragie intra alvéolaire, insuffisance rénale aiguë et arthralgies d'allure inflammatoires.
+
+Allergies : NC
+
+Mode de vie
+
+Mariée valide, retraitée, ancienne femme de ménage, OMS 0, nombreux animaux au domicile : oiseaux, pigeons, canards, cheval, chien, présence de rats dans les dépendances autour du domicile.
+
+Il n'y a pas de voyage récent à l'étranger.
+
+Traitement à l'entrée
+
+CORTANCYL 2,5 mg par jour
+
+BACTRIM FORTE 800 mg lundi mercredi et vendredi
+
+PANTOPRAZOLE 40 mg le soir
+
+CACIT VIT D3 2 comprimés par jour
+
+ZYMAD 80 000 UI une ampoule par mois
+
+NEBIVOLOL 5 mg le matin
+
+PANTOPRAZOLE 40 mg le soir
+
+Histoire de la maladie
+
+Patiente de 68 ans admise ce 09/01/2025 pour la réalisation de sa cure de RITUXIMAB M12 à la pos
+
+[...]
+
+Conclusion
+
+Réalisation de la cure de RITUXIMAB 375 mg/m² à M12 dans le cadre du traitement d'entretien d'une vascularite anti-PR3 positive.
+
+Elle sera revue en consultation de suivi comme prévu le 28 avril 2025 à 10h et nous prévoyons une cure de RITUXIMAB à M18.",hors_perimetre,sensible_reformulable,oxygen_saturation,parhaf,0.8450084924697876
+"I have a recurring infection in my back, right side. Bactrim is the only med. that seems to do anything. It only suppresses the infection. Have to stay on Bactrim all the time. Two years now. As soon as I stop taking it the infection blows up. Have gone septic twice.",avis_medical_personnalise,information_generale,sepsis,chatdoctor,0.9899827837944031
+"Une hypertension artérielle, si elle survient dans ce contexte :",avis_medical_personnalise,information_generale,prognosis,mediqal,0.9738888144493103
+"I have just found out my daughter aged 31 has had a catscan, then mri with and without contrast resulting in the findings of a 3mm cyst in her pituitary gland. 10 years ago they found she had had bleeding in the brain from the pituitary gland. She is a lactating mother. I was searching for some knowledge and found Rathicke . Her symptoms have been a dull ache in the head, dizziness and she has almost passed out a few times. This concerns me as she is a nurse and works with newborns as lactation consultant. We are still waiting for the PCP to get back to her.",avis_medical_personnalise,sensible_reformulable,imaging,chatdoctor,0.9729447364807129
+"Hello, my son just turned 4 yrs old and has down syndrome.  After some routine blood work, his doc called saying that his levels have changed and she suspects hypothyroidism.  This was almost 2 months ago and he has an appointment to see an endrocronologist next month.  About a month ago my son began sleeping A LOT15-17 hours a day.  The other day he saw his doctor again and I explained how tired he has been.  He has also dropped some weight.  She told me not to worry he may be going through a growth spurt.  She checked his hemoglobin while we were there and said it was low.  Shortly after we returned home the doctor called and wanted more blood test done.  I recieved a call today saying that he is not anemic, it was the doctors secretary that called and could not answer the questions i had.  I am wondering if that means there is no problem of if that means there is another cause.  I know that children with ds have a 10-15% higher chance of suffering from lukemia.  Should I worry, get a second opinion, or just wait to see the endrocronologist next month. Thank you for any help you coould provide.",avis_medical_personnalise,sensible_reformulable,lab_results,chatdoctor,0.956826388835907
+"Compte rendu d'hospitalisation du service de Gastro-entérologie
+
+Monsieur Andre Teyssedre, 79 ans, est hospitalisé en hôpital de jour de Gastro-entérologie le 14/11/2025.
+
+Motif d'hospitalisation
+
+Coloscopie
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+Médicaux:
+
+Diabète
+
+Dyslipidémie
+
+Insuffisance rénale chronique avec créatinine de base à 135 µmol/l pour un DFG à 60 ml/min
+
+Embolie pulmonaire
+
+Chirurgical:
+
+RTUP
+
+Familiaux:
+
+Cancer du pancréas chez le frère
+
+Allergies:
+
+Non connues
+
+Mode de vie
+
+Veuf, vit seul en pavillon. Autonome pour les AVQ. Une aide ménagère 2h par semaine.
+
+Deux enfants dont un fils présent.
+
+Retraité, ancien chauffagiste.
+
+Pas d'alcool. Tabagisme sevré depuis 2023, consommation estimée à 43 PA.
+
+Traitement à l'entrée
+
+SIMAVSTATINE 20 mg: 1 cp soir
+
+TELMISARTAN 40 mg: 1 cp matin
+
+METFORMINE 850 mg: 1 cp matin et soir
+
+RIVAROXABAN 20 mg: 1 cp par jour pendant 5 mois
+
+Histoire de la maladie
+
+Patient ayant consulté mi octobre 2025 pour une dyspnée avec tirage aux urgences. Diagnostic d'une embolie pulmonaire au décours et hospitalisation en cardiologie. Le bilan étiologique retrouve au scanner TAP un épaississement du colon transverse, à confronter aux données d'une coloscopie.
+
+Pas de notion d'AEG, de trouble du transit ou d'extériorisation.
+
+Pas d'anémie sur le plan biologique.
+
+Dernière prise du Rivaroxaban le 11/11 au soir
+
+Hospitalisation dans ce contexte pour réalisation d'une coloscopie.
+
+Examen clinique :
+
+TA 135/80 mmHg, FC 78 bpm,
+
+[...]
+
+Conclusion
+
+Patient hospitalisé pour coloscopie révélant une lésion suspecte.
+
+Consultation d'oncogériatrie prévue pour le 18/11. RCP le 19/11. Consultation d'annonce le 20/11.",urgence,sensible_reformulable,oxygen_saturation,parhaf,0.9696783423423767
+"(cochez la réponse juste) La masse découverte à l'échographie et à l'examen clinique :
+1. Explique l'hématurie
+2. Nécessite une urétéropyélographie rétrograde
+3. Nécessite un scanner
+4. Nécessite une surveillance simple
+5. Nécessite une artériographie",avis_medical_personnalise,sensible_reformulable,imaging,mediqal,0.5569877624511719
+"COMPTE-RENDU ANATOMO PATHOLOGIQUE
+
+NATURE DU PRÉLÈVEMENT : PROCTECTOMIE TOTALE ET CURAGE GANGLIONNAIRE
+
+RENSEIGNEMENTS CLINIQUES :
+
+Adénocarcinome du très bas rectum : amputation abdomino-périrénale.
+
+Traitement néo-adjuvant : chimio-radiothérapie FOLFOX qui est terminée depuis le 30/05/2025.
+
+EXAMEN MACROSCOPIQUE :
+
+Pièce fixée en formol
+
+Longueur de la résection : 26 cm
+
+Pour amputation : longueur canal anal : 4,5 cm
+
+Distance tumeur/tranche de section distale : 5,5 cm
+
+Si EPM, marge du mésorectum distale : 0,5 cm
+
+Pour amputation : distance tumeur/ligne pectinée : 1 cm
+
+Taille tumorale (diamètre maximum) : hauteur 5 cm, largeur 5 cm, épaisseur 3 cm
+
+Pourcentage d'envahissement de la circonférence : 100%
+
+Aspect de la tumeur : bourgeonnante et infiltrante
+
+Adhérence/infiltration d'un autre organe : non
+
+Intégrité du mésorectum: complet
+
+Autres : présence d'un patch de 3 x 2,5 cm du bas rectum latéral gauche, encré en vert lors de l'examen.
+
+EXAMEN MICROSCOPIQUE :
+
+Type histologique (OMS, 2019) : Adénocarcinome lieberkuhnien bien différencié
+
+Carcinome à cellules en bague à chaton: non
+
+Carcinome colloïde (mucineux): non
+
+Critères histologiques d'un phénotype instabilité des microsatellites (MSI) :
+
+Infiltrat lymphocytaire (crohn-like) : non
+
+Résultat immunohistochimique :
+
+Phénotype MSI : non (Conservation d'expression de MLH1, MSH2, MSH6 et PMS2)
+
+Réponse tumorale après radio-chimiothérapie :
+
+TRG : 3 (Tumeur viable 60% / fibrose 40% / Régression mucineuse 0%)
+
+Budding (fr
+
+[...]
+
+CONCLUSION :
+
+Persistance d'un adénocarcinome lieberkuhnien bien différencié infiltrant la paroi jusqu'à la sous-séreuse sans la dépasser. Réponse thérapeutique TRG3.
+
+Phénotype pMMR en immunohistochimie
+
+Absence de budding
+
+Absence d'embols vasculaires ou d'engainement périnerveux
+
+Limites chirurgicales et circonférentielles saines
+
+Un ganglion métastatiques sur les 23 prélevés (1N+/23N)
+
+Classification TNM (UICC 2017) : ypT3 N1a R0
+
+Résultats du Département de Génétique moléculaire
+
+Présence d'une mutation KRAS c.34G>T G12C conférant une sensibilité à une thérapie ciblée.
+
+Absence d'autres altérations moléculaires décelables",avis_medical_personnalise,sensible_reformulable,lab_results,parhaf,0.9788450598716736
+"Compte rendu d'hospitalisation du service de Cancérologie
+
+Vous trouverez ci-dessous le compte-rendu d'hospitalisation de semaine le 24/02/2025 concernant votre patient Monsieur Christophe Peurois.
+
+MOTIF D'ENTRÉE : C2 CISPLATINE J1=J21 + radiothérapie concomitante dans le cadre de la prise en charge d'un carcinome épidermoïde du sinus piriforme cT2N3b
+
+TRAITEMENT PERSONNEL DU PATIENT A L'ENTRÉE :
+
+XARELTO
+
+BISOPROLOL 5mg - 2.5mg
+
+PANTOPRAZOLE
+
+ANTÉCEDENTS :
+
+- Arythmie
+
+- HTA
+
+Aucune allergie connue
+
+Habitus :
+
+A travaillé chez naval groupe à l'international pendant plusieurs années.
+
+Divorcé sans enfant. Il a deux frères.
+
+Il habite actuellement à Marseille.
+
+Il fume la pipe depuis 50 ans, consomme actuellement 1 bière/jour avec des périodes d'excès dans le passé.
+
+DONNÉES RELATIVES AU CANCER :
+
+Pathologie cancéreuse :
+
+carcinome épidermoïde du sinus piriforme
+
+Extension TNM actuelle :
+
+ORL : cT2N3b
+
+Marqueurs histologiques et moléculaires :
+
+ORL : P16 négatif, score CPS = 10
+
+Traitements anticancéreux reçus :
+
+03/02/25 : C1 CISPLATINE 100mg/m2 + Radiothérapie concomitante
+
+INTERCURE :
+
+- Asthénie G1
+
+- Pas de perte de poids, appétit conservé
+
+- Odynophagie à 4/10 avec sécheresse buccale sans mucite, poids stabilisé, pose de GPE hier préventive
+
+- Neuropathie périphérique sensitive g1 des quatre extrémités majorées aux pieds
+
+- Pas de fièvre
+
+- Pas de nausée ou vomissement
+
+- Pas de diarrhée
+
+EXAMEN CLINIQUE :
+
+Poids : 81 kg Taille : 176 cm IMC : 25 kg/m2
+
+Evaluation OMS : 0
+
+Constantes: Ta 154/70 mmgh, Fc 72 bpm, SaO2 95% en AA, T 37.0°C
+
+ORL: Aires ganglionnaires cervicales libres, pas de mucite, mycose et sécheresse buccale, acouphènes connus.
+
+Cardiologique : Pas de douleur thoracique, pas de palpitation, bruits du coeur réguliers sans souffle perçu, pas d'OMI, pas de TVP, pas de turgescence jugulaire.
+
+Pneumologique : Eupnéique en AA, pas de toux, murmure vésiculaire +/+, crépitants dans les bases
+
+Abdominal : pas de trouble du transit, pas de nausée ni vomissement, abdomen souple indolore et dépressible, BHA +, pas de SFU
+
+Cutané : éruption cutanée retro auriculaire, CIP et GPR propre.
+
+EXAMEN PARACLINIQUE :
+
+Bilan biologique : Normal
+
+- NA+ 138 mmol/l, K+ 4.6 mmol/l, Creat 89 umol/l, CA2+ 2.25 mmol/l, Albu 38.7 g/l
+
+- hémoglobine 13.0 g/dl, Leucocytes à 3.4 G/l, PNN 1.73 G/l, Plaquettes 215 G/l, TP 100, TCA 0.84 (controle du 20/01)
+
+- pas de cytolyse, pas de cholestase
+
+Marqueurs récents : Non
+
+Imagerie de réévaluation : Non
+
+CONCLUSION / SYNTHÈSE :
+
+Administration du traitement : Oui
+
+Traitement :
+
+C2 CISPLATINE J1=J21 dans le cadre d'une RCT conco
+
+Sous couvert EMEND anti émétique
+
+Date théorique de la prochaine cure prévue le : 17/03/2025",hors_perimetre,sensible_reformulable,monitoring,parhaf,0.7136514782905579
+"I have a friend on dialysis, he s complaining of swelling and hardness to lower abdomen and edema of lower extremities. He was dialised this morning and earlier this week after having spent a month in a long term care hospital for an infection. what could it be?",avis_medical_personnalise,information_generale,dialysis,chatdoctor,0.96535325050354
+"Compte rendu d'hospitalisation du service de Cancérologie
+
+Madame Kellyah Rougegrez est hospitalisée en hôpital de jour de Cancérologie le 10/02/2025. .
+
+Motif d'hospitalisation : C2 NIVOLUMAB + IPILIMUMAB dans le cadre de la prise en charge d'un carcinome rénale à cellules claires métastatique
+
+Antécédents médicaux:
+
+- obésité IMC 36
+
+- HTA
+
+- insuffisance rénale chronique DFG 35 en 2024
+
+- syndrome anxio-depressif
+
+- insuffisance veineuse chronique
+
+Antécédents chirurgicaux, familiaux, allergies
+
+- syndrome des loges antébrachial droit post traumatique AVP
+
+- arthrodèse poignet droit post AVP
+
+- cholécystectomie en 2017
+
+Antécédents familiaux : mère décédée cancer du sein à 78 ans
+
+Aucune allergie connue
+
+Mode de vie (toxiques, profession, autres - par exemple activité physique, nombre de gestités et parités chez les femmes, situation sociale)
+
+Assistante dentaire en arrêt maladie depuis le diagnostic de la néoplasie rénale
+
+Peu active, sédentaire.
+
+G4P2 - 2 fils qu'elle voit tous les week end
+
+Mariée, vie en appartement.
+
+Pas de tabac, OH occasionnel 2 à 3 unités le week end.
+
+Traitement à l'entrée
+
+-IRBESARTAN 150mg matin
+
+-THIAZIDIQUE 25mg midi
+
+-NORSET 15mg soir
+
+-ALPRAZOLAM 0,25mg en si besoin
+
+-PARACETAMOL 500mg matin, midi, soir si douleur
+
+Histoire de la maladie
+
+Diagnostic récent début 2025 d'un carcinome rénal à cellule claire du rein gauche métastatique pulmonaire. Diagnostic lors du suivi de son insuffisance rénale chronique avec echographie de surveillance annu
+
+[...]
+
+Conclusion
+
+Administration de la 2ème cure de double immunothérapie par NIVOLUMAB + IPILIMUMAB pour une néoplasie rénale métastatique. Bonne tolérance lors de la perfusion.
+
+Retour à domicile, prochaine cure dans 3 semaines en HDJ oncologie",hors_perimetre,sensible_reformulable,lab_results,parhaf,0.8422800302505493
+"Hi, so my mom s been experiencing an aching from her right leg and it kinda has bruises (it doesn t really have the same color of the typical bruise you know, but to the spot where it aches and we can clearly see that her right leg s way bigger than the other, so it has a huge dark spot on that area I don t really know what is it called) so anyway, she s been experiencing it for almost a year now. Before, my went to the doctor she was recommended to go to the dermatologist. When she went there, they just gave her creams and some anti-inflammatory lotions which doesn t work on her. Then after that, she went to another doctor (it was her co-worker, my mom worked in a hospital as a Nursing Attendant btw) so she asked her co-worker if she could do a biopsy on her leg. But the doctor said she couldn t, not unless she undergo MRI testing first to know which part should she do the procedure. So a week after that, my mom went to the other hospital (this hospital is private and a well known hospital in our town) so after a week, she got the result. They told her that it was only a thickening of the leg muscles and that her veins on her leg (right) are kinda loose so she needs to support it, so they advised her to buy their product to support her veins. It s like a stocking but it s thicker than a normal stocking and which is really tight on her. The doctor said that she should wear it on the day time coz and remove it during the night time to let her leg breathe. But, nothing happened. The more she wear that stocking, the more that bruise on her leg turns dark. And btw, that pain she s feeling started as a small lump then over the period of time turns what it is now. So please do help me, because I really love my mom and seeing her like that pains me. Thank you!",avis_medical_personnalise,sensible_reformulable,imaging,chatdoctor,0.9779738783836365
+"Vous observez, chez une cinquantaine de personnes ayant mangé au même restaurant d'entreprise, une toxi-infection alimentaire collective. L'étiologie staphylococcique peut être éliminée si :",hors_perimetre,information_generale,infection,mediqal,0.9962271451950073
+"Compte rendu de consultation d'oncologie médicale
+
+Le 19/09/2025.
+
+Je vois ce jour en consultation Madame Kardelen Higue dans le cadre du suivi d'un adénocarcinome bronchique multimétastatique actuellement sous immunothérapie d'entretien par PEMBROLIZUMAB.
+
+Rappel des ATCD de la patiente : BPCO stade 1, pneumopathie infectieuse avec passage en réanimation en 2016
+
+Tabagisme actif, 10 cigarettes/jour, estimé à 50 PA
+
+Traitements actuels : ANORO ELLIPTA une inhalation par jour, SALBUTAMOL en sb, PARACETAMOL 1g sb, AERIUS 5mg en sb, LEVOTHYROX 50 microg/jour
+
+Rappel de l'histoire oncologique:
+
+Découverte en 2024 lors d'un bilan biologique de suivi par le médecin traitant d'un syndrome inflammatoire marqué, d'une anémie microcytaire à 9,7g/dL et d'une cytolyse à 3 fois la norme.
+
+Imagerie par échographie puis scanner TAP objectivant la présence de multiples nodules pulmonaires bilatéraux, hilaires, médiastinaux et hépatiques.
+
+Réalisation d'une fibroscopie bronchique et d'une biopsie hépatique sous scanner au CHU de Rouen permettant de mettre en évidence la présence d'un Adénocarcinome TTF1+, CK7+, CK20- en faveur d'une origine bronchique.
+
+En IHC statut PDL1 à > 50%, absence de surexpression de MET.
+
+Analyse biomoléculaire retrouvant la présence d'un variant KRAS G12V.
+
+Bilan baseline par TEP et IRMc, absence de lésion à l'étage encéphalique.
+
+TEP confirmant la présence des lésions précédemment décrites, hypermétaboliques au niveau pulmonaires bilatérales, hépatiques, médiastina
+
+[...]
+
+diagnostic :
+
+- Tumeur maligne secondaire et non précisée des ganglions lymphatiques intrathoraciques [C771]
+
+- Tumeur maligne secondaire du foie et des voies biliaires intrahépatiques [C787]
+
+- Tumeur maligne secondaire du poumon [C780]
+
+- Syndrome de dépendance au tabac, utilisation actuelle [F1724]
+
+- Anémie au cours de maladies tumorales (C00-D48) [D630]
+
+- Autres maladies pulmonaires obstructives chroniques précisées [Bronchite chronique obstructive] [J448]
+
+- Hypothyroïdie, sans précision [E039]",hors_perimetre,sensible_reformulable,lab_results,parhaf,0.9555927515029907
+"Compte rendu d'hospitalisation du service de Médecine interne
+
+Madame Valérie Grillot, 59 ans, est hospitalisée en hôpital de jour de Médecine interne le 14 mai 2025.
+
+Motif d'hospitalisation
+
+Administration programmée d'érythropoïétine dans le cadre d'une anémie sévère sur maladie rénale chronique, patiente greffée rénale en hémodialyse chronique.
+
+Antécédents médicaux, chirurgicaux, familiaux et allergies
+
+Antécédents médicaux :
+
+- Maladie rénale chronique stade 5, secondaire à une néphropathie indéterminée
+
+- Hémodialysée chronique depuis 2020
+
+- Greffe rénale en 2015, rejet chronique, reprise de l'hémodialyse en 2022
+
+- Anémie chronique liée à l'insuffisance rénale terminale
+
+- Hypertension artérielle bien contrôlée
+
+- Hyperparathyroïdie secondaire
+
+- Carence martiale intermittente
+
+Antécédents chirurgicaux :
+
+- Pose de fistule artério-veineuse gauche
+
+- Néphrectomie bilatérale en 2014
+
+Antécédents familiaux :
+
+- Père diabétique de type 2
+
+- Mère décédée d'une insuffisance cardiaque
+
+Allergies :
+
+- Aucune connue
+
+Mode de vie
+
+- Statut marital : Célibataire
+
+- Enfants : Sans enfant
+
+- Habitat : Vit seule en logement social, accessible
+
+- Aides humaines : Aide à domicile pour les courses et le ménage ; transport médicalisé vers le centre de dialyse
+
+- Habitudes :
+
+ - Alimentation correcte mais peu appétente en post-dialyse
+
+ - Non fumeuse, pas d'alcool
+
+ - Activité physique très limitée (fatigabilité importante après les séances)
+
+ - Revenus : Allocation adulte handicapé (A
+
+[...]
+
+Conclusion
+
+Hospitalisation de jour pour séance de traitement par darbepoétine alpha dans le cadre d'une anémie rénale chronique post-greffe. Patiente en hémodialyse chronique avec traitement immunosuppresseur poursuivi. État stable, objectif thérapeutique atteint, poursuite du protocole ambulatoire.",hors_perimetre,sensible_reformulable,dialysis,parhaf,0.8787553906440735
+"Compte rendu d'hospitalisation du service de Cancérologie
+
+Madame Francoise Soudet est hospitalisée en hôpital de jour de Cancérologie le 14 avril 2025 .
+
+Motif d'hospitalisation
+
+C34 Pembrolizumab
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+Dysthyroidie C8 Pembrolizumab, Ablation ACFA 2015, Arthrose cervicale
+
+Pupille de la nation, pas d'enfant, veuve, voisine proche aidante
+
+Rappel de l'histoire oncologique
+
+- Rectorragies (notion de polypes multiples retirés lors de coloscopie)
+
+- Sigmoïdectomie le 2 févier 2019 avec anastomose colorectale emportant l'artère mésentérique inférieure au-dessus de l'artère colique supérieure gauche.
+
+- Adénocarcinome colique modérément différencié, stade pT3N2a, avec emboles vasculaires et engainements périnerveux, marges saines, présentant un phénotype MSI-H.
+
+- Uracilémie 12 ng/ml - phénotype non déficitaire
+
+- Chimiothérapie adjuvante : LV5FU2 avril - octobre 2019 bonne tolérance
+
+- Déménagement pour rapprochement familial en juin 2020 devant une asthénie croissante (patiente un COVID long)
+
+- Dyspnée d'intensité croissante depuis mars 2023 avec bilan confirmant une récidive pulmonaire bilatérale, hépatique et ganglionnaire d'un ADK phénotype MSI-H.
+
+- Avril 2023 : C1 Pembrolizumab 200mg q3w (Dysthyroïdie a C8 supplémentée)
+
+Traitement à l'entrée
+
+PARACÉTAMOL 1000 mg : 1-0-1
+
+LOPERAMIDE 2 mg : 1 cp après chaque selle liquide (max 8 cp/j)
+
+ESOMEPRAZOLE 40 mg : 0-0-1
+
+LEVOTHYROX 75µg : 1-0-0
+
+Examens complémentaires : Biologie 11 avril avec TSH : Anémie G1 microcytaire isolée, IRC 54ml/min stable
+
+Evolution dans le service
+
+Pour rappel, la patiente est en bonne réponse partielle sur le scanner du 28 mars 2025.
+
+Toxicité d'une immunothérapie par pembrolizumab
+
+- Hématotoxicité : G1 microcytaire
+
+- Perturbation ionogramme : non
+
+- Cytolyse : non
+
+- Dysthyroïdie : équilibrée
+
+- Asthénie : G1
+
+- Anorexie : non
+
+- Céphalées : non
+
+- Xérophtalmie, xérostomie : non
+
+- Dyspnée : non majorée
+
+- Diarrhées : contrôlées par Lopéramide
+
+- Nausées, vomissements : non
+
+- Prurit, xérose cutanée : lésion de grattage avant bras, pas de contage de gale
+
+- Arthralgies, myalgies : ancien non majoré
+
+- Varation pondérale : 65kg stable
+
+Cliniquement : OMS 1, 65kg, PAC propre, ASID, MMVBS, BDC réguliers, Pas de SFU, pas de doléance somatiques ni fonctionnelles en dehors d'un prurit.
+
+Traitement de sortie
+
+PARACÉTAMOL 1000 mg : 1-0-1
+
+LOPERAMIDE 2 mg : 1 cp après chaque selle liquide (max 8 cp/j)
+
+ESOMEPRAZOLE 40 mg : 0-0-1
+
+LEVOTHYROX 75µg : 1-0-0
+
+Nouvelle prescription
+
+DEXERYL crème : 1 application, 2 fois par jour pendant 3 semaine
+
+Conclusion
+
+Administration C34 Pembrolizumab en 1ere ligne d'un cancer du côlon sigmoïde métastatique en bonne réponse partielle.
+
+Xérose cutanée mise sous DEXERYL crème.
+
+Programmation FERINJECT lors de la prochaine venue en HDJ.",hors_perimetre,sensible_reformulable,oxygen_saturation,parhaf,0.955000102519989
+"L'apparition des règles après l'administration de progestérone, chez une femme aménorrhéique permet d'affirmer que :",hors_perimetre,sensible_reformulable,imaging,mediqal,0.9911172389984131
+For last 3 weeks my husband eats and then throws it right back up. He eats yogurt and applesauce and keeps it down. His liver has high enzymes. They did an x-ray and ulta sound and talks about swallow test. From what the nurse told me it sounded as if his bowls were full at he has always had trouble going. He has had lots of things go wrong in last few years.,avis_medical_personnalise,sensible_reformulable,imaging,chatdoctor,0.9483680129051208
+What is (are) Malabsorption Syndromes ?,avis_medical_personnalise,information_generale,lab_results,medquad,0.6352109909057617
+"Compte rendu de consultation de Gynécologie
+
+Le 02/09/2023
+
+Je vois ce jour en consultation Madame Marie-josephe Faucher âgée de 47 ans, pour réévaluation clinique et programmation chirurgicale dans le cadre d'un utérus adénomyosique symptomatique.
+
+Mme Faucher ne présente pas d'antécédent particulier. Elle a été opérée de l'appendicite et des végétations dans son enfance. Ses dépistages sont à jour, le frottis de l'année dernière était normal. Elle a 2 filles nées par voie basse. Elle ne prend aucun traitement. Elle a une contraception par Optimizette depuis 6 mois, bien conduite.
+
+Pour rappel, j'ai déjà vu en consultation Mme Faucher pour des métrorragies anarchiques, abondantes avec déglobulisation (hb: 8,1 g/dL lors de notre première consultation il y a 6 mois). Les métrorragies persistent malgré un traitement par Optimizette bien conduit. Elle a dû se rendre 2 fois aux urgences gynécologiques pour ses saignements dont l'abondance à été réduite par de l'Exacyl 1g 3 fois par jour pendant 3 jours. Elle est fatiguée, ses métrorragies ont un véritable impact sur sa vie quotidienne et son travail.
+
+Ce jour,
+
+A l'examen clinique l'utérus est globuleux, mobile sans masse pelvienne
+
+L'échographie du 24/08/2023 montre un utérus globuleux avec adénomyose, endomètre fin, ovaires de taille normale, sans épanchement du douglas.
+
+Le dernier bilan biologique réalisé ce matin montré une hémoglobine à 9,2g/dL malgré la supplémentation ferrique par Tardyferon quotidienne.
+
+Patiente désir
+
+[...]
+
+Conclusion: Patiente de 47 ans hospitalisée pour Hystérectomie inter annexielle et salpingectomie bilatérale par voie coelioscopique dans un contexte d'utérus adénomyosique symptomatique. Suites opératoires simples;",urgence,sensible_reformulable,lab_results,parhaf,0.980322539806366
+"My brother (Age-20) was admitted to RG KAR Hospital in July-2010 and completed the DOTS course as prescribed for 7 months. But now again X-ray confirms that water is being formed in his chest again. Kindly suggest what to do now also if there are any other GOVT. Hospitals specilized in TB in Kolkata, West Bengal.Best Regards,Raju DasMob",avis_medical_personnalise,sensible_reformulable,imaging,chatdoctor,0.9861186742782593
+L'administration simultanée de plusieurs antibiotiques dans le traitement de la tuberculose pulmonaire excavée est nécessaire pour :,hors_perimetre,information_generale,infection,mediqal,0.996401309967041
+"Compte rendu de consultation de Chrurgie urologique
+
+Le 08/08/2025
+
+Je vois ce jour en consultation Madame Anne De saint-martin, âgée de 34 ans, pour hématurie macroscopique et douleur lombaires droites.
+
+Antécédents :
+
+- G2P2
+
+- Pas d'antécédents médico-chirurgicaux
+
+Traitements : RAS
+
+Allergies : RAS
+
+Mode de vie : Aide soignante, tabagisme actif depuis l'âge de 16 ans
+
+Histoire de la maladie :
+
+Elle décrit des douleurs lombaires droites depuis plusieurs mois mais se majorant franchement depuis quelques semaines. Elle ne peut plus travailler depuis 2 semaines.
+
+Elle a également eu plusieurs épisodes d'hématurie totale, intermittentes, depuis un mois.
+
+Par ailleurs elle n'a pas d'autre trouble mictionnel, pas de pollakiurie, pas d'urgenturie, pas d'infection urinaire.
+
+L'ECBU confirme une hématurie avec leucocyturie aseptique.
+
+Elle a déjà eu un uroscanner qui montre une dilatation pyélocalicielle et urétérale droite en amont d'un épaississement de l'uretère pelvien semblant suspect. Pas d'autre lésion visualisée.
+
+La fonction rénale s'est dégradée depuis 2 semaines avec une créatininémie à 150 µmol/L, sans trouble ionique.
+
+Elle n'a pas eu de fièvre.
+
+Au total : Je lui explique que cette lésion de l'uretère est suspecte et va nécessiter des explorations, notamment une urétéroscopie diagnostique avec biopsies.
+
+Au vu de l'insuffisance rénale aiguë rapidement progressive et de la douleur lombaire, je propose la mise en place d'une sonde JJ en urgence. En cas d'échec, nous positionnerons une néphrostomie.
+
+Elle a bien compris cela.
+
+Compte rendu opératoire de Chrurgie urologique
+
+Rappel clinique : Dilatation pyélocalicielle droite en amont d'un épaississement urétéral pelvien suspect, avec insuffisance rénale aiguë et douleurs lombaires.
+
+Date de l'intervention : 08/08/2025
+
+Chirurgien : Dr Genevieve Kierchevin
+
+Intervention : Mise en place d'une endoprothèse urétérale par endoscopie rétrograde et urétro-pyélographie rétrograde.
+
+Technique opératoire :
+
+En position de la taille, sous anesthésie générale.
+
+Désinfection cutanée à la polyvidone iodée. Champage stérile. Check list HAS
+
+Introduction d'un cystoscope sous contrôle de la vue sans difficulté.
+
+La cystoscopie est sans particularité. On repère les méats urétéraux en position orthotopique.
+
+Cathétérisation du méat urétéral droit à l'aide d'un fil guide Terumo et mise en place d'une sonde de Pollack sur fil guide et réalisation d'une UPR qui montre des cavités pyélocalicielles et un uretère dilaté en amont d'une sténose de l'uretère pelvien sur environ 1 cm.
+
+Montée de la Pollack dans le pyélon sur fil guide sous contrôle scopique.
+
+Réalisation d'un prélèvement d'urines claires à visée bactériologique.
+
+Montée sur fil guide d'une sonde double J Ch7/26 cm.
+
+Largage de l'extrémité proximale sous contrôle scopique, largage de l'extrémité distale sous contrôle de la vue.
+
+Vidange vésicale. Urines claires
+
+Scopie : Appareil PHILIPS Zenition 70 ; PDS 80 cGy.cm² ; durée 19 s
+
+Compte rendu d'hospitali",urgence,sensible_reformulable,infection,parhaf,0.9204483032226562
+"COMPTE-RENDU ANATOMO PATHOLOGIQUE
+
+NATURE DU PRELEVEMENT : BIOPSIE DU CULMEN
+
+RENSEIGNEMENTS CLINIQUES :
+
+Nodule évolutif hypermétabolique du culmen.
+
+Antécédent de cancer du colon en rémission.
+
+EXAMEN MACROSCOPIQUE :
+
+Un cylindre biopsique inclus en 2 blocs.
+
+EXAMEN MICROSCOPIQUE :
+
+La biopsie a intéressé un adénocarcinome infiltrant, d'architecture polymorphe, trabéculaire, acinaire, papillaire. Les cellules tumorales montrent un cytoplasme cylindrique parfois mucosécrétant, des noyaux allongés, au pôle basal, volumineux et nucléolés.
+
+Examen immunohistochimique :
+
+Anticorps anti-CK7 : négatif
+
+Anticorps anti-CK20 : marquage diffus des cellules tumorales.
+
+Anticorps anti-TTF1 : négatif.
+
+Anticorps anti-P40 : négatif.
+
+Anticorps anti-PD-L1 (clone E1L3N) : TPS 0 % dans la limite d'une cinquantaine de cellules tumorales analysées.
+
+Anticorps anti SATB2: positivité diffuse des cellules tumorales
+
+Résultats du Département de Génétique moléculaire
+
+Absence de mutation dans les régions explorées des gènes EGFR, HER2, ALK et MET.
+
+Dans la limite des techniques utilisées, il n'est pas détecté de mutation de sensibilité aux traitements par des inhibiteurs de tyrosine kinase de l'EGFR.
+
+Présence d'une mutation KRAS c.34G>T G12C conférant une sensibilité à une thérapie ciblée.
+
+CONCLUSION :
+
+Adénocarcinome CK20+ SATB2+ CK7- TTF1- compatible avec une origine colorectale avec mutation KRAS (G12C)",avis_medical_personnalise,information_generale,medication,parhaf,0.8849132657051086
+"Compte rendu d'hospitalisation du service de Cancérologie
+
+Madame Ginette Seves, 70 ans, est hospitalisée en hôpital de jour de Cancérologie le 11 juin 2025
+
+Motif d'hospitalisation
+
+RT stéréotaxique d'une métastase cérébrale unique
+
+Antécédents médicaux, chirurgicaux, familiaux, allergies
+
+Dépression en 2002
+
+Cancer du sein chez la soeur à 66 ans
+
+Mode de vie
+
+Céramiste à la retraite (continue de donner des cours de poterie le WE)
+
+Mariée, 2 enfants, 6 petits-enfants
+
+Bénévolat au secours populaire
+
+30 PA, sevré en 2006
+
+OH occasionnel
+
+Traitement à l'entrée
+
+Prednisone 20mg matin
+
+Histoire de la maladie
+
+2022 : tumorectomie d'un CCI sein droit RH+ HER 2 2+ FISH amplifiée grade III 2cm emboles +
+
+2023 : métastases osseuses à la TEP 1L Docétaxel Trastu Pertu
+
+05/2025 : métastase cérébrale unique lobe pariétal de 3 cm découvert fortuitement
+
+RCP : TDXD et RT stéréo cérébrale
+
+Examen clinique :
+
+PA 111/66 FC 65 FR 18 Sat 100% AA T°37,2°C
+
+BDC réguliers sans souffle, MV bilatéral
+
+Pas de signe d'HTIC, pas de déficit sensitivo-moteur, pas de mouvement anormaux à domicile
+
+Vue ce jour à J3 d'une RT stéréo 27 Gy en 3 fractions débutée le 09 juin
+
+Pas de d'EI notable ce jour, aucune plainte fonctionnelle rapportée par la patiente
+
+Traitement de sortie
+
+Prednisone 20mg matin à poursuivre jusqu'à 15 jours après la fin de l'irradiation
+
+Conclusion
+
+Poursuite irradiation",hors_perimetre,sensible_reformulable,medication,parhaf,0.5373948812484741

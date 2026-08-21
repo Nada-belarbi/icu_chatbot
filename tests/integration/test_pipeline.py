@@ -14,7 +14,7 @@ from src.pipeline.chatbot_pipeline import (
 from src.safety.query_classifier import MockQueryClassifier
 from src.memory.conversation_memory import ConversationMemoryManager
 from src.safety.decision_engine import (
-    DECISION_REDIRECT, DECISION_REFUSE, DECISION_ASK_REFORMULATION, DECISION_ALLOW_RAG,
+    DECISION_REDIRECT, DECISION_REFUSE, DECISION_REFUSE_OOS, DECISION_ASK_REFORMULATION, DECISION_ALLOW_RAG,
 )
 from config.safety_config import (
     LABEL_GENERAL, LABEL_MEDICAL_ADVICE, LABEL_EMERGENCY, LABEL_OUT_OF_SCOPE,
@@ -61,7 +61,7 @@ class TestRoutingDecisions:
         result = make_pipeline(label=LABEL_OUT_OF_SCOPE, score=0.88).run(
             "quel est le menu du restaurant ?"
         )
-        assert result.decision == DECISION_REFUSE
+        assert result.decision == DECISION_REFUSE_OOS
 
     def test_emergency_label_returns_redirect(self):
         result = make_pipeline(label=LABEL_EMERGENCY, score=0.97).run(
@@ -117,7 +117,8 @@ class TestExceptionSafety:
                 raise RuntimeError("simulated crash")
 
         pipeline = ChatbotPipeline(classifier=BrokenClassifier())
-        result = pipeline.run("qu'est-ce qu'une sonde ?")
+        # Neutral question: no rules, no safe-allow bypass, not a greeting → reaches classifier
+        result = pipeline.run("les soins intensifs en reanimation")
         assert result.response_type == RTYPE_ERROR
         assert len(result.answer) > 0
 #   - Sensitive question → ask_reformulation

@@ -1,0 +1,2 @@
+N,precision,recall,f1,specificity,FPR,FNR
+10,1.0,1.0,1.0,1.0,0.0,0.0

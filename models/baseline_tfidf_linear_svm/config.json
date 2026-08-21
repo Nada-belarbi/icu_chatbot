@@ -1,0 +1,31 @@
+{
+  "model_type": "tfidf_linear_svm",
+  "vectorizer_parameters": {
+    "lowercase": true,
+    "strip_accents": "unicode",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 70000,
+    "min_df": 2,
+    "max_df": 0.95,
+    "sublinear_tf": true
+  },
+  "classifier_parameters": {
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "label_order": [
+    "information_generale",
+    "sensible_reformulable",
+    "avis_medical_personnalise",
+    "urgence",
+    "hors_perimetre"
+  ],
+  "training_date": "2026-06-18T08:32:01.663500+00:00",
+  "train_file": "C:/Users/223114186/Documents/chatbot_ia/icu_chatbot/data/processed/train.csv",
+  "val_file": "C:/Users/223114186/Documents/chatbot_ia/icu_chatbot/data/processed/val.csv",
+  "test_file": "C:/Users/223114186/Documents/chatbot_ia/icu_chatbot/data/processed/test.csv",
+  "random_state": 42
+}
