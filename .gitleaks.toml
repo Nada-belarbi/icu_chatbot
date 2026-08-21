@@ -1,0 +1,10 @@
+title = "icu_chatbot gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Third-party widget/analytics API keys embedded in scraped public health-guideline HTML pages (reference corpus, not application secrets)"
+paths = [
+  '''^data/rag_documents/raw/.*''',
+]
