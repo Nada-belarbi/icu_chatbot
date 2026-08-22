@@ -8,7 +8,7 @@ cryptography
 langchain
 langchain-openai
 langchain-community
-langchain-chroma==0.2.5
+langchain-chroma==1.1.0
 langchain-huggingface
 openai
 chromadb==1.0.15
